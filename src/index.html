@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" class="dark min-h-[10vh]" data-pgc-master="master.html">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title data-pgc-field="title">{{meta.siteName}}</title>
-        <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link" />
+        <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link">
         <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -30,16 +30,17 @@
                 </ul>
                 <div class="flex gap-12 justify-end">
                     <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                         </svg>                         
-                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd" />
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
                         </svg>
-                    </button>                     <a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
+                    </button>
+                    <a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
                 </div>
                 <label class="cursor-pointer place-self-end px-3 py-6 relative self-center z-40 md:hidden" for="mobile-menu">
-                    <input class="peer hidden" type="checkbox" id="mobile-menu" />
+                    <input class="peer hidden" type="checkbox" id="mobile-menu">
                     <div class="after:absolute after:bg-black after:block after:bottom-[-0.35rem] after:content-[''] after:dark:bg-white after:duration-200 after:ease-out after:h-full after:right-0 after:transition-all after:w-full before:absolute before:bg-black before:block before:content-[''] before:dark:bg-white before:duration-200 before:ease-out before:h-full before:top-[-0.35rem] before:transition-all before:w-full before:z-50 bg-black bg-transparent block content-[''] dark:bg-white h-[1px] peer-checked:bg-transparent relative w-7 z-50 after:peer-checked:-rotate-45 after:peer-checked:bottom-0 after:peer-checked:transform after:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:top-0 before:peer-checked:transform before:peer-checked:w-full"></div>
                     <div class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block">&nbsp;</div>
                     <div class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0">
@@ -58,261 +59,440 @@
             <main data-empty-placeholder></main>
         </header>
         <main class="pt-24" data-pgc-field="mainContent">
-            <section class="bg-primary-800 flex-col h-[80vh]" data-pg-name="hero-section"> 
-                <p class="text-green-700 uppercase">Headless e-commerce solutions</p> 
-                <h1 class="text-6xl text-center text-white uppercase editable">Transforming the             way your  buy from you.</h1> 
-            </section>             
-            <section class="container flex flex-col items-center justify-center mx-auto py-[10% py-[10%] text-accent-950 w-full" data-pg-name="benefits"> 
-                <p class="text-green-700 uppercase">Headless e-commerce solutions</p> 
-                <h2 class="heading-2">Benefits of jam-stack</h2> 
-                <ul style="list-style: none;;" class="gap-10 grid grid-cols-1 md:grid-cols-3"> 
-                    <li class="benefits__list-element flex flex-col items-center text-center"> 
-                        <svg width="55" height="60" viewbox="0 0 55 60" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                            <g clip-path="url(#clip0_211_114)"> 
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.4057 0C37.661 6.45292 46.926 9.50482 54.8762 8.78432C56.2654 36.6638 45.8933 53.1288 27.5119 60C9.76088 53.5682 -0.738696 37.8119 0.0402738 8.36021C9.37375 8.84524 18.5314 6.84305 27.4057 0ZM22.4911 29.5079C23.114 30.0322 23.7014 30.5966 24.2497 31.1973C25.9682 28.4512 27.8011 25.93 29.7356 23.6115C35.2072 17.052 32.7275 18.3161 40.3166 18.3161L39.2626 19.4794C36.0216 23.0527 34.9287 24.9143 32.2719 28.723C29.6152 32.5364 27.2405 36.4717 25.1266 40.5217L24.4704 41.7812L23.8661 40.4995C22.752 38.1236 21.4159 35.9445 19.8249 33.9962C18.2328 32.0479 16.8424 30.7779 14.6837 29.3076C15.6728 26.0847 20.3808 27.7342 22.4911 29.5079ZM27.4234 4.64404C35.9284 9.99453 44.0922 13.0031 50.6851 12.4044C51.8371 35.5251 42.755 49.6563 27.5131 55.3548C12.7906 50.0219 3.60347 36.4787 4.24907 12.0541C12.7918 12.4981 20.6204 9.89026 27.4234 4.64404Z" fill="#121415" /> 
-                            </g>                             
-                            <defs> 
-                                <clippath id="clip0_211_114"> 
-                                    <rect width="55" height="60" fill="white" /> 
-                                </clippath>                                 
-                            </defs>                             
-                        </svg>                         
-                        <h3>Enhanced Security</h3> 
-                        <p class="text-center">By utilizing serverless architecture, JAMstack sites are inherently more secure than traditional websites.</p> 
-                    </li>                     
-                    <li class="benefits__list-element flex flex-col items-center text-center"> 
-                        <svg width="68" height="66" viewbox="0 0 68 66" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                            <g clip-path="url(#clip0_211_116)"> 
-                                <path d="M32.3928 18.1902L14.0089 24.3749L34.041 33.5526L54.0732 24.6338L39.1158 19.4567V16.6608L58.0907 23.2251C58.6738 23.4639 59.0271 23.9979 58.9753 24.5922C58.9792 24.6204 58.9792 24.6539 58.9792 24.6861V48.8975L63.3089 51.421L62.4629 48.8438C61.9848 47.3359 65.2108 45.946 65.8629 48.3193L67.9282 54.4824C68.1991 55.5195 67.6904 56.4358 66.6678 56.7309L60.306 58.043C58.2262 58.585 57.0986 55.4645 59.4069 54.6434L61.7364 54.2222L46.2744 45.2068C45.5134 44.7614 45.2517 43.7767 45.6914 43.0066C46.131 42.2366 47.1071 41.9736 47.8682 42.4177L56.3509 47.3641V26.5107L35.3439 35.8614V62.5185L53.0372 53.4347L55.7439 55.0124L34.7117 65.808C34.5011 65.9359 34.2593 66.0017 34.0136 65.9982C33.7679 65.9946 33.5281 65.9218 33.3212 65.7879L12.548 54.842L15.2321 53.2777L32.7196 62.493V35.8493L11.6396 26.1954V47.3681L20.1316 42.4177C20.8926 41.9736 21.8688 42.2366 22.3084 43.0066C22.748 43.7767 22.4864 44.7614 21.7253 45.2068L6.26331 54.2222L8.59284 54.6434C10.9011 55.4645 9.77354 58.585 7.6937 58.043L1.33198 56.7309C0.309325 56.4358 -0.199347 55.5195 0.0715903 54.4824L2.13682 48.3193C2.78893 45.946 6.01495 47.3359 5.53682 48.8438L4.69081 51.421L9.0205 48.8975L9.01651 24.2045C9.01651 23.4827 9.50393 23.1581 10.1428 22.8911L32.3928 15.4091L32.3915 6.14693L30.6039 8.17538C29.5507 9.34658 26.7457 7.22019 28.455 5.46273L32.7089 0.575377C33.462 -0.18127 34.5019 -0.193344 35.2656 0.553911L39.57 5.46273C41.0748 7.0109 38.9644 9.5572 37.1064 7.94866L35.5803 6.12278L35.5817 24.1562C35.5803 25.0443 34.8671 25.7647 33.9866 25.7661C33.106 25.7661 32.3928 25.0443 32.3928 24.1562V18.1902Z" fill="#121415" /> 
-                            </g>                             
-                            <defs> 
-                                <clippath id="clip0_211_116"> 
-                                    <rect width="68" height="66" fill="white" /> 
-                                </clippath>                                 
-                            </defs>                             
-                        </svg>                         
-                        <h3>Enhanced Security</h3> 
-                        <p class="text-center">By utilizing serverless architecture, JAMstack sites are inherently more secure than traditional websites.</p> 
-                    </li>                     
-                    <li class="benefits__list-element flex flex-col items-center text-center"> 
-                        <svg width="63" height="63" viewbox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                            <g clip-path="url(#clip0_211_121)"> 
-                                <path d="M62.1899 23.02L23.02 62.1899C23.0046 62.2053 22.9841 62.2207 22.9585 62.231C22.7021 62.4771 22.4099 62.6616 22.1023 62.7898C21.7639 62.9282 21.3999 63 21.041 63C20.6821 63 20.3181 62.9333 19.9797 62.7898C19.6516 62.6565 19.3491 62.4565 19.0825 62.1899L13.9351 57.0425C13.771 56.8784 13.6787 56.6631 13.6582 56.4375C13.6377 56.2222 13.689 55.9966 13.8069 55.8018L13.8171 55.7812C14.1196 55.3147 14.335 54.8123 14.4631 54.2893C14.5913 53.7561 14.6272 53.2075 14.5759 52.6641V52.6589C14.5195 52.1257 14.376 51.5925 14.1401 51.0952C13.9146 50.6184 13.6018 50.1724 13.207 49.7725C12.8123 49.3777 12.3611 49.0649 11.8843 48.8394C11.387 48.6035 10.8538 48.4548 10.3206 48.4036C9.79248 48.3472 9.24902 48.3882 8.72607 48.5112C8.21338 48.6343 7.71606 48.8445 7.25977 49.1367C7.06494 49.2854 6.82397 49.3469 6.59326 49.3315C6.36255 49.3162 6.14209 49.2188 5.96777 49.0496C5.5166 48.6343 0.810059 43.9431 0.810059 43.8918C0.543457 43.6252 0.343506 43.3228 0.210205 42.9946C0.0666504 42.6665 0 42.3025 0 41.9436C0 41.5796 0.0666504 41.2207 0.210205 40.8823C0.343506 40.5593 0.53833 40.262 0.799805 39.9954L39.98 0.810059C40.2466 0.543457 40.5542 0.343506 40.8772 0.210205C41.2156 0.0666504 41.5796 0 41.9436 0C42.3076 0 42.6665 0.0666504 43.0049 0.210205C43.333 0.343506 43.6355 0.543457 43.9021 0.810059L49.0854 5.99341C49.2393 6.14722 49.3367 6.35742 49.3623 6.57275C49.3879 6.78296 49.3469 7.00342 49.2341 7.19824L49.2239 7.21362C48.9419 7.66479 48.7419 8.15698 48.6343 8.66455C48.5215 9.1875 48.4958 9.72583 48.5574 10.2539V10.259C48.624 10.7769 48.7727 11.2896 49.0085 11.7715C49.2341 12.2329 49.5417 12.6687 49.9314 13.0583C50.3108 13.448 50.7415 13.7505 51.2029 13.9761C51.6848 14.2119 52.2026 14.3606 52.7256 14.4272C53.2434 14.4888 53.7664 14.4683 54.2791 14.3606C54.7866 14.2529 55.2737 14.0684 55.73 13.8018C55.9299 13.6736 56.1658 13.6172 56.3965 13.6377C56.6118 13.6582 56.8271 13.7454 56.9963 13.9094C57.4475 14.3247 62.1899 19.0569 62.1899 19.103C62.4565 19.3696 62.6565 19.6721 62.7898 20.0002C62.9282 20.3386 63 20.7026 63 21.0615C63 21.4255 62.9333 21.7844 62.7898 22.1228C62.6565 22.4407 62.4617 22.7432 62.2002 23.0098L62.1899 23.02ZM39.5544 28.1008L41.0566 29.603C41.1335 29.6799 41.1335 29.803 41.0566 29.8799C41.031 29.9055 40.9951 29.926 40.9592 29.9312L23.6353 35.0735C23.5635 35.094 23.4917 35.0735 23.4404 35.0222L21.9382 33.52C21.8613 33.4431 21.8613 33.3201 21.9382 33.2432C21.9639 33.2175 21.9998 33.197 22.0356 33.1919L39.3596 28.0496C39.4314 28.0291 39.5083 28.0547 39.5544 28.1008ZM27.5625 21.8972C27.8137 21.646 28.0906 21.4255 28.3931 21.2358C28.6904 21.0513 29.0083 20.8975 29.3467 20.7795C29.6953 20.6565 30.0439 20.595 30.3977 20.5898C30.7515 20.5847 31.1052 20.636 31.459 20.7385L31.4692 20.7437C31.8179 20.8462 32.1614 21.0051 32.4895 21.2102C32.8228 21.4204 33.1406 21.6768 33.4482 21.9844C33.9045 22.4407 34.248 22.9124 34.4788 23.4045C34.7095 23.9019 34.8325 24.4197 34.8325 24.9529C34.8376 25.4861 34.7249 25.9937 34.5095 26.4807C34.2891 26.9626 33.9661 27.4241 33.5303 27.8547C33.0945 28.2905 32.6331 28.6187 32.146 28.8391C31.6589 29.0596 31.1462 29.1672 30.613 29.1672C30.0798 29.1621 29.5671 29.0442 29.0647 28.8135C28.5725 28.5828 28.0957 28.2393 27.6445 27.783C27.3369 27.4753 27.0754 27.1523 26.8704 26.8242C26.6602 26.491 26.5063 26.1475 26.3987 25.7937C26.291 25.4399 26.2397 25.0862 26.25 24.7324C26.2551 24.3787 26.3218 24.03 26.4397 23.6814L26.4448 23.6711C26.5627 23.3328 26.7114 23.02 26.9011 22.7227C27.0806 22.4304 27.3062 22.1536 27.5625 21.8972ZM29.8337 24.2043C29.5466 24.4915 29.3262 24.7581 29.1672 25.0042C29.0134 25.2451 28.9211 25.4656 28.8904 25.6655C28.8699 25.7834 28.8801 25.8962 28.916 25.9988C28.9519 26.1064 29.0237 26.209 29.1211 26.3064C29.2185 26.4038 29.321 26.4705 29.4236 26.5063C29.5261 26.5422 29.6338 26.5474 29.7466 26.5269H29.7568C29.9568 26.4961 30.1721 26.4038 30.4131 26.25C30.6643 26.0911 30.9309 25.8706 31.2129 25.5835C31.4949 25.3015 31.7153 25.0349 31.8743 24.7888C32.0281 24.5479 32.1204 24.3274 32.1562 24.1223C32.1768 24.0095 32.1665 23.9019 32.1306 23.8044C32.0947 23.7019 32.0229 23.5994 31.9255 23.4968C31.823 23.3943 31.7205 23.3276 31.6179 23.2866C31.5154 23.2507 31.4077 23.2405 31.2898 23.2559C31.0898 23.2866 30.8694 23.3789 30.6284 23.5327C30.3875 23.6968 30.1208 23.9172 29.8337 24.2043ZM29.4595 35.1914C29.7158 34.9351 29.9927 34.7146 30.29 34.5249C30.5874 34.3352 30.9053 34.1814 31.2437 34.0635C31.5872 33.9456 31.9358 33.8789 32.2896 33.8738C32.6433 33.8687 32.9971 33.9148 33.356 34.0225C33.7097 34.1301 34.0583 34.2839 34.3865 34.4941C34.7197 34.6992 35.0376 34.9556 35.3452 35.2632C35.8015 35.7195 36.145 36.1963 36.3809 36.6936C36.6167 37.1909 36.7346 37.7087 36.7346 38.2471C36.7346 38.7803 36.627 39.293 36.4065 39.78C36.186 40.262 35.8579 40.7234 35.4272 41.1592C34.9915 41.595 34.53 41.9231 34.0481 42.1384C33.561 42.3589 33.0483 42.4666 32.5151 42.4666C31.9819 42.4666 31.4641 42.3486 30.9617 42.1128C30.4644 41.8821 29.9875 41.5386 29.5312 41.0771L29.521 41.0669C29.2185 40.7593 28.9622 40.4465 28.7622 40.1184C28.5571 39.7852 28.3982 39.4417 28.2905 39.0879L28.2854 39.0725C28.1829 38.7188 28.1367 38.3701 28.1418 38.0215C28.147 37.6677 28.2136 37.3191 28.3315 36.9756C28.4495 36.6372 28.6033 36.3193 28.793 36.022C28.9827 35.7246 29.2031 35.4478 29.4595 35.1914ZM31.7307 37.4985C31.4436 37.7856 31.218 38.0574 31.0591 38.3035C30.9053 38.5444 30.813 38.7649 30.7771 38.97C30.7566 39.0828 30.7668 39.1904 30.8027 39.2878C30.8386 39.3904 30.9104 39.4929 31.0078 39.5955C31.1052 39.6929 31.2078 39.7646 31.3154 39.8005C31.418 39.8364 31.5256 39.8467 31.6436 39.8313C31.8486 39.7954 32.0691 39.7031 32.3101 39.5493C32.5613 39.3904 32.8279 39.1648 33.115 38.8777C33.4021 38.5906 33.6226 38.324 33.7866 38.0728C33.9404 37.8318 34.0378 37.6062 34.0737 37.4011V37.3909C34.0891 37.2832 34.0789 37.1755 34.043 37.0781C34.0071 36.9705 33.9353 36.8679 33.8379 36.7705C33.7405 36.6731 33.6379 36.6013 33.5303 36.5654C33.4277 36.5295 33.3201 36.5244 33.2073 36.5449H33.2021C32.9971 36.5808 32.7766 36.6731 32.5408 36.8218C32.2844 36.991 32.0178 37.2166 31.7307 37.4985ZM9.94629 33.6892L29.3313 53.0742L53.064 29.3416L33.679 9.95654L9.94629 33.6892ZM27.9419 54.4636L8.55688 35.0786L2.23022 41.4053C2.15845 41.4771 2.10205 41.5642 2.06616 41.6565C2.02515 41.759 2.00464 41.8616 2.00464 41.9641C2.00464 42.0718 2.02515 42.1743 2.06104 42.2717C2.09692 42.3589 2.14819 42.4409 2.21997 42.5127L6.84448 47.1372C7.39307 46.8655 7.97754 46.6655 8.56714 46.5527C9.21313 46.4297 9.87451 46.3989 10.5256 46.4656C11.2896 46.5322 12.0381 46.7373 12.7354 47.0654C13.4224 47.3884 14.0632 47.8345 14.6221 48.3984C15.1809 48.9573 15.6167 49.593 15.9346 50.2698C16.2678 50.9824 16.478 51.7361 16.5549 52.5C16.6216 53.1511 16.5959 53.8125 16.4678 54.4534C16.355 55.0481 16.1602 55.6274 15.8833 56.1812L20.4976 60.7954C20.5693 60.8672 20.6565 60.9236 20.7488 60.9595C20.8462 61.0005 20.9539 61.021 21.0564 61.021C21.1641 61.021 21.2666 61.0005 21.364 60.9646C21.4563 60.9287 21.5383 60.8723 21.6152 60.7954L27.9419 54.4636ZM35.0684 8.56714L54.4534 27.9521L60.7903 21.6152C60.8108 21.5947 60.8364 21.5793 60.8672 21.5691C60.9133 21.5127 60.9492 21.4512 60.9749 21.3845C61.0159 21.282 61.0364 21.1794 61.0364 21.0769C61.0364 20.9692 61.0159 20.8667 60.98 20.7693C60.9441 20.6821 60.8928 20.6001 60.821 20.5283L56.1555 15.8628C55.6069 16.1089 55.0276 16.2832 54.4431 16.3806C53.8125 16.4832 53.1665 16.4985 52.5308 16.4216C51.7822 16.3345 51.0593 16.1243 50.3723 15.791C49.7109 15.468 49.0957 15.0374 48.542 14.4836C47.9934 13.9351 47.5627 13.3147 47.2397 12.6584C46.9065 11.9714 46.6963 11.2383 46.6091 10.5C46.5322 9.86426 46.5476 9.21826 46.6501 8.58765C46.7476 8.00317 46.9219 7.42383 47.168 6.87524L42.5127 2.21997C42.4409 2.14819 42.3538 2.0918 42.2615 2.05591C42.1641 2.01489 42.0564 1.99438 41.9539 1.99438C41.8462 1.99438 41.7437 2.01489 41.6462 2.05078C41.554 2.08667 41.4719 2.14307 41.395 2.21997L35.0684 8.56714Z" fill="#121415" /> 
-                            </g>                             
-                            <defs> 
-                                <clippath id="clip0_211_121"> 
-                                    <rect width="63" height="63" fill="white" /> 
-                                </clippath>                                 
-                            </defs>                             
-                        </svg>                         
-                        <h3>Enhanced Security</h3> 
-                        <p class="text-center">By utilizing serverless architecture, JAMstack sites are inherently more secure than traditional websites.</p> 
-                    </li>                     
-                    <li class="benefits__list-element flex flex-col items-center text-center"> 
-                        <svg width="61" height="49" viewbox="0 0 61 49" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                            <g clip-path="url(#clip0_211_118)"> 
-                                <path d="M36.2982 0C39.6391 0 42.8311 0.659634 45.745 1.85584C48.7682 3.09634 51.4886 4.91772 53.7672 7.17721C56.0408 9.43179 57.8775 12.1294 59.1285 15.1371C60.3348 18.0267 61 21.192 61 24.5C61 27.8129 60.3348 30.9782 59.1285 33.8678C57.8775 36.8657 56.0408 39.5633 53.7622 41.8228C51.4886 44.0774 48.7682 45.8987 45.7351 47.1392C42.8211 48.3354 39.6292 48.9951 36.2932 48.9951C32.9523 48.9951 29.7603 48.3354 26.8464 47.1392C23.8232 45.8987 21.1028 44.0774 18.8292 41.8228L18.8242 41.8179C16.5457 39.5584 14.7139 36.8608 13.4629 33.8678C13.0757 32.9374 12.7431 31.9824 12.4701 31.0028C12.9863 31.052 13.5125 31.0767 14.0437 31.0767C15.0514 31.0767 16.0343 30.988 16.9924 30.8158C17.1513 31.2883 17.325 31.756 17.5137 32.2138C18.5413 34.6751 20.0504 36.8903 21.9268 38.7511C23.8033 40.6118 26.0422 42.1083 28.5193 43.1273C30.9071 44.1069 33.5331 44.6533 36.2932 44.6533C39.0533 44.6533 41.6744 44.1118 44.0671 43.1273C46.5492 42.1083 48.7831 40.6118 50.6596 38.7511C52.5361 36.8903 54.0452 34.6702 55.0728 32.2138C56.0606 29.846 56.6117 27.2419 56.6117 24.5049C56.6117 21.7679 56.0656 19.1688 55.0728 16.7961C54.0452 14.3347 52.5361 12.1195 50.6596 10.2588C48.7831 8.39803 46.5443 6.90155 44.0671 5.88256C41.6794 4.90295 39.0533 4.35654 36.2932 4.35654C33.5331 4.35654 30.912 4.89803 28.5193 5.88256C28.3058 5.97117 28.0924 6.0647 27.8839 6.15823C27.0697 4.88819 26.0868 3.73629 24.96 2.73699C25.5755 2.42194 26.206 2.1315 26.8464 1.86568C29.7703 0.659634 32.9573 0 36.2982 0ZM13.3934 1.29958C20.79 1.29958 26.7868 7.24613 26.7868 14.5809C26.7868 21.9156 20.79 27.8622 13.3934 27.8622C5.99675 27.8622 0 21.9156 0 14.5809C0 7.24613 5.99675 1.29958 13.3934 1.29958ZM13.3934 22.1962L20.5815 13.3847H16.1187V8.69831H10.668V13.3847H6.20524L13.3934 22.1962ZM33.4636 12.853C33.4636 12.2525 33.7118 11.711 34.104 11.3172C34.5011 10.9233 35.0472 10.6821 35.6528 10.6821C36.2585 10.6821 36.8045 10.9233 37.2017 11.3172C37.5988 11.711 37.842 12.2525 37.842 12.853V24.2834L46.4549 29.3488C46.9712 29.654 47.3187 30.1413 47.4577 30.6779C47.5967 31.2145 47.5321 31.8052 47.2244 32.3172V32.3221C46.9166 32.834 46.4251 33.1786 45.884 33.3165C45.3429 33.4543 44.7472 33.3903 44.231 33.0851H44.226L34.5905 27.4142C34.2579 27.2321 33.9849 26.9662 33.7863 26.6512C33.5828 26.3214 33.4636 25.9325 33.4636 25.519V12.853Z" fill="#121415" /> 
-                            </g>                             
-                            <defs> 
-                                <clippath id="clip0_211_118"> 
-                                    <rect width="61" height="49" fill="white" /> 
-                                </clippath>                                 
-                            </defs>                             
-                        </svg>                         
-                        <h3>Enhanced Security</h3> 
-                        <p class="text-center">By utilizing serverless architecture, JAMstack sites are inherently more secure than traditional websites.</p> 
-                    </li>                     
-                    <li class="benefits__list-element flex flex-col items-center text-center"> 
-                        <svg width="79" height="45" viewbox="0 0 79 45" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                            <g clip-path="url(#clip0_211_112)"> 
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4729 0H68.1478C68.5127 0 68.8626 0.144138 69.1206 0.400705C69.3786 0.657272 69.5236 1.00525 69.5236 1.36809V39.9432C69.5242 40.2298 69.4342 40.5093 69.2664 40.7423H76.8398C77.4076 40.7423 77.9522 40.9666 78.3537 41.3658C78.7552 41.7651 78.9807 42.3065 78.9807 42.8711C78.9807 43.4357 78.7552 43.9772 78.3537 44.3765C77.9522 44.7757 77.4076 45 76.8398 45H2.14087C1.57412 44.9966 1.03154 44.7713 0.630774 44.3728C0.230012 43.9743 0.00337362 43.4347 0 42.8711C0.000685684 42.5907 0.0579369 42.3132 0.168366 42.0552C0.278794 41.7971 0.440157 41.5637 0.642904 41.3688C0.839167 41.1675 1.07393 41.0072 1.33339 40.8974C1.59284 40.7876 1.87176 40.7305 2.15373 40.7295H9.35425C9.18176 40.4985 9.08926 40.2181 9.09066 39.9304V1.36809C9.09236 1.00466 9.23874 0.656699 9.49777 0.400314C9.75681 0.14393 10.1074 -3.93105e-06 10.4729 0ZM44.1611 7.07061C46.2208 7.07037 48.2424 7.62357 50.012 8.67172C51.7816 9.71987 53.2336 11.224 54.2143 13.0252C55.1951 14.8263 55.6681 16.8575 55.5836 18.904C55.499 20.9504 54.8599 22.9362 53.7339 24.6512L58.6778 30.0085L55.2897 33.1091L50.5194 27.8925C48.538 29.2098 46.1924 29.8791 43.8101 29.8069C41.4278 29.7347 39.1276 28.9246 37.2305 27.4897L33.926 30.7949L27.2977 24.2932L22.6431 28.7683L20.3222 26.4604L27.3363 19.6839C29.5286 21.8575 31.6952 24.0119 33.9067 26.1855L34.9354 25.1563C33.6866 23.4618 32.9345 21.4564 32.7625 19.3627C32.5905 17.2689 33.0053 15.1688 33.961 13.2953C34.9167 11.4218 36.3758 9.8483 38.1764 8.7495C39.9769 7.65069 42.0485 7.06956 44.1611 7.07061ZM36.6905 23.3854L41.2551 18.8017L38.5356 16.0975L46.1862 16.0271V23.6987L43.5696 21.0967L38.9407 25.7508C40.7638 27.043 43.0077 27.6087 45.2297 27.3364C47.4518 27.0641 49.4904 25.9735 50.9434 24.2798C52.3964 22.5861 53.1583 20.4123 53.0786 18.1875C52.9989 15.9626 52.0835 13.8483 50.5129 12.2617C48.9453 10.7311 46.8663 9.82738 44.6718 9.7227C42.4774 9.61802 40.3209 10.3197 38.6131 11.694C36.9053 13.0684 35.7656 15.0194 35.4111 17.1754C35.0565 19.3314 35.5119 21.5417 36.6905 23.3854ZM11.4501 2.14803H67.3827V39.5596H11.4501V2.14803ZM37.237 41.8675H41.7373C41.8386 41.8675 41.9389 41.8873 42.0325 41.9258C42.1261 41.9644 42.2112 42.0209 42.2828 42.0921C42.3545 42.1634 42.4113 42.248 42.4501 42.341C42.4888 42.4341 42.5088 42.5339 42.5088 42.6346C42.5088 42.7354 42.4888 42.8351 42.4501 42.9282C42.4113 43.0213 42.3545 43.1058 42.2828 43.1771C42.2112 43.2483 42.1261 43.3048 42.0325 43.3434C41.9389 43.3819 41.8386 43.4018 41.7373 43.4018H37.237C37.1357 43.4018 37.0353 43.3819 36.9417 43.3434C36.8481 43.3048 36.7631 43.2483 36.6915 43.1771C36.6198 43.1058 36.563 43.0213 36.5242 42.9282C36.4854 42.8351 36.4655 42.7354 36.4655 42.6346C36.4655 42.5339 36.4854 42.4341 36.5242 42.341C36.563 42.248 36.6198 42.1634 36.6915 42.0921C36.7631 42.0209 36.8481 41.9644 36.9417 41.9258C37.0353 41.8873 37.1357 41.8675 37.237 41.8675Z" fill="#121415" /> 
-                            </g>                             
-                            <defs> 
-                                <clippath id="clip0_211_112"> 
-                                    <rect width="79" height="45" fill="white" /> 
-                                </clippath>                                 
-                            </defs>                             
-                        </svg>                         
-                        <h3>Enhanced Security</h3> 
-                        <p class="text-center">By utilizing serverless architecture, JAMstack sites are inherently more secure than traditional websites.</p> 
-                    </li>                     
-                    <li class="benefits__list-element flex flex-col items-center text-center"> 
-                        <svg width="56" height="46" viewbox="0 0 56 46" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                            <g clip-path="url(#clip0_211_124)"> 
-                                <path d="M20.4941 5.81536H12.6556L0 22.3594L12.6556 38.9035H20.4941L7.83854 22.3594L20.4941 5.81536ZM35.5059 5.81536H43.3444L56 22.3594L43.3444 38.9035H35.5059L48.1615 22.3594L35.5059 5.81536ZM31.9785 0.0183696L34.6947 0.647886C35.123 0.747522 35.3874 1.17324 35.2917 1.59895L25.0378 45.3889C24.9375 45.81 24.5091 46.0772 24.0807 45.9821L21.3691 45.3526C20.9408 45.253 20.6764 44.8273 20.7721 44.4016L31.026 0.611655C31.1263 0.190468 31.5547 -0.0767373 31.9785 0.0183696Z" fill="#121415" /> 
-                            </g>                             
-                            <defs> 
-                                <clippath id="clip0_211_124"> 
-                                    <rect width="56" height="46" fill="white" /> 
-                                </clippath>                                 
-                            </defs>                             
-                        </svg>                         
-                        <h3>Enhanced Security</h3> 
-                        <p class="text-center">By utilizing serverless architecture, JAMstack sites are inherently more secure than traditional websites.</p> 
-                    </li>                     
-                </ul>                 
-            </section>             
-            <section class="bg-primary-800 flex flex-col pr-[10%] px-10 py-[15%] text-white md:pl-[40vw]" data-pg-name="every-step-of-the-way"> 
-                <p class="mb-10 text-green-700 uppercase">What we do</p> 
-                <div class="w-fit"> 
-                    <h2 class="min-w-full text-4xl">Web development</h2> 
-                    <p class="mt-20">We specialise in Shopify Plus development, building scalable stores from our own custom starter in Shopify 2.0. Performance is our top priority as we make sure all stores are lightweight and lightning fast. If a project demands more from Shopify&apos;s systems than.</p> 
-                </div>                 
-                <div class="mt-32 w-fit"> 
-                    <h2 class="min-w-full text-4xl">Branding design</h2> 
-                    <p class="mt-20">We specialise in Shopify Plus development, building scalable stores from our own custom starter in Shopify 2.0. Performance is our top priority as we make sure all stores are lightweight and lightning fast. If a project demands more from Shopify&apos;s systems than.</p> 
-                </div>                 
-            </section>             
-            <section class="bg-brownie flex flex-col py-[10%]" data-pg-name="track-progress"> 
-                <div class="container mx-auto px-10">
-                    <p class="mb-10 self-start text-green-700 uppercase">Stay Informed and Connected</p>
-                    <h2 class="heading-2 self-start text-black text-left">Effortlessly track your project progress with our transparent approach</h2>
-                    <ul class="flex flex-col md:flex-row"> 
-                        <li class="bg-green-800 px-24 py-20 rounded-3xl text-accent-50 text-center"> 
-                            <h3 class="pb-10 pb-5 text-3xl editable">Project  Dashboard Access</h3> 
-                            <p>Gain insights into your project&apos;s status with a dedicated tasks dashboard account. Stay informed and up-to-date on progress, milestones, and deadlines with ease.</p> 
-                        </li>                         
-                        <li class="bg-accent-700 px-24 py-20 rounded-3xl text-accent-50 text-center">
-                            <h3 class="pb-10 pb-5 text-3xl">Collaborative<br />Slack<br />Channel</h3> 
-                            <p>Gain insights into your project's status with a dedicated tasks dashboard account. Stay informed and up-to-date on progress, milestones, and deadlines with ease.</p> 
-                        </li>                         
-                        <li class="bg-primary-800 px-24 py-20 rounded-3xl text-accent-50 text-center"> 
-                            <h3 class="pb-10 pb-5 text-3xl">GitHub  Repository  Access</h3> 
-                            <p>Gain insights into your project&apos;s status with a dedicated tasks dashboard account. Stay informed and up-to-date on progress, milestones, and deadlines with ease.</p> 
-                        </li>                         
-                    </ul>
-                </div>                 
+            <section class="bg-primary-800 flex flex-col h-[80vh] items-center justify-center mx-auto" data-pg-name="hero-section"> 
+                <p class="text-green-700 uppercase">100% HAND-CODED WEBSITES STARTING AT 100&euro;/MO</p> 
+                <h1 class="editable text-8xl text-center text-white uppercase">SMALL BUSINESS WEB DESIGN AND DEVELOPMENT</h1> 
             </section>
-            <section class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-                <ul class="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-6 md:gap-10">
-                    <li class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
-                        <div class="flex items-center gap-x-4 mb-3">
-                            <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
-                                <svg class="flex-shrink-0 size-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="13.5" cy="6.5" r=".5" />
-                                    <circle cx="17.5" cy="10.5" r=".5" />
-                                    <circle cx="8.5" cy="7.5" r=".5" />
-                                    <circle cx="6.5" cy="12.5" r=".5" />
-                                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+            <section class="text-gray-600 body-font">
+                <div class="container flex flex-col items-center mx-auto px-5 py-32 md:flex-row">
+                    <div class="flex flex-col gap-12 items-center mb-16 text-center md:items-start md:mb-0 md:pr-16 md:text-left lg:pr-24">
+                        <p class="editable text-green-700 uppercase">100% HAND-CODED WEBSITES STARTING AT 100&euro;/MO</p>
+                        <h1 class="editable font-medium mb-4 pb-32 text-3xl text-gray-900 title-font sm:text-4xl">Before they sold out <br class="hidden lg:inline-block">readymade gluten </h1>
+                        <div class="flex gap-24 justify-center">
+                            <div class="flex gap-4">
+                                <svg width="60" height="60" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-20 w-20">
+                                    <path d="M12.0249 16.6883L14.6971 19.3605L20.0414 14.0161M28.058 16.6883C28.058 23.3295 22.6743 28.7132 16.0332 28.7132C9.39201 28.7132 4.0083 23.3295 4.0083 16.6883C4.0083 10.0472 9.39201 4.66345 16.0332 4.66345C22.6743 4.66345 28.058 10.0472 28.058 16.6883Z" stroke="#4AD697" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
+                                <p class="editable leading-relaxed mb-8">Copper mug try-hard pitchfork pour-over freegan heirloom neutra&nbsp;</p>
                             </div>
-                            <div class="flex-shrink-0">
-                                <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">
-    Your Partner
-</h3>
+                            <div class="flex gap-4">
+                                <svg width="60" height="60" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-20 w-20">
+                                    <path d="M12.0249 16.6883L14.6971 19.3605L20.0414 14.0161M28.058 16.6883C28.058 23.3295 22.6743 28.7132 16.0332 28.7132C9.39201 28.7132 4.0083 23.3295 4.0083 16.6883C4.0083 10.0472 9.39201 4.66345 16.0332 4.66345C22.6743 4.66345 28.058 10.0472 28.058 16.6883Z" stroke="#4AD697" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="editable leading-relaxed mb-8">Copper mug try-hard pitchfork pour-over freegan heirloom neutra&nbsp;</p>
                             </div>
                         </div>
-                        <p class="editable text-gray-600 dark:text-gray-400">
-    We’re not a 1 off design and develop agency, you get us as a lifetime partner
-</p>
+                    </div>
+                    <div class="flex items-end justify-end w-5/6 md:w-1/2 lg:w-full">
+                        <img class="editable object-center object-cover rounded-3xl" alt="hero" src="https://dummyimage.com/720x600">
+                    </div>
+                </div>
+            </section>
+            <section class="bg-primary-800 body-font text-gray-600">
+                <div class="container flex flex-col gap-12 items-center mx-auto px-5 py-64">
+                    <h2 class="text-5xl text-white">Unleash the full power of data</h2>
+                    <p class="text-accent-100">Everything you need to convert, engage, and retain more users.</p>
+                    <ul class="-m-4 flex  text-center text-white">
+                        <li class="border-r-[1px] p-4 pr-12 pr-24 ">
+                            <h4 class="font-medium text-3xl text-primarylight-400 title-font sm:text-4xl">2.7K</h4>
+                            <p class="leading-relaxed">Users</p>
+                        </li>
+                        <li class="border-r-[1px] p-4 pl-12 pr-24">
+                            <h4 class="font-medium text-3xl text-primarylight-400 title-font sm:text-4xl">1.8K</h4>
+                            <p class="leading-relaxed">Subscribes</p>
+                        </li>
+                        <li class="p-4 ">
+                            <h4 class="font-medium text-3xl text-primarylight-400 title-font sm:text-4xl">35</h4>
+                            <p class="leading-relaxed">Downloads</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>             
+
+            <section class="hidden p-[10%] rounded-bl-3xl rounded-br-3xl text-black text-center">
+                <h2 class="pb-20 text-center"> Our operations</h2>
+                <p class="pb-24">We specialize in small business web design and development for clients anywhere in the EU. We code on the JamStack ensuring best performance, which helps drive more customers to your business which translates to more revenue.</p>
+                <ul class="gap-14 gird-cols-1 grid text-left md:pl-[30vw]">
+                    <li class="flex flex-col gap-10 pb-14">
+                        <h3>Mobile first design</h3>
+                        <p>All our websites are created for mobiles first, after that they are adjusted for tablet and desktop.</p>
                     </li>
-                    <li class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
-                        <div class="flex items-center gap-x-4 mb-3">
-                            <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
-                                <svg class="flex-shrink-0 size-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M2 3h20" />
-                                    <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3" />
-                                    <path d="m7 21 5-5 5 5" />
-                                </svg>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">
-    High Standards
-</h3>
-                            </div>
-                        </div>
-                        <p class="editable text-gray-600 dark:text-gray-400">
-    Everything is optimized to the highest standards, you get an actual developer working on your site and not just designers that will make it “look nice”.
-</p>
+                    <li class="flex flex-col gap-10 pb-14">
+                        <h3>Optimization</h3>
+                        <p>JamStack websites are speed optimized by design, after the site is completed we run tests on it, to get it to a perfect 100% google score. Which is guranteed to rank you higher on search engines.</p>
                     </li>
-                    <li class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
-                        <div class="flex items-center gap-x-4 mb-3">
-                            <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
-                                <svg class="flex-shrink-0 size-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
-                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
-                                    <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
-                                    <path d="M2 7h20" />
-                                    <path d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7" />
-                                </svg>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">
-    Tech Support Forever
-</h3>
-                            </div>
-                        </div>
-                        <p class="editable text-gray-600 dark:text-gray-400">
-    We take care of all the rest of the technical stuff, so you can focus fully on your business and just get the benefits of online presence
-</p>
-                    </li>
-                    <li class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
-                        <div class="flex items-center gap-x-4 mb-3">
-                            <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
-                                <svg class="flex-shrink-0 size-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z" />
-                                    <path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z" />
-                                    <path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z" />
-                                    <path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z" />
-                                </svg>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">
-    Affordable
-</h3>
-                            </div>
-                        </div>
-                        <p class="editable text-gray-600 dark:text-gray-400">
-    We start at 100<strong>€ per month, making it affordable for everyone</strong>
-</p>
-                    </li>
-                    <li class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
-                        <div class="flex items-center gap-x-4 mb-3">
-                            <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
-                                <svg class="flex-shrink-0 size-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M16.466 7.5C15.643 4.237 13.952 2 12 2 9.239 2 7 6.477 7 12s2.239 10 5 10c.342 0 .677-.069 1-.2" />
-                                    <path d="m15.194 13.707 3.814 1.86-1.86 3.814" />
-                                    <path d="M19 15.57c-1.804.885-4.274 1.43-7 1.43-5.523 0-10-2.239-10-5s4.477-5 10-5c4.838 0 8.873 1.718 9.8 4" />
-                                </svg>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">
-    Fast Delivery Of Results
-</h3>
-                            </div>
-                        </div>
-                        <p class="editable text-gray-600 dark:text-gray-400">
-    We gurantee fast delivery as we’ve optimized and streamlined our design/development process over the years
-</p>
-                    </li>
-                    <li class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
-                        <div class="flex items-center gap-x-4 mb-3">
-                            <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
-                                <svg class="flex-shrink-0 size-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z" />
-                                    <rect x="3" y="14" width="7" height="7" rx="1" />
-                                    <circle cx="17.5" cy="17.5" r="3.5" />
-                                </svg>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">
-    Frequent&nbsp;
-</h3>
-                            </div>
-                        </div>
-                        <p class="editable text-gray-600 dark:text-gray-400">
-    We monitor and update our client’s sites frequently to keep up with the latest on the web
-</p>
+                    <li class="flex flex-col gap-10 pb-14">
+                        <h3>SEO</h3>
+                        <p>With perfect speed scores, the last piece of the puzzle is perfect SEO scores, having us as a partner…</p>
                     </li>
                 </ul>
             </section>             
-            <section class="bg-base bg-primary-800 flex flex-col items-center justify-center py-64" data-pg-name="start-project"> 
-                <div class="bg-black container flex flex-col items-center px-[10%] py-24 rounded-3xl text-accent-50"> 
-                    <h2 class="pb-10 pb-5 text-2xl text-5xl">Discover What We Can Do For You</h2> 
-                    <p>Gain insights into your project&apos;s status with a dedicated tasks dashboard account. Stay informed and up-to-date on progress, milestones, and deadlines with ease.</p> 
-                    <button class="bg-green-800 mt-32 px-12 py-4 rounded-3xl">Start Project</button>
-                </div>                 
+
+            <section class="bg-white fle flex flex-col items-center p-[10%] py-32 rounded-b-3xl text-black md:py-64">
+                <h2 class="pb-20 text-center"><span class="text-green-300">
+    0€  Down </span>,  100€ Per Month,<br/> 12 Month <span class="text-slate-400">Minimum Contract</span></h2>
+                <p class="pb-4 text-center">Yes, we start you at 0**€, for a standard 5 page website, if you need more we have custom pricing based on the scope of work. You own everything, the domain the content and the listing. Cancel anytime with 
+    no fees.</p>
+                <ul class="gap-20 grid pt-20 text-3xl">
+                    <li class="delay-0 duration-200 ease-linear flex font-bold gap-12 items-center transition will-change-scroll" style="transition: opacity 1;">
+                        <svg width="50" height="35" viewBox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_282_159)">
+                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_282_159">
+                                    <rect width="62" height="45" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                                                                                                                                                                                                                                                                                                                Hosting fees included
+                    </li>
+                    <li class="flex font-bold gap-12 items-center">
+                        <svg width="50" height="35" viewBox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_282_159)">
+                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_282_159">
+                                    <rect width="62" height="45" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                                                                                                                                                                                                                                                                                                         Unlimited edits
+                    </li>
+                    <li class="flex font-bold gap-12 items-center">
+                        <svg width="50" height="35" viewBox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_282_159)">
+                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_282_159">
+                                    <rect width="62" height="45" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                                                                                                                                                                                                                                                                                                         24/7 Customer service
+                    </li>
+                    <li class="flex font-bold gap-12 items-center">
+                        <svg width="50" height="35" viewBox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_282_159)">
+                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_282_159">
+                                    <rect width="62" height="45" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                                                                                                                                                                                                                                                                                                         Web deisgn and development
+                    </li>
+                    <li class="flex font-bold gap-12 items-center">
+                        <svg width="50" height="35" viewBox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_282_159)">
+                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_282_159">
+                                    <rect width="62" height="45" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                                                                                                                                                                                                                                                                                                             JamStack site with perfect scores
+                    </li>
+                    <li class="flex font-bold gap-12 items-center">
+                        <svg width="50" height="35" viewBox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_282_159)">
+                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_282_159">
+                                    <rect width="62" height="45" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                                                                                                                                                                                                                                                                                                         Analytics and tracking
+                    </li>
+                </ul>
+            </section>             
+
+            <section class="bg-primary-800 py-24 py-64 text-black text-white">
+                <div class="container mx-auto">
+                    <h2 class="pb-6 text-center">Packages</h2>
+                    <p class="max-w-5xl mx-auto pb-32 text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit for official consequat enim to main purpose. If you haven’t tried out Flaro App for them help.</p>
+                    <ul class="gap-24 grid md:gap-10 lg:grid-cols-3">
+                        <li>
+                            <div class="bg-Secondary-500 flex flex-col justify-between min-h- min-h-[600px] p-14 rounded-3xl text-black text-neutral">
+                                <h3 class="pb-10">E-Commerce</h3>
+                                <p class="font-bold pb-24 text-left"><span class="text-4xl">5000€</span> <br/><span class="text-3xl text-neutral-300">minimum uprfront cost</span></p>
+                                <ul class="flex flex-col gap-10 text-left">
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                    Starting at 5k**€**
+                                    </li>
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                 5.000€  minimum upfront cost
+                                    </li>
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                    Shopify intergation
+                                    </li>
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                Editable content
+                                    </li>
+                                </ul>
+                                <CustomButton class="bg-blue mt-16 w-full"/>
+                                <button class="border-[1px] border-black py-6 rounded-full text-black w-full">Start Project</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-white flex flex-col justify-between min-h- min-h-[600px] p-14 rounded-3xl text-black text-neutral">
+                                <h3 class="pb-10">Standard</h3>
+                                <p class="font-bold pb-24 text-5xl text-left">100€ <span class="text-3xl text-neutral-300">/ per month</span></p>
+                                <ul class="flex flex-col gap-10">
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                100€ per month**
+                                    </li>
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                Unlimited Edits
+                                    </li>
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                Includes Hosting
+                                    </li>
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                24/7 Customer Service
+                                    </li>
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                Lifetime Updates
+                                    </li>
+                                </ul>
+                                <CustomButton class="mt-16 w-full"/>
+                                <button class="border-[1px] border-black py-6 rounded-full text-black w-full">Start Project</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-Secondary-800 flex flex-col justify-between min-h- min-h-[600px] p-14 rounded-3xl text-neutral">
+                                <h3 class="pb-10">Bonus</h3>
+                                <p class="font-bold pb-24 text-5xl text-left">0€ <span class="text-3xl text-neutral-300">/ per month</span></p>
+                                <ul class="flex flex-col gap-10">
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                                100€ per month**
+                                    </li>
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                                Unlimited Edits
+                                    </li>
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                                Includes Hosting
+                                    </li>
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                                24/7 Customer Service
+                                    </li>
+                                    <li class="flex gap-4 items-center">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_294_229)">
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_294_229">
+                                                    <rect width="25" height="19" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                                                                                                                                                                                                                                Lifetime Updates
+                                    </li>
+                                </ul>
+                                <CustomButton class="mt-16 w-full"/>
+                                <button class="border-[1px] border-black py-6 rounded-full text-black w-full">Start Project</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
+            <section class="container dark:bg-white mx-auto pt-32 text-black">
+                <h2 class="pb-10 px-[10%] text-6xl text-center md:pb-24">Advantages of becoming <span class="text-Secondary-400">our partner</span></h2>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
+                        <h4 class="editable">Heading 4</h4> 
+                        <p class="editable">We’re not a 1 off design and develop agency, you get us as a lifetime partner</p>
+                    </li>
+                    <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
+                        <h4 class="editable">Heading 4</h4>
+                        <p class="editable">Everything is optimized to the highest standards, you get an actual developer working on your site and not just designers that will make it “look nice”.</p>
+                    </li>
+                    <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
+                        <h4 class="editable">Heading 4</h4>
+                        <p class="editable">We take care of all the rest of the technical stuff, so you can focus fully on your business and just get the benefits of online presence</p>
+                    </li>
+                    <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
+                        <h4 class="editable">Heading 4</h4>
+                        <p class="editable">Everything is optimized to the highest standards, you get an actual developer working on your site and not just designers that will make it “look nice”.</p>
+                    </li>
+                    <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
+                        <h4 class="editable">Heading 4</h4>
+                        <p class="editable">We start at 100€ per month, making it affordable for everyone</p>
+                    </li>
+                    <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
+                        <h4 class="editable">Heading 4</h4>
+                        <p class="editable">We gurantee fast delivery as we’ve optimized and streamlined our design/development process over the years</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="bg-primary-800 py-64">
+                <div class="container mx-auto">
+                    <p class="text-green-700 uppercase">FAQ</p>
+                    <h2>Answers to our frequently asked questions</h2>
+                    <div class="container pt-20" data-pgc="flowbite-accordion-simple" data-pgc-no-update>
+                        <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                            <div id="accordion-flush-heading-1">
+                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                                    <h4 class="editable text-2xl text-3xl">What is Flowbite?</h4> 
+                                    <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                    <p class="editable text-white px-10 mb-2">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+                                </div>
+                            </div>
+                            <div id="accordion-flush-heading-2">
+                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                                    <h4 class="editable text-2xl text-3xl">Is there a Figma file available?</h4> 
+                                    <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                    <p class="editable text-white px-10 mb-2">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+                                </div>
+                            </div>
+                            <div id="accordion-flush-heading-3">
+                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                                    <h4 class="editable text-2xl text-3xl">Is there a Figma file available?</h4> 
+                                    <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                    <p class="editable text-white px-10 mb-2">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>                                                    
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
         <script src="/static/js/alpine.js"></script>
@@ -418,7 +598,7 @@ themeToggleBtn.addEventListener('click', function() {
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">List item</a><a class="pl-10">List item</a>
+                        <li><a class="pr-10 border-r-[1px]">List item</a> <a class="pl-10">List item</a>
                         </li>
                         <li class="justify-self-end self-end">List item</li>
                     </ul>
