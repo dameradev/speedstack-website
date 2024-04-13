@@ -3,6 +3,8 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
@@ -27,6 +29,23 @@ module.exports = function (eleventyConfig) {
     // console.log(image)
     // console.log(image.replace('src/images', 'image'))
     return image.replace("src/uploads", image);
+  });
+
+  eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
+    let metadata = await Image(src, {
+      widths: [300, 600],
+      formats: ["webp", "jpeg"],
+    });
+
+    let imageAttributes = {
+      alt,
+      sizes,
+      loading: "lazy",
+      decoding: "async",
+    };
+
+    // You bet we throw an error on a missing alt (alt="" works okay)
+    return Image.generateHTML(metadata, imageAttributes);
   });
 
   // Syntax Highlighting for Code blocks
@@ -67,6 +86,26 @@ module.exports = function (eleventyConfig) {
     }
 
     return content;
+  });
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // which file extensions to process
+    extensions: "html",
+
+    // Add any other Image utility options here:
+
+    // optional, output image formats
+    formats: ["webp", "jpeg"],
+    // formats: ["auto"],
+
+    // optional, output image widths
+    // widths: ["auto"],
+
+    // optional, attributes assigned on <img> override these values.
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async",
+    },
   });
 
   eleventyConfig.addPassthroughCopy("../css/styles.css");
