@@ -88,25 +88,25 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    // which file extensions to process
-    extensions: "html",
+  // eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+  //   // which file extensions to process
+  //   extensions: "html",
 
-    // Add any other Image utility options here:
+  //   // Add any other Image utility options here:
 
-    // optional, output image formats
-    formats: ["webp", "jpeg"],
-    // formats: ["auto"],
+  //   // optional, output image formats
+  //   formats: ["webp", "jpeg"],
+  //   // formats: ["auto"],
 
-    // optional, output image widths
-    // widths: ["auto"],
+  //   // optional, output image widths
+  //   // widths: ["auto"],
 
-    // optional, attributes assigned on <img> override these values.
-    defaultAttributes: {
-      loading: "lazy",
-      decoding: "async",
-    },
-  });
+  //   // optional, attributes assigned on <img> override these values.
+  //   defaultAttributes: {
+  //     loading: "lazy",
+  //     decoding: "async",
+  //   },
+  // });
 
   eleventyConfig.addPassthroughCopy("../css/styles.css");
   // Let Eleventy transform HTML files as nunjucks
