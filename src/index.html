@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" class="dark min-h-[10vh]" data-pgc-master="master.html">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title data-pgc-field="title">{{meta.siteName}}</title>
-        <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link">
+        <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link" />
         <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -32,16 +32,16 @@
                 </ul>
                 <div class="flex gap-12 justify-end">
                     <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
                         </svg>                         
-                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd" />
                         </svg>
                     </button><a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
                 </div>
                 <label class="cursor-pointer place-self-end px-3 py-6 relative self-center z-40 md:hidden" for="mobile-menu">
-                    <input class="peer hidden" type="checkbox" id="mobile-menu">
+                    <input class="peer hidden" type="checkbox" id="mobile-menu" />
                     <div class="after:absolute after:bg-black after:block after:bottom-[-0.35rem] after:content-[''] after:dark:bg-white after:duration-200 after:ease-out after:h-full after:right-0 after:transition-all after:w-full before:absolute before:bg-black before:block before:content-[''] before:dark:bg-white before:duration-200 before:ease-out before:h-full before:top-[-0.35rem] before:transition-all before:w-full before:z-50 bg-black bg-transparent block content-[''] dark:bg-white h-[1px] peer-checked:bg-transparent relative w-7 z-50 after:peer-checked:-rotate-45 after:peer-checked:bottom-0 after:peer-checked:transform after:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:top-0 before:peer-checked:transform before:peer-checked:w-full"></div>
                     <div class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block">&nbsp;</div>
                     <div class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0">
@@ -68,24 +68,24 @@
                 <div class="container flex flex-col items-center mx-auto px-5 py-40 md:flex-row">
                     <div class="flex flex-col gap-12 items-center mb-16 text-center md:items-start md:mb-0 md:pr-16 md:text-left lg:pr-24">
                         <p class="editable text-green-700 uppercase">100% HAND-CODED WEBSITES STARTING AT 100&euro;/MO</p>
-                        <h1 class="editable font-medium mb-4 pb-32 text-3xl text-gray-900 title-font sm:text-4xl">Before they sold out <br class="hidden lg:inline-block"/>readymade gluten </h1>
+                        <h1 class="editable font-medium mb-4 pb-32 text-3xl text-gray-900 title-font sm:text-4xl">Before they sold out <br class="hidden lg:inline-block" />readymade gluten </h1>
                         <div class="flex gap-24 justify-center">
                             <div class="flex gap-4">
                                 <svg width="60" height="60" viewbox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-20 w-20">
-                                    <path d="M12.0249 16.6883L14.6971 19.3605L20.0414 14.0161M28.058 16.6883C28.058 23.3295 22.6743 28.7132 16.0332 28.7132C9.39201 28.7132 4.0083 23.3295 4.0083 16.6883C4.0083 10.0472 9.39201 4.66345 16.0332 4.66345C22.6743 4.66345 28.058 10.0472 28.058 16.6883Z" stroke="#4AD697" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.0249 16.6883L14.6971 19.3605L20.0414 14.0161M28.058 16.6883C28.058 23.3295 22.6743 28.7132 16.0332 28.7132C9.39201 28.7132 4.0083 23.3295 4.0083 16.6883C4.0083 10.0472 9.39201 4.66345 16.0332 4.66345C22.6743 4.66345 28.058 10.0472 28.058 16.6883Z" stroke="#4AD697" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <p class="editable leading-relaxed mb-8">Copper mug try-hard pitchfork pour-over freegan heirloom neutra&nbsp;</p>
                             </div>
                             <div class="flex gap-4">
                                 <svg width="60" height="60" viewbox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-20 w-20">
-                                    <path d="M12.0249 16.6883L14.6971 19.3605L20.0414 14.0161M28.058 16.6883C28.058 23.3295 22.6743 28.7132 16.0332 28.7132C9.39201 28.7132 4.0083 23.3295 4.0083 16.6883C4.0083 10.0472 9.39201 4.66345 16.0332 4.66345C22.6743 4.66345 28.058 10.0472 28.058 16.6883Z" stroke="#4AD697" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.0249 16.6883L14.6971 19.3605L20.0414 14.0161M28.058 16.6883C28.058 23.3295 22.6743 28.7132 16.0332 28.7132C9.39201 28.7132 4.0083 23.3295 4.0083 16.6883C4.0083 10.0472 9.39201 4.66345 16.0332 4.66345C22.6743 4.66345 28.058 10.0472 28.058 16.6883Z" stroke="#4AD697" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <p class="editable leading-relaxed mb-8">Copper mug try-hard pitchfork pour-over freegan heirloom neutra&nbsp;</p>
                             </div>
                         </div>
                     </div>
                     <div class="flex items-end justify-end w-5/6 md:w-1/2 lg:w-full">
-                        <img class="editable object-center object-cover rounded-3xl" alt="hero" src="uploads/image-3.png" srcset="uploads/image-3.png 1x, /uploads/image-3-2x.png 2x"/>
+                        <img class="editable object-center object-cover rounded-3xl" alt="hero" src="uploads/image-3.png" srcset="uploads/image-3.png 1x, /uploads/image-3-2x.png 2x" />
                     </div>
                 </div>
             </section>
@@ -129,18 +129,18 @@
             </section>             
             <section class="bg-white fle flex flex-col items-center p-[10%] py-32 rounded-b-3xl text-black md:py-64">
                 <h2 class="pb-20 text-center"><span class="text-green-300">
-    0€  Down </span>,  100€ Per Month,<br/> 12 Month <span class="text-slate-400">Minimum Contract</span></h2>
+    0€  Down </span>,  100€ Per Month,<br /> 12 Month <span class="text-slate-400">Minimum Contract</span></h2>
                 <p class="editable pb-4 text-center">Yes, we start you at 0**€, for a standard 5 page website, if you need more we have custom pricing based on the scope of work. You own everything, the domain the content and the listing. Cancel anytime with 
     no fees.</p>
                 <ul class="gap-20 grid pt-20 text-3xl">
                     <li class="delay-0 duration-200 ease-linear flex font-bold gap-12 items-center transition will-change-scroll" style="transition: opacity 1;">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_282_159)">
-                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
+                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697" />
                             </g>
                             <defs>
                                 <clippath id="clip0_282_159">
-                                    <rect width="62" height="45" fill="white"/>
+                                    <rect width="62" height="45" fill="white" />
                                 </clippath>
                             </defs>
                         </svg>                                                                                                                                                                                                                                                                                                                                                                Hosting fees included
@@ -148,11 +148,11 @@
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_282_159)">
-                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
+                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697" />
                             </g>
                             <defs>
                                 <clippath id="clip0_282_159">
-                                    <rect width="62" height="45" fill="white"/>
+                                    <rect width="62" height="45" fill="white" />
                                 </clippath>
                             </defs>
                         </svg>                                                                                                                                                                                                                                                                                                                                                         Unlimited edits
@@ -160,11 +160,11 @@
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_282_159)">
-                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
+                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697" />
                             </g>
                             <defs>
                                 <clippath id="clip0_282_159">
-                                    <rect width="62" height="45" fill="white"/>
+                                    <rect width="62" height="45" fill="white" />
                                 </clippath>
                             </defs>
                         </svg>                                                                                                                                                                                                                                                                                                                                                         24/7 Customer service
@@ -172,11 +172,11 @@
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_282_159)">
-                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
+                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697" />
                             </g>
                             <defs>
                                 <clippath id="clip0_282_159">
-                                    <rect width="62" height="45" fill="white"/>
+                                    <rect width="62" height="45" fill="white" />
                                 </clippath>
                             </defs>
                         </svg>                                                                                                                                                                                                                                                                                                                                                         Web deisgn and development
@@ -184,11 +184,11 @@
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_282_159)">
-                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
+                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697" />
                             </g>
                             <defs>
                                 <clippath id="clip0_282_159">
-                                    <rect width="62" height="45" fill="white"/>
+                                    <rect width="62" height="45" fill="white" />
                                 </clippath>
                             </defs>
                         </svg>                                                                                                                                                                                                                                                                                                                                                             JamStack site with perfect scores
@@ -196,11 +196,11 @@
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_282_159)">
-                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
+                                <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697" />
                             </g>
                             <defs>
                                 <clippath id="clip0_282_159">
-                                    <rect width="62" height="45" fill="white"/>
+                                    <rect width="62" height="45" fill="white" />
                                 </clippath>
                             </defs>
                         </svg>                                                                                                                                                                                                                                                                                                                                                         Analytics and tracking
@@ -215,16 +215,16 @@
                         <li>
                             <div class="bg-Secondary-500 flex flex-col justify-between min-h- min-h-[600px] p-14 rounded-3xl text-black text-neutral">
                                 <h3 class="pb-10">E-Commerce</h3>
-                                <p class="font-bold pb-24 text-left"><span class="text-4xl">5000€</span> <br/><span class="text-3xl text-neutral-300">minimum uprfront cost</span></p>
+                                <p class="font-bold pb-24 text-left"><span class="text-4xl">5000€</span> <br /><span class="text-3xl text-neutral-300">minimum uprfront cost</span></p>
                                 <ul class="flex flex-col gap-10 text-left">
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                    Starting at 5k**€**
@@ -232,11 +232,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                 5.000€  minimum upfront cost
@@ -244,11 +244,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                    Shopify intergation
@@ -256,11 +256,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                Editable content
@@ -279,11 +279,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                100€ per month**
@@ -291,11 +291,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                Unlimited Edits
@@ -303,11 +303,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                Includes Hosting
@@ -315,11 +315,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                24/7 Customer Service
@@ -327,11 +327,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                Lifetime Updates
@@ -350,11 +350,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                                100€ per month**
@@ -362,11 +362,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                                Unlimited Edits
@@ -374,11 +374,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                                Includes Hosting
@@ -386,11 +386,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                                24/7 Customer Service
@@ -398,11 +398,11 @@
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_294_229)">
-                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D"/>
+                                                <path d="M0.250696 11.7459C-0.0611911 11.4524 -0.0854015 10.9516 0.196782 10.6274C0.479169 10.303 0.960936 10.278 1.27303 10.5714L8.20107 17.1015L23.6833 0.246574C23.9741 -0.0708616 24.4572 -0.0835505 24.7626 0.218658C25.0682 0.520655 25.0802 1.02293 24.7897 1.34057L8.79372 18.7549L8.7927 18.7538C8.50869 19.0643 8.03668 19.0844 7.72927 18.7953L0.250696 11.7459Z" fill="#191B1D" />
                                             </g>
                                             <defs>
                                                 <clippath id="clip0_294_229">
-                                                    <rect width="25" height="19" fill="white"/>
+                                                    <rect width="25" height="19" fill="white" />
                                                 </clippath>
                                             </defs>
                                         </svg>                                                                                                                                                                                                                                                                                                                                                                                                                Lifetime Updates
@@ -453,22 +453,26 @@
                         <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
                             <div id="accordion-flush-heading-1">
                                 <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
-                                    <h4 class="editable text-3xl">QUestion</h4>
+                                    <h4 class="editable text-3xl">
+    Test1
+</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
                                     </svg>
                                 </button>
                             </div>
                             <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
                                 <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                    <p class="editable text-white px-10 mb-2">Answer</p>
+                                    <p class="editable text-white px-10 mb-2">
+    Test
+</p>
                                 </div>
                             </div>
                             <div id="accordion-flush-heading-2">
                                 <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
                                     <h4 class="editable text-3xl">QUestion</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
                                     </svg>
                                 </button>
                             </div>
@@ -481,7 +485,7 @@
                                 <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
                                     <h4 class="editable text-3xl">QUestion</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
                                     </svg>
                                 </button>
                             </div>
@@ -494,7 +498,7 @@
                                 <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
                                     <h4 class="editable text-3xl">QUestion</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
                                     </svg>
                                 </button>
                             </div>
@@ -507,7 +511,7 @@
                                 <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
                                     <h4 class="editable text-3xl">QUestion</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
                                     </svg>
                                 </button>
                             </div>
@@ -518,9 +522,11 @@
                             </div>
                             <div id="accordion-flush-heading-6">
                                 <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-6" aria-expanded="false" aria-controls="accordion-flush-body-6">
-                                    <h4 class="editable text-3xl">QUestion</h4>
+                                    <h4 class="editable text-3xl">
+    QUestion
+</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
                                     </svg>
                                 </button>
                             </div>
