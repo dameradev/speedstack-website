@@ -26,7 +26,7 @@ This is a tricky one, be careful which one you buy as metal stands are usually f
 
 ## **3\. Travel backpack**
 
-Whether you decided to travel with or without checked-in baggage you still need to have a reliable backpack, the one I am using has everything you would need, from a secure laptop sleeve, 10s of pockets for organization, and the possibility for extensions between 18L to 30L which I find very useful, as it gives me the freedom to use it as a day bag when I am at the destination. [To read more about it click here.](https://litetravel.co/products/expandable-backpack?aff=25)
+Whether you decided to travel with or without checked-in baggage you still need to have a reliable backpack, the one I am using has everything you would need, from a secure laptop sleeve, 10s of pockets for organization, and the possibility for extensions between 18L to 30L which I find very useful, as it gives me the freedom to use  it as a day bag when I am at the destination. [To read more about it click here.](https://litetravel.co/products/expandable-backpack?aff=25)
 
 ## **4\. Extra screen**
 

@@ -27,6 +27,8 @@
                     </li>
                     <li><a href="/blog">Blog</a>
                     </li>
+                    <li><a href="/contact">Contact</a>
+                    </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
                     <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
@@ -61,21 +63,31 @@
             <div class="container flex flex-col gap-32 mx-auto pb-24">
                 <div class="w-full">
                     <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-                        <ul class="flex flex-wrap -mb-px  font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                        <ul class="flex flex-wrap -mb-px font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                             <li class="me-2" role="presentation">
-                                <button class="inline-block p-4 border-b-2 rounded-t-lg" id="interactive-tab" data-tabs-target="#interactive" type="button" role="tab" aria-controls="interactive" aria-selected="false">Interactive</button>
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg" id="interactive-tab" data-tabs-target="#interactive" type="button" role="tab" aria-controls="interactive" aria-selected="false">
+                                    Interactive
+</button>
                             </li>
                             <li class="me-2" role="presentation">
-                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="cards-tab" data-tabs-target="#cards" type="button" role="tab" aria-controls="cards" aria-selected="false">Cards</button>
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="cards-tab" data-tabs-target="#cards" type="button" role="tab" aria-controls="cards" aria-selected="false">
+                                    Cards
+</button>
                             </li>
                             <li class="me-2" role="presentation">
-                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="full-height-tab" data-tabs-target="#full-height" type="button" role="tab" aria-controls="full-height" aria-selected="false">Full height elements</button>
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="full-height-tab" data-tabs-target="#full-height" type="button" role="tab" aria-controls="full-height" aria-selected="false">
+                                    Full height elements
+</button>
                             </li>
                             <li role="presentation">
-                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="widgets-tab" data-tabs-target="#widgets" type="button" role="tab" aria-controls="widgets" aria-selected="false">Widgets</button>
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="widgets-tab" data-tabs-target="#widgets" type="button" role="tab" aria-controls="widgets" aria-selected="false">
+                                    Widgets
+</button>
                             </li>
                             <li role="presentation">
-                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Information</button>
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">
+                                    Information
+</button>
                             </li>
                         </ul>
                     </div>
@@ -85,70 +97,81 @@
                                 <div x-data="{ openTab: 1 }">
                                     <div class="max-w-md mx-auto">
                                         <div class="mb-4 flex space-x-4 p-2 bg-white rounded-lg shadow-md">
-                                            <button x-on:click="openTab = 1" :class="{ 'bg-blue-600 text-white': openTab === 1 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">Section
-                                                1
+                                            <button x-on:click="openTab = 1" :class="{ 'bg-blue-600 text-white': openTab === 1 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">
+                                                Section 1
 </button>
-                                            <button x-on:click="openTab = 2" :class="{ 'bg-blue-600 text-white': openTab === 2 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">Section
-                                                2
+                                            <button x-on:click="openTab = 2" :class="{ 'bg-blue-600 text-white': openTab === 2 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">
+                                                Section 2
 </button>
-                                            <button x-on:click="openTab = 3" :class="{ 'bg-blue-600 text-white': openTab === 3 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">Section
-                                                3
+                                            <button x-on:click="openTab = 3" :class="{ 'bg-blue-600 text-white': openTab === 3 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">
+                                                Section 3
 </button>
                                         </div>
                                         <div x-show="openTab === 1" class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-blue-600">
-                                            <h2 class="text-2xl font-semibold mb-2 text-blue-600">Section 1 Content</h2>
-                                            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                                aliquam justo nec justo lacinia, vel ullamcorper nibh tincidunt.</p>
+                                            <h2 class="text-2xl font-semibold mb-2 text-blue-600">
+                        Section 1 Content </h2>
+                                            <p class="text-gray-700">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam aliquam justo nec justo lacinia, vel ullamcorper
+                        nibh tincidunt. </p>
                                         </div>
                                         <div x-show="openTab === 2" class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-blue-600">
-                                            <h2 class="text-2xl font-semibold mb-2 text-blue-600">Section 2 Content</h2>
-                                            <p class="text-gray-700">Proin non velit ac purus malesuada venenatis sit amet eget lacus.
-                                Morbi quis purus id ipsum ultrices aliquet Morbi quis.</p>
+                                            <h2 class="text-2xl font-semibold mb-2 text-blue-600">
+                        Section 2 Content </h2>
+                                            <p class="text-gray-700">
+                        Proin non velit ac purus malesuada venenatis sit amet
+                        eget lacus. Morbi quis purus id ipsum ultrices aliquet
+                        Morbi quis. </p>
                                         </div>
                                         <div x-show="openTab === 3" class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-blue-600">
-                                            <h2 class="text-2xl font-semibold mb-2 text-blue-600">Section 3 Content</h2>
-                                            <p class="text-gray-700">Fusce hendrerit urna vel tortor luctus, nec tristique odio
-                                tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                                cubilia Curae.</p>
+                                            <h2 class="text-2xl font-semibold mb-2 text-blue-600">
+                        Section 3 Content </h2>
+                                            <p class="text-gray-700">
+                        Fusce hendrerit urna vel tortor luctus, nec tristique
+                        odio tincidunt. Vestibulum ante ipsum primis in faucibus
+                        orci luctus et ultrices posuere cubilia Curae. </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-fit" data-pgc-define="flowbite-default-tabs" data-pgc-section="Tabs">
                                 <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-                                    <ul class="flex flex-wrap -mb-px  font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                                    <ul class="flex flex-wrap -mb-px font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                                         <li class="me-2" role="presentation">
-                                            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                                            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                                Profile
+</button>
                                         </li>
                                         <li class="me-2" role="presentation">
-                                            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+                                            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">
+                                                Settings
+</button>
                                         </li>
                                     </ul>
                                 </div>
                                 <div id="default-tab-content">
                                     <div class="bg-gray-50 dark:bg-gray-800 max-w-3xl p-4 rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                        <p class=" text-white">Profile tab</p>
+                                        <p class="text-white">Profile tab</p>
                                     </div>
                                     <div class="bg-gray-50 dark:bg-gray-800 hidden max-w-3xl p-4 rounded-lg" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-                                        <p class=" text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab&apos;s associated
-                                content</strong>. Clicking another tab will toggle the visibility of this one for the
-                            next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                                        <p class="text-gray-500 dark:text-gray-400">
+                      This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab&apos;s associated content</strong>. Clicking another tab will toggle the visibility of this
+                      one for the next. The tab JavaScript swaps classes to
+                      control the content visibility and styling. </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="flex items-center justify-center" data-pgc-define="alpine-menu-dropdown" data-pgc-section="Dropdowns">
                                 <div x-data="{ open: false }" class="inline-block relative text-left">
-                                    <button @click="open = !open" class="bg-white border border-gray-300 flex focus:ring-2 focus:ring-blue-500 focus:ring-offset-gray-100 font-medium inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-gray-700  w-full">
+                                    <button @click="open = !open" class="bg-white border border-gray-300 flex focus:ring-2 focus:ring-blue-500 focus:ring-offset-gray-100 font-medium inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-gray-700 w-full">
                                         Menu
                                         <svg class="h-5 w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-</path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                         </svg>
                                     </button>
-                                    <div x-show="open" @click.away="open = false" class="absolute bg-white left-0 mt-2 origin-top-left px-2 py-2 ring-1 ring-black ring-opacity-5 rounded-md shadow-lg w-56">
-                                        <a href="#" class="block px-4 py-2  text-gray-700 hover:bg-gray-100 rounded-md">Save</a>
+                                    <div x-show="open" @click.away="open = false" class="absolute bg-white left-0 mt-2 origin-top-left px-2 py-2 ring-1 ring-black ring-opacity-5 rounded-md shadow-lg w-56"><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Save</a>
                                         <div x-data="{ subMenuOpen: false }" class="relative">
-                                            <button @click="subMenuOpen = !subMenuOpen" class="flex justify-between items-center w-full px-4 py-2  text-gray-700 hover:bg-gray-100 relative rounded-md">
+                                            <button @click="subMenuOpen = !subMenuOpen" class="flex justify-between items-center w-full px-4 py-2 text-gray-700 hover:bg-gray-100 relative rounded-md">
                                                 Share to
                                                 <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-5 w-5 ml-2" transform="matrix(1, 0, 0, 1, 0, 0)rotate(270)">
                                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -159,18 +182,16 @@
                                                                 <rect width="48" height="48" fill="none"></rect>
                                                             </g>
                                                             <g id="icons_Q2" data-name="icons Q2">
-                                                                <path d="M24,27.2,13.4,16.6a1.9,1.9,0,0,0-3,.2,2.1,2.1,0,0,0,.2,2.7l12,11.9a1.9,1.9,0,0,0,2.8,0l12-11.9a2.1,2.1,0,0,0,.2-2.7,1.9,1.9,0,0,0-3-.2Z">
-</path>
+                                                                <path d="M24,27.2,13.4,16.6a1.9,1.9,0,0,0-3,.2,2.1,2.1,0,0,0,.2,2.7l12,11.9a1.9,1.9,0,0,0,2.8,0l12-11.9a2.1,2.1,0,0,0,.2-2.7,1.9,1.9,0,0,0-3-.2Z"></path>
                                                             </g>
                                                         </g>
                                                     </g>
                                                 </svg>
                                             </button>
-                                            <div x-show="subMenuOpen" @click.away="subMenuOpen = false" class="absolute top-0 left-full ml-4 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 px-2 py-2">
-                                                <a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;text=" class="flex px-4 py-2  text-gray-700 hover:bg-gray-100">Twitter</a> <a target="_blank" rel="noopener" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah" class="block px-4 py-2  text-gray-700 hover:bg-gray-100">Facebook</a> <a target="_blank" rel="noopener" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;title=&amp;summary=&amp;source=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah" class="block px-4 py-2  text-gray-700 hover:bg-gray-100">LinkedIn</a> <a target="_blank" rel="noopener" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=&amp;caption=&amp;content=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;canonicalUrl=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;shareSource=tumblr_share_button" class="block px-4 py-2  text-gray-700 hover:bg-gray-100">Tumblr</a> <a target="_blank" rel="noopener" href="https://reddit.com/submit/?url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;resubmit=true&amp;title=" class="block px-4 py-2  text-gray-700 hover:bg-gray-100">Reddit</a>
+                                            <div x-show="subMenuOpen" @click.away="subMenuOpen = false" class="absolute top-0 left-full ml-4 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 px-2 py-2"><a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;text=" class="flex px-4 py-2 text-gray-700 hover:bg-gray-100">Twitter</a><a target="_blank" rel="noopener" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Facebook</a><a target="_blank" rel="noopener" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;title=&amp;summary=&amp;source=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">LinkedIn</a><a target="_blank" rel="noopener" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=&amp;caption=&amp;content=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;canonicalUrl=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;shareSource=tumblr_share_button" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Tumblr</a><a target="_blank" rel="noopener" href="https://reddit.com/submit/?url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;resubmit=true&amp;title=" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Reddit</a>
                                                 <!-- Add more sub-menu items as needed -->
                                             </div>
-                                        </div>                                         <a href="#" class="block px-4 py-2  text-red-500 hover:bg-red-100 rounded-md">Report</a>
+                                        </div><a href="#" class="block px-4 py-2 text-red-500 hover:bg-red-100 rounded-md">Report</a>
                                     </div>
                                 </div>
                             </div>
@@ -185,9 +206,9 @@
                                         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                                             <!-- Modal header -->
                                             <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                                                <h3 class=" font-semibold text-gray-900 dark:text-white">
-                                    Terms of Service </h3>
-                                                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg  w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                                                <h3 class="font-semibold text-gray-900 dark:text-white">
+                          Terms of Service </h3>
+                                                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
                                                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
                                                     </svg><span class="sr-only">Close modal</span>
@@ -196,21 +217,26 @@
                                             <!-- Modal body -->
                                             <div class="p-4 md:p-5 space-y-4">
                                                 <p class="dark:text-gray-400 leading-relaxed text-gray-500 text-lg">
-                                    With less than a month to go before the European Union enacts new consumer privacy
-                                    laws for its citizens, companies around the world are updating their terms of
-                                    service agreements to comply. </p>
+                          With less than a month to go before the European Union
+                          enacts new consumer privacy laws for its citizens,
+                          companies around the world are updating their terms of
+                          service agreements to comply. </p>
                                                 <p class="dark:text-gray-400 leading-relaxed text-gray-500 text-lg">
-                                    The European Union&rsquo;s General Data Protection Regulation (G.D.P.R.) goes into effect
-                                    on May 25 and is meant to ensure a common set of data rights in the European Union.
-                                    It requires organizations to notify users as soon as possible of high-risk data
-                                    breaches that could personally affect them. </p>
+                          The European Union&rsquo;s General Data Protection
+                          Regulation (G.D.P.R.) goes into effect on May 25 and
+                          is meant to ensure a common set of data rights in the
+                          European Union. It requires organizations to notify
+                          users as soon as possible of high-risk data breaches
+                          that could personally affect them. </p>
                                             </div>
                                             <!-- Modal footer -->
                                             <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                                                <button data-modal-hide="default-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
-                                                    accept
+                                                <button data-modal-hide="default-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                                    I accept
 </button>
-                                                <button data-modal-hide="default-modal" type="button" class="py-2.5 px-5 ms-3 font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Decline</button>
+                                                <button data-modal-hide="default-modal" type="button" class="py-2.5 px-5 ms-3 font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                                                    Decline
+</button>
                                             </div>
                                         </div>
                                     </div>
@@ -226,15 +252,17 @@
                                                 <svg class="w-20 h-auto sm:w-24 text-gray-700 dark:text-gray-300" width="200" height="67" viewBox="0 0 200 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M192.914 45.0629C197.106 45.0629 200 42.1687 200 38.1767C200 36.1807 199.401 34.2845 198.403 32.9871C197.305 31.5899 195.709 30.7915 193.812 30.7915C191.317 30.7915 188.922 32.6877 186.627 36.6797L186.427 36.9791L186.327 36.6797C185.729 34.9831 185.23 33.5859 184.93 32.7875C184.731 32.1887 184.631 31.9891 184.631 31.8893C184.531 31.4901 184.132 31.1907 183.633 31.1907C183.333 31.1907 183.034 31.2905 182.735 31.4901C182.435 31.6897 182.236 31.8893 182.236 32.1887C179.94 39.3743 178.044 42.8673 176.447 42.8673C176.248 42.8673 176.048 42.7675 175.948 42.6677C175.549 42.1687 175.649 41.0709 175.749 39.5739C175.848 38.4761 175.948 37.1787 175.948 35.8813C175.848 33.2865 174.451 31.6897 172.156 31.6897C169.261 31.6897 167.365 34.7835 166.467 36.5799L166.168 37.0789L166.068 36.4801C165.868 34.1847 165.07 31.4901 162.675 31.4901C159.88 31.4901 157.685 34.7835 156.387 37.5779L156.088 38.2765V37.4781C156.287 33.7855 156.387 31.5899 156.487 30.9911C156.587 30.3923 156.487 29.9931 156.287 29.6937C156.088 29.4941 155.788 29.3943 155.19 29.3943C154.291 29.4941 153.792 29.9931 153.094 31.7895C151.996 34.7835 149.102 41.8693 146.707 41.8693C146.208 41.8693 145.908 41.6697 145.609 41.3703C144.611 40.2725 145.01 37.2785 145.609 33.0869V32.7875C145.908 30.7915 145.409 30.3923 144.311 30.1927C144.212 30.1927 144.112 30.1927 144.012 30.1927C143.114 30.1927 142.715 30.9911 141.916 33.2865C140.519 37.3783 138.623 41.5699 136.527 41.5699C136.427 41.5699 136.327 41.5699 136.327 41.5699C135.23 41.3703 135.23 39.6737 135.23 37.5779C135.23 36.3803 135.23 35.0829 135.13 33.9851C134.83 31.8893 133.533 30.5919 131.836 30.4921C128.443 30.4921 126.248 34.7835 125.15 37.3783L124.95 37.9771L124.85 37.3783C124.651 35.6817 124.551 34.0849 124.451 32.3883V32.2885C130.739 24.4043 133.533 18.6158 133.633 13.7256C133.633 10.6318 132.236 8.7356 129.741 8.7356C127.944 8.7356 123.752 10.2326 122.255 24.0051C121.956 26.5999 121.856 29.1947 121.856 31.7895C118.962 35.9811 112.774 43.1667 106.786 43.1667C101.297 43.1667 97.006 38.7755 97.006 30.9911C97.006 20.6118 104.391 14.2246 109.88 14.2246C111.078 14.2246 112.076 14.524 112.874 15.2226C113.673 15.9212 114.072 16.8194 114.072 17.8174C114.072 19.2146 113.573 20.013 113.174 20.7116C113.074 20.9112 112.974 21.1108 112.874 21.3104C112.774 21.51 112.675 21.8094 112.774 22.009C112.874 22.3084 113.273 22.4083 113.772 22.4083C115.07 22.4083 117.066 20.512 117.066 17.6178C117.066 14.6238 114.571 11.53 109.98 11.53C103.094 11.53 93.9122 19.015 93.9122 31.2905C93.9122 39.8733 99.3014 45.8613 106.687 45.8613C111.876 45.8613 117.066 42.1687 121.557 35.8813L121.856 35.4821V35.9811C121.956 38.2765 122.156 40.0729 122.255 41.3703C122.355 42.1687 122.355 42.8673 122.355 43.1667C122.355 43.8653 122.455 44.4641 122.754 44.7635C123.054 45.0629 123.453 45.2625 124.052 45.2625C125.05 45.2625 125.25 44.5639 125.649 42.8673L125.749 42.3683C126.248 40.2725 128.144 33.4861 130.938 33.4861C131.437 33.4861 131.737 33.5859 132.036 33.8853C132.635 34.5839 132.535 35.8813 132.535 37.4781C132.535 38.4761 132.435 39.4741 132.535 40.4721C132.834 43.0669 133.932 44.3643 136.028 44.4641C138.124 44.4641 140.419 42.1687 141.617 40.0729L141.816 39.6737L141.916 40.1727C142.116 41.2705 143.114 45.0629 146.108 45.0629C148.902 45.0629 151.198 42.1687 153.792 36.1807L154.092 35.3823V36.2805C153.992 38.5759 153.892 41.2705 153.892 43.4661C153.892 45.1627 154.092 45.7615 154.79 45.7615H154.99C155.689 45.7615 156.188 45.3623 156.487 44.4641C158.483 37.6777 160.08 34.4841 161.776 34.4841C163.373 34.4841 163.573 37.4781 163.673 42.7675V43.1667C163.673 44.9631 163.772 45.8613 164.97 45.8613C165.868 45.8613 166.068 45.1627 166.467 43.4661C166.567 43.1667 166.667 42.7675 166.766 42.3683C168.363 36.8793 169.661 34.6837 171.257 34.6837C172.655 34.6837 172.755 36.0809 172.755 36.5799C172.854 37.5779 172.754 38.6757 172.555 39.6737C172.455 40.6717 172.355 41.5699 172.355 42.5679C172.455 44.6637 173.653 45.8613 175.649 45.9611C178.343 45.9611 180.639 42.8673 182.735 36.7795L182.834 36.3803L183.034 36.7795C183.433 37.7775 183.932 39.0749 184.331 40.5719V40.6717V40.7715C182.335 45.2625 180.838 50.2526 180.838 52.9472C180.838 56.4402 182.435 58.7356 184.93 58.8354C186.327 58.8354 189.421 58.3364 189.521 53.2466C189.521 51.1508 189.022 48.2566 188.024 44.5639L187.924 44.1647L188.323 44.3643C190.02 44.5639 191.517 45.0629 192.914 45.0629ZM124.651 27.8973C124.751 26.5999 124.85 25.4023 124.95 24.2047C125.948 16.7196 127.944 11.4302 129.94 11.4302C130.838 11.4302 131.337 12.1288 131.337 13.526C131.337 16.9192 129.142 21.8094 124.95 27.9971L124.651 28.4961V27.8973ZM186.826 54.9432C186.527 55.3424 186.128 55.542 185.529 55.542C184.93 55.542 184.431 55.3424 184.132 54.9432C183.234 53.7456 183.533 50.9512 184.93 45.8613C185.13 45.2625 185.329 44.6637 185.529 44.0649L185.729 43.5659L185.828 44.0649C187.525 49.8534 187.924 53.546 186.826 54.9432ZM187.425 39.8733L187.325 39.5739V39.4741C189.222 35.4821 191.517 33.1867 193.413 33.1867C195.609 33.1867 197.106 35.1827 197.106 37.9771C197.106 39.8733 196.307 40.8713 195.609 41.4701C194.81 42.1687 193.812 42.4681 192.715 42.4681C190.12 42.5679 188.423 41.1707 187.425 39.8733ZM64.2715 44.3643C67.2655 44.1647 69.6607 40.0729 70.4591 38.3763L70.6587 37.8773L70.7585 38.3763C71.1577 40.7715 72.5549 44.8633 76.6467 44.9631C78.4431 44.9631 80.4391 43.8653 82.5349 41.7695L82.7345 41.5699L82.8343 41.7695C84.2315 44.0649 86.0279 45.3623 88.0239 45.1627C90.9182 44.9631 92.7146 42.9671 92.8144 41.5699C92.8144 41.1707 92.7146 40.8713 92.515 40.6717C92.2156 40.3723 91.9162 40.3723 91.6168 40.5719L91.517 40.6717C90.8184 41.3703 89.6208 42.5679 88.2236 42.5679C86.5269 42.6677 85.3293 41.6697 84.5309 39.5739V39.4741L84.6307 39.3743C89.2216 33.2865 92.515 24.1049 92.2156 17.9172C92.1158 15.023 91.2176 11.6298 88.1238 11.6298H87.8244C86.6267 11.7296 85.5289 12.2286 84.6307 13.3264C81.7365 16.6198 80.2395 24.6039 80.7385 33.6857C80.8383 35.5819 81.1377 37.3783 81.7365 38.9751V39.0749L81.6367 39.1747C79.9401 41.1707 78.2435 42.2685 76.8463 42.2685C73.5529 42.2685 73.6527 36.7795 73.9521 32.1887C74.0519 31.1907 74.0519 30.5919 73.7525 30.1927C73.5529 29.8933 73.1537 29.7935 72.6547 29.7935H72.5549C71.3573 29.7935 71.1577 29.9931 70.5589 31.7895C69.3613 35.3823 66.8663 41.3703 64.3713 41.3703C63.6727 41.3703 63.1737 41.1707 62.7745 40.6717C61.5769 39.1747 62.4751 35.3823 63.1737 32.2885C63.2735 31.7895 63.4731 31.1907 63.5729 30.6917C63.7725 29.9931 63.6727 29.3943 63.4731 29.0949C63.1737 28.7955 62.6747 28.5959 62.0759 28.6957C60.978 28.7955 60.3792 29.1947 59.98 31.1907L59.8802 31.5899V31.6897C59.3812 30.9911 58.483 30.1927 56.8862 30.1927C56.7864 30.1927 56.5868 30.1927 56.3872 30.1927C54.5908 30.2925 52.5948 31.5899 51.0978 33.3863C49.4012 35.5819 48.503 38.2765 48.8024 41.0709C48.8024 41.1707 48.8024 41.3703 48.9022 41.4701V41.5699L48.8024 41.6697C47.8044 42.7675 46.7066 43.3663 45.7086 43.3663C44.1118 43.3663 43.2136 42.1687 43.2136 40.1727C43.2136 36.7795 45.509 26.6997 45.509 23.0071C45.509 19.1148 43.8124 17.019 40.7186 16.9192C36.3273 16.9192 32.8343 21.9092 29.5409 32.1887C29.2415 33.1867 28.9421 34.1847 28.6427 35.1827L28.1437 36.7795L28.2435 35.1827C28.5429 31.6897 28.7425 28.2965 28.8423 24.8035C29.0419 19.8134 28.3433 16.6198 26.7465 15.023C25.9481 14.1248 24.8503 13.7256 23.3533 13.7256C17.9641 13.7256 15.3693 22.8075 13.4731 29.2945C12.8743 31.1907 11.7764 35.5819 11.0778 38.5759L11.477 37.8773C11.7764 34.0849 12.7745 24.7037 12.6747 19.6138C12.5749 14.1248 10.7784 11.6298 6.78643 11.6298C4.59082 11.6298 3.19361 12.7276 2.29541 13.6258C0.798403 14.9232 0 17.019 0 18.8154C0 19.9132 0.698603 20.9112 1.1976 20.9112C1.49701 20.9112 1.69661 20.4122 1.79641 20.2126C3.09381 16.1208 4.69062 14.1248 6.68663 14.1248C7.58483 14.1248 8.18363 14.4242 8.68263 14.9232C10.2794 16.6198 9.98004 21.3104 9.48104 29.8933C9.38124 32.4881 9.18164 35.6817 8.98204 39.1747C8.98204 39.7735 8.88224 40.3723 8.88224 40.9711C8.68263 43.4661 8.58283 45.3623 9.48104 45.4621C10.6786 45.6617 11.477 45.1627 11.8762 43.9651C12.475 42.1687 13.7725 37.2785 16.3673 28.3963C18.8623 19.9132 20.7585 16.7196 23.1537 16.7196C25.9481 16.7196 26.1477 21.51 25.6487 31.5899C25.5489 33.6857 25.3493 36.1807 25.2495 38.7755C25.2495 39.1747 25.2495 39.4741 25.2495 39.8733C25.1497 42.0689 25.0499 43.7655 25.6487 44.4641C25.8483 44.6637 26.1477 44.7635 26.4471 44.7635C27.6447 44.7635 28.0439 43.6657 28.6427 41.9691C28.7425 41.6697 28.8423 41.3703 28.9421 40.9711C33.0339 29.5939 36.1277 19.7136 40.2196 19.7136C41.4172 19.7136 42.4152 20.7116 42.4152 22.7077C42.4152 27.1987 40.2196 35.8813 40.2196 40.2725C40.2196 41.8693 40.7186 43.2665 41.517 44.2645C42.4152 45.2625 43.6128 45.8613 45.1098 45.8613C46.507 45.8613 47.9042 45.1627 49.4012 43.8653L49.501 43.7655L49.6008 43.8653C50.5988 45.1627 52.0958 45.8613 53.7924 45.6617C56.3872 45.4621 58.483 43.1667 59.2814 41.0709L59.481 40.6717L59.6806 41.0709C60.2794 42.6677 61.5769 44.6637 64.2715 44.3643ZM87.7246 14.6238C88.024 14.6238 88.3233 14.7236 88.523 15.023C89.521 16.4202 89.521 21.4102 87.8244 27.0989C86.8263 30.3923 85.5289 33.3863 83.9321 35.9811L83.6327 36.3803L83.5329 35.8813C83.3333 34.4841 83.2335 33.0869 83.2335 31.8893C82.9341 23.3065 85.5289 14.7236 87.7246 14.6238ZM59.481 34.6837C58.5828 38.2765 56.8862 42.5679 53.7924 42.8673H53.493C52.1956 42.8673 51.497 42.0689 51.3972 40.3723C51.1976 38.2765 52.0958 35.8813 53.6926 34.1847C54.6906 33.0869 55.7884 32.4881 56.7864 32.4881C58.1836 32.5879 59.0818 33.5859 59.481 34.6837ZM73.7525 21.51C72.6547 21.51 71.6567 22.4082 71.6567 23.5061C71.6567 24.6039 72.5549 25.5021 73.6527 25.5021V25.7017V25.5021C74.7505 25.5021 75.6487 24.6039 75.7485 23.5061C75.8483 22.4082 74.9501 21.51 73.7525 21.51ZM145.309 21.51C144.212 21.51 143.214 22.4082 143.214 23.5061C143.214 24.6039 144.112 25.5021 145.21 25.5021V25.7017V25.5021C146.307 25.5021 147.305 24.6039 147.305 23.5061C147.405 22.4082 146.507 21.51 145.309 21.51Z" fill="currentColor"></path>
                                                 </svg>
-                                                <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
-                                                                &quot; With Preline, we&apos;re able to easily track our performance in full detail. It&apos;s
-                                                                become an essential tool for us to grow and engage with our audience. &quot; </em></p>
+                                                <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"> <em>
+                            &quot; With Preline, we&apos;re able to easily track
+                            our performance in full detail. It&apos;s become an
+                            essential tool for us to grow and engage with our
+                            audience. &quot; </em> </p>
                                             </div>
                                             <div class="p-4 rounded-b-xl md:px-6">
                                                 <h3 class="text-sm font-semibold text-gray-800 sm:text-base dark:text-gray-200">
-                                                            Josh Tyson </h3>
+                          Josh Tyson </h3>
                                                 <p class="text-sm text-gray-500">
-                                                            Product Manager | Capsule </p>
+                          Product Manager | Capsule </p>
                                             </div>
                                         </div>
                                     </div>
@@ -248,8 +276,7 @@
                                                         <path d="M110.659 30.7161C114.431 30.7161 114.152 26.4546 114.152 26.4546V17.9316H117.086V26.3847C117.086 26.3847 117.086 26.4546 117.086 26.6642C117.086 27.9217 116.946 33.3009 110.728 33.3009H110.519C104.301 33.3009 104.162 27.9915 104.162 26.6642C104.162 26.5245 104.162 26.3847 104.162 26.3847V17.9316H107.096V26.3847C107.166 26.3847 106.886 30.7161 110.659 30.7161Z" fill="currentColor"></path>
                                                         <path d="M136.926 28.3405C136.088 29.8076 134.411 30.6459 132.595 30.6459C130.08 30.6459 128.054 29.0392 127.705 26.5242H139.93C139.93 26.1749 139.93 25.6859 139.93 25.3366C139.93 20.5861 136.717 17.5122 132.455 17.5122C128.194 17.5122 124.771 20.5162 124.771 25.3366C124.771 30.1569 128.194 33.2308 132.455 33.2308C135.11 33.2308 137.625 32.113 139.022 29.8775L136.926 28.3405ZM132.525 20.2368C134.97 20.2368 136.717 21.7737 137.136 24.2887H127.774C128.124 21.7038 130.01 20.2368 132.525 20.2368Z" fill="currentColor"></path>
                                                         <path d="M80.9681 17.582C78.8723 17.582 76.7066 18.5601 75.7286 20.2367V17.8615H72.7944V40.2168H75.7286V30.7158C76.7066 32.4623 78.8723 33.3006 80.9681 33.3006C85.0898 33.3006 88.513 30.2966 88.513 25.4762C88.513 20.7257 85.0898 17.582 80.9681 17.582ZM80.6886 30.576C78.2435 30.576 75.6587 28.8295 75.6587 25.616C75.6587 22.4024 78.1737 20.3066 80.8284 20.3066C83.5529 20.3066 85.7186 22.3325 85.7186 25.3365C85.6487 28.4104 83.3433 30.576 80.6886 30.576Z" fill="currentColor"></path>
-                                                        <path d="M122.605 9.68799H119.67V32.9515H122.605V9.68799Z" fill="currentColor">
-</path>
+                                                        <path d="M122.605 9.68799H119.67V32.9515H122.605V9.68799Z" fill="currentColor"></path>
                                                         <path d="M64.4113 17.4424C64.3414 17.4424 64.2716 17.4424 64.2017 17.4424C64.2017 17.4424 61.6867 17.4424 59.3115 18.4204L59.5909 19.1889L60.1498 20.7957C60.9881 20.4464 62.3853 20.0272 64.2017 19.9574C64.2716 19.9574 64.3414 19.9574 64.4113 19.9574C67.6249 19.9574 67.6947 22.8915 67.6947 22.8915V23.6599L62.6648 23.5901C62.3155 23.5901 60.2895 23.5901 58.8225 24.9873C58.4732 25.3366 58.1937 25.6859 57.9841 26.1051C57.7047 26.7338 57.4951 27.4324 57.4951 28.2009C57.4951 29.1789 57.7746 30.0871 58.1937 30.8556C58.4033 31.2049 58.6827 31.5542 58.9622 31.8336C59.9402 32.7418 61.3374 33.3007 62.8744 33.3007C63.0141 33.3007 63.1538 33.3007 63.2237 33.3007C64.9702 33.2308 66.577 32.5322 67.6249 30.8556V32.9514H70.2097V23.4504C70.2796 21.0053 68.7426 17.4424 64.4113 17.4424ZM63.1538 30.9254C62.2456 30.9953 60.1498 30.5063 60.1498 28.2009C60.1498 27.5721 60.7087 26.1051 62.5251 26.1051C64.3414 26.1051 67.555 26.1051 67.555 26.1051C67.6249 28.8995 65.9482 30.7857 63.1538 30.9254Z" fill="currentColor"></path>
                                                         <path d="M49.1118 30.3667C44.4311 30.3667 40.8682 26.5942 40.8682 21.9136C40.8682 17.233 44.501 13.3906 49.1118 13.3906C51.3473 13.3906 53.3034 14.2988 54.7704 15.696L56.5169 13.3208C54.6307 11.5743 51.976 10.5264 49.1118 10.5264C42.8243 10.5264 37.8643 15.6262 37.8643 21.9136C37.8643 28.201 42.8243 33.3008 49.1118 33.3008C51.6966 33.3008 54.002 32.4625 55.8183 31.1351L54.8403 28.4106C53.2335 29.5284 51.0678 30.3667 49.1118 30.3667Z" fill="currentColor"></path>
                                                         <path d="M0 30.2965H3.63273V28.061H8.24351V30.2965H11.8064V12.9712H0V30.2965Z" fill="currentColor"></path>
@@ -273,16 +300,17 @@
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
-                                                <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
-                                                                &quot; In September, I will be using this theme for 2 years. I went through multiple
-                                                                updates and changes and I&apos;m very glad to see the consistency and effort made by the
-                                                                team. &quot; </em></p>
+                                                <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"> <em>
+                            &quot; In September, I will be using this theme for
+                            2 years. I went through multiple updates and changes
+                            and I&apos;m very glad to see the consistency and
+                            effort made by the team. &quot; </em> </p>
                                             </div>
                                             <div class="p-4 rounded-b-xl md:px-6">
                                                 <h3 class="text-sm font-semibold text-gray-800 sm:text-base dark:text-gray-200">
-                                                            Luisa </h3>
+                          Luisa </h3>
                                                 <p class="text-sm text-gray-500">
-                                                            Senior Director of Operations | Fitbit </p>
+                          Senior Director of Operations | Fitbit </p>
                                             </div>
                                         </div>
                                     </div>
@@ -302,16 +330,17 @@
                                                     <path d="M49.8106 22.053V38.5401C49.8106 38.8195 50.09 39.0291 50.2996 39.0291H52.605C52.8844 39.0291 53.094 38.7497 53.094 38.5401V22.053H58.5431C58.8226 22.053 59.0321 21.7736 59.0321 21.564V19.2586C59.0321 18.9792 58.7527 18.7696 58.5431 18.7696H53.094V14.4383C53.094 12.6918 54.3515 11.5041 55.8186 11.5041H58.5431C58.8226 11.5041 59.0321 11.2247 59.0321 11.0151V8.70973C59.0321 8.43028 58.7527 8.2207 58.5431 8.2207H55.9583C52.5351 8.2207 49.8106 11.085 49.8106 14.3684V18.7696H47.3655C47.086 18.7696 46.8765 19.049 46.8765 19.2586V21.564C46.8765 21.8435 47.1559 22.053 47.3655 22.053H49.8106Z" fill="currentColor"></path>
                                                     <path d="M106.258 21.2148C104.442 19.2587 101.857 18.1409 99.1321 18.1409C96.5473 18.1409 93.9625 19.2587 92.3557 20.8655V8.57008C92.3557 8.29064 92.0763 8.08105 91.8667 8.08105H89.5613C89.2818 8.08105 89.0723 8.3605 89.0723 8.57008V28.8994C89.0723 36.4443 94.1022 39.7278 99.0623 39.7278C103.952 39.7278 109.052 36.3745 109.052 28.8994C109.052 25.8954 108.074 23.1709 106.258 21.2148ZM99.0623 36.584C94.1022 36.584 92.2858 32.6719 92.2858 28.9693C92.2858 24.4284 95.0104 21.4244 99.0623 21.4244C103.114 21.4244 105.839 24.4982 105.839 28.9693C105.769 32.6719 104.022 36.584 99.0623 36.584Z" fill="currentColor"></path>
                                                 </svg>
-                                                <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
-                                    &quot; I&apos;m absolutely floored by the level of care and attention to detail the team at HS
-                                    have put into this theme and for one can guarantee that I will be a return customer.
-                                    &quot; </em></p>
+                                                <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"> <em>
+                            &quot; I&apos;m absolutely floored by the level of
+                            care and attention to detail the team at HS have put
+                            into this theme and for one can guarantee that I
+                            will be a return customer. &quot; </em> </p>
                                             </div>
                                             <div class="p-4 rounded-b-xl md:px-6">
                                                 <h3 class="text-sm font-semibold text-gray-800 sm:text-base dark:text-gray-200">
-                                Nicole Grazioso </h3>
+                          Nicole Grazioso </h3>
                                                 <p class="text-sm text-gray-500">
-                                Director Payments &amp; Risk | HubSpot </p>
+                          Director Payments &amp; Risk | HubSpot </p>
                                             </div>
                                         </div>
                                     </div>
@@ -325,81 +354,62 @@
                         <button type="button" class="bg-base h-3 rounded-full w-3 z-50" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button> -->
                                 </div>
                                 <!-- Slider controls -->
-                                <button type="button" class="absolute cursor-pointer flex focus:outline-none group h-full items-center justify-center px-4 start-0 top-0 z-50" data-carousel-prev="">
-                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <button type="button" class="absolute cursor-pointer flex focus:outline-none group h-full items-center justify-center px-4 start-0 top-0 z-50" data-carousel-prev=""><span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"></path>
                                         </svg> <span class="sr-only">Previous</span> </span>
                                 </button>
-                                <button type="button" class="absolute cursor-pointer end-0 flex focus:outline-none group h-full items-center justify-center px-4 top-0 z-50" data-carousel-next="">
-                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <button type="button" class="absolute cursor-pointer end-0 flex focus:outline-none group h-full items-center justify-center px-4 top-0 z-50" data-carousel-next=""><span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
                                         </svg> <span class="sr-only">Next</span> </span>
                                 </button>
                             </div>
                             <div class="container py-32" data-pgc-define="flowbite-accordion-simple" data-pgc-section="Accordions">
                                 <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-                                    <div id="accordion-flush-heading-1">
-                                        <button type="button" class="border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 flex font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-gray-500 w-full" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
-                                            <span>What is Flowbite?</span>
-                                            <svg data-accordion-icon="" class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
+                                    {% for item in settings.homePageFaq %}
+                                    <div id="accordion-flush-heading-{{ item }}">
+                                        <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-{{ item }}" aria-expanded="false" aria-controls="accordion-flush-body-{{ item }}">
+                                            <h4 class="editable text-3xl">QUestion</h4>
+                                            <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                                             </svg>
                                         </button>
                                     </div>
-                                    <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                                    <div id="accordion-flush-body-{{ item }}" class="hidden" aria-labelledby="accordion-flush-heading-{{ item }}">
                                         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                            <p class="dark:text-black mb-2">Flowbite is an open-source library of interactive components
-                                built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more. </p>
+                                            <p class="editable text-white px-10 mb-2">Answer</p>
                                         </div>
                                     </div>
-                                    <div id="accordion-flush-heading-2">
-                                        <button type="button" class="border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 flex font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-gray-500 w-full" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
-                                            <span>Is there a Figma file available?</span>
-                                            <svg data-accordion-icon="" class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-                                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                            <p class="dark:text-black mb-2">Flowbite is first conceptualized and designed using the
-                                Figma software so everything you see in the library has a design equivalent in our Figma
-                                file.</p>
-                                        </div>
-                                    </div>
+                                    {% endfor %}
                                 </div>
                             </div>
                         </div>
                         <div class="hidden p-4 rounded-lg" id="cards" role="tabpanel" aria-labelledby="cards-tab">
                             <div class="bg-primary-800 dark:bg-gray-800 dark:text-gray-100 flex flex-col justify-center mx-6 my-12 px-8 rounded-md text-accent-100 text-center w-full md:w-64 lg:w-[30rem]" data-pgc-define="mambaui-team-person-card" data-pgc-section="Cards">
-                                <img alt="" class="self-center flex-shrink-0 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?0">
+                                <img alt="" class="self-center flex-shrink-0 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?0"/>
                                 <div class="flex-1 my-4">
-                                    <p class="text-xl font-semibold leading-snug">Nela Nikolovska</p>
+                                    <p class="text-xl font-semibold leading-snug">
+                    Nela Nikolovska </p>
                                     <p>Visual Designer</p>
                                 </div>
                                 <div class="border-t-2 flex items-center justify-center p-3 pb-10 space-x-3"><a rel="noopener noreferrer" href="#" title="Email" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8">
                                             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                                             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                                         </svg> </a><a rel="noopener noreferrer" href="#" title="Twitter" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" class="w-8 h-8">
-                                            <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z">
-</path>
+                                            <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"></path>
                                         </svg> </a><a rel="noopener noreferrer" href="#" title="LinkedIn" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-8 h-8">
-                                            <path d="M8.268 28h-5.805v-18.694h5.805zM5.362 6.756c-1.856 0-3.362-1.538-3.362-3.394s1.505-3.362 3.362-3.362 3.362 1.505 3.362 3.362c0 1.856-1.506 3.394-3.362 3.394zM29.994 28h-5.792v-9.1c0-2.169-0.044-4.95-3.018-4.95-3.018 0-3.481 2.356-3.481 4.794v9.256h-5.799v-18.694h5.567v2.55h0.081c0.775-1.469 2.668-3.019 5.492-3.019 5.875 0 6.955 3.869 6.955 8.894v10.269z">
-</path>
+                                            <path d="M8.268 28h-5.805v-18.694h5.805zM5.362 6.756c-1.856 0-3.362-1.538-3.362-3.394s1.505-3.362 3.362-3.362 3.362 1.505 3.362 3.362c0 1.856-1.506 3.394-3.362 3.394zM29.994 28h-5.792v-9.1c0-2.169-0.044-4.95-3.018-4.95-3.018 0-3.481 2.356-3.481 4.794v9.256h-5.799v-18.694h5.567v2.55h0.081c0.775-1.469 2.668-3.019 5.492-3.019 5.875 0 6.955 3.869 6.955 8.894v10.269z"></path>
                                         </svg> </a><a rel="noopener noreferrer" href="#" title="GitHub" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-8 h-8">
-                                            <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z">
-</path>
+                                            <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"></path>
                                         </svg> </a>
-                                </div>
-                                <a href="">Link</a>
+                                </div><a href="">Link</a>
                             </div>
-                            <div class="bg-primary-800 max-w-xl rounded-lg shadow text-accent-50" data-pgc-define="flowbite-card-image" data-pgc-section="Cards">
-                                <a href="#"> <img class="rounded-t-lg" src="../images/blog/sample.jpg" alt=""> </a>
-                                <div class="p-14"><a href="#"> <h3 class="dark:text-white font-bold mb-10 text-2xl tracking-tight">Noteworthy technology
-                            acquisitions 2021</h3> </a>
-                                    <p class="dark:text-gray-100 font-normal mb-3 text-lg text-md">Here are the biggest enterprise
-                        technology acquisitions of 2021 so far, in reverse chronological order.</p><a href="#" class="bg-blue-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium hover:bg-blue-800 inline-flex items-center mt-16 px-3 py-2 rounded-lg  text-center text-white">
-                        Read more <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <div class="bg-primary-800 max-w-xl rounded-lg shadow text-accent-50" data-pgc-define="flowbite-card-image" data-pgc-section="Cards"><a href="#"> <img class="rounded-t-lg" src="../images/blog/sample.jpg" alt=""/> </a>
+                                <div class="p-14"><a href="#"> <h3 class="dark:text-white font-bold mb-10 text-2xl tracking-tight">
+                      Noteworthy technology acquisitions 2021 </h3> </a>
+                                    <p class="dark:text-gray-100 font-normal mb-3 text-lg text-md">
+                    Here are the biggest enterprise technology acquisitions of
+                    2021 so far, in reverse chronological order. </p><a href="#" class="bg-blue-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium hover:bg-blue-800 inline-flex items-center mt-16 px-3 py-2 rounded-lg text-center text-white">
+                    Read more <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
                                         </svg> </a>
                                 </div>
@@ -408,33 +418,32 @@
                         <div class="hidden p-4 rounded-lg" id="full-height" role="tabpanel" aria-labelledby="full-height-tab">
                             <section class="dark:bg-gray-100 dark:text-gray-800" data-pgc-define="mamba-hero-2-column-ilustration" data-pgc-section="Hero">
                                 <div class="container flex flex-col gap-10 justify-center lg:flex-row lg:justify-between lg:py-24 md:px-24 mx-auto p-6 py-6 sm:py-12">
-                                    <div class="flex flex-col justify-center p-6 text-center rounded-sm  lg:text-left">
-                                        <h1 class="text-5xl font-bold leading-none sm:text-6xl">Transforming Online Business</h1>
-                                        <p class="mt-6 mb-8 text-lg sm:mb-12">With you every step of the way, SpeedStack transforms your
-                            online presence</p>
-                                        <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                                            <a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50">GET
-                                STARTED</a><a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">FIND
-                                PROJECT</a>
+                                    <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:text-left">
+                                        <h1 class="text-5xl font-bold leading-none sm:text-6xl">
+                      Transforming Online Business </h1>
+                                        <p class="mt-6 mb-8 text-lg sm:mb-12">
+                      With you every step of the way, SpeedStack transforms your
+                      online presence </p>
+                                        <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"><a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50">GET STARTED</a><a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">FIND PROJECT</a>
                                         </div>
                                     </div>
                                     <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 min-w-fit">
-                                        <img src="../images/Business_SVG.svg" alt="" class="md:h-[400px] object-cover xl:h-[600px]">
+                                        <img src="../images/Business_SVG.svg" alt="" class="md:h-[400px] object-cover xl:h-[600px]"/>
                                     </div>
                                 </div>
                             </section>
                             <section class="py-6 dark:bg-gray-100 dark:text-gray-900" data-pgc-define="mambaui-gallery-4x-square" data-pgc-section="Mansory">
                                 <div class="container gap-4 grid mx-auto p-4">
-                                    <img alt="" class="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square" src="../images/big-image-1.webp">
-                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-1.webp">
-                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-2.webp">
-                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-3.webp">
-                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-4.webp">
-                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-5.webp">
-                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-6.webp">
-                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-7.webp">
-                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-8.webp">
-                                    <img src="../images/big-image-2.webp" alt="" class="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-1 md:row-start-3 dark:bg-gray-500 aspect-square">
+                                    <img alt="" class="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square" src="../images/big-image-1.webp"/>
+                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-1.webp"/>
+                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-2.webp"/>
+                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-3.webp"/>
+                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-4.webp"/>
+                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-5.webp"/>
+                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-6.webp"/>
+                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-7.webp"/>
+                                    <img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="../images/image-8.webp"/>
+                                    <img src="../images/big-image-2.webp" alt="" class="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-1 md:row-start-3 dark:bg-gray-500 aspect-square"/>
                                 </div>
                             </section>
                             <section class="mb-10" data-pgc-define="preline-hero-section" data-pgc-section="Hero" data-pgc-define-description="Left image, right coinainer funky">
@@ -442,22 +451,21 @@
                                     <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
                                         <div class="lg:py-16 relative z-10">
                                             <div class="relative h-64 sm:h-80 lg:h-[80%]">
-                                                <img alt="" src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="absolute inset-0 h-full w-full object-cover">
+                                                <img alt="" src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="absolute inset-0 h-full w-full object-cover"/>
                                             </div>
                                         </div>
-                                        <div class="relative flex items-center bg-gray-100">
-                                            <span class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span>
+                                        <div class="relative flex items-center bg-gray-100"><span class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span>
                                             <div class="p-8 sm:p-16 lg:p-24">
                                                 <h2 class="text-2xl font-bold sm:text-3xl">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, debitis. </h2>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Tempore, debitis. </h2>
                                                 <p class="mt-4 text-gray-600">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, molestiae! Quidem
-                                    est
-                                    esse numquam odio deleniti, beatae, magni dolores provident quaerat totam eos,
-                                    aperiam
-                                    architecto eius quis quibusdam fugiat dicta. </p>
-                                                <a href="#" class="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500">
-                                    Get in Touch </a>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Aliquid, molestiae! Quidem est esse numquam odio
+                          deleniti, beatae, magni dolores provident quaerat
+                          totam eos, aperiam architecto eius quis quibusdam
+                          fugiat dicta. </p><a href="#" class="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500">
+                          Get in Touch </a>
                                             </div>
                                         </div>
                                     </div>
@@ -465,42 +473,42 @@
                             </section>
                             <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" data-pgc-define="preline-gallery-square" data-pgc-section="Mansory">
                                 <div class="space-y-2">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" alt="Image Description">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=986&amp;q=80" alt="Image Description">
-                                    <img class="h-ful object-cover w-full" src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Image Description">
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" alt="Image Description"/>
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=986&amp;q=80" alt="Image Description"/>
+                                    <img class="h-ful object-cover w-full" src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Image Description"/>
                                 </div>
                                 <div class="space-y-2">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1064&amp;q=80" alt="Image Description">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1664574654529-b60630f33fdb?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=987&amp;q=80" alt="Image Description">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" alt="Image Description">
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1064&amp;q=80" alt="Image Description"/>
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1664574654529-b60630f33fdb?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=987&amp;q=80" alt="Image Description"/>
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" alt="Image Description"/>
                                 </div>
                                 <div class="space-y-2">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" alt="Image Description">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1035&amp;q=80" alt="Image Description">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1711409496386-ad2c5946ac7f?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1711843250811-a7d0bb485a42?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description">
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" alt="Image Description"/>
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1035&amp;q=80" alt="Image Description"/>
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1711409496386-ad2c5946ac7f?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description"/>
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1711843250811-a7d0bb485a42?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description"/>
                                 </div>
                                 <div class="space-y-2">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=988&amp;q=80" alt="Image Description">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1668584054035-f5ba7d426401?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3465&amp;q=80" alt="Image Description">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1682686578615-39549501dd08?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description">
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=988&amp;q=80" alt="Image Description"/>
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1668584054035-f5ba7d426401?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3465&amp;q=80" alt="Image Description"/>
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1682686578615-39549501dd08?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description"/>
                                 </div>
                                 <div class="-translate-y-[9%] space-y-2">
-                                    <img class="w-full h-auto object-cover" src="https://plus.unsplash.com/premium_photo-1686149758342-9f0f249f2989?q=80&amp;w=1742&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1711574786543-0078cf358b50?q=80&amp;w=1587&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                                    <img class="w-full h-auto object-cover" src="https://plus.unsplash.com/premium_photo-1686149758342-9f0f249f2989?q=80&amp;w=1742&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""/>
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1711574786543-0078cf358b50?q=80&amp;w=1587&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""/>
                                 </div>
                                 <!-- New Row Starts Here -->
                                 <div class="space-y-2">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1710170601257-242514895755?q=80&amp;w=1632&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1708649290066-5f617003b93f?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description">
-                                    <img class="w-full h-auto object-cover" src="https://plus.unsplash.com/premium_photo-1705091308837-a62710023dd4?q=80&amp;w=1635&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description">
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1710170601257-242514895755?q=80&amp;w=1632&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description"/>
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1708649290066-5f617003b93f?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description"/>
+                                    <img class="w-full h-auto object-cover" src="https://plus.unsplash.com/premium_photo-1705091308837-a62710023dd4?q=80&amp;w=1635&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description"/>
                                 </div>
                                 <div class="-translate-y-[2.5%] space-y-2">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1682685797703-2bb22dbb885b?q=80&amp;w=1587&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1682687982204-f1a77dcc3067?q=80&amp;w=1587&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description">
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1682685797703-2bb22dbb885b?q=80&amp;w=1587&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""/>
+                                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1682687982204-f1a77dcc3067?q=80&amp;w=1587&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description"/>
                                 </div>
                                 <div class="space-y-2">
-                                    <img class="w-full h-auto object-cover" src="https://plus.unsplash.com/premium_photo-1669381260444-4f8e2e2948e3?q=80&amp;w=1587&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description">
+                                    <img class="w-full h-auto object-cover" src="https://plus.unsplash.com/premium_photo-1669381260444-4f8e2e2948e3?q=80&amp;w=1587&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description"/>
                                 </div>
                             </div>
                             <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto" data-pgc-define="preline-mansory-funky" data-pgc-section="Mansory">
@@ -508,7 +516,7 @@
                                 <div class="grid sm:grid-cols-12 gap-6">
                                     <div class="sm:self-end col-span-12 sm:col-span-7 md:col-span-8 lg:col-span-5 lg:col-start-3">
                                         <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-                                                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3481&amp;q=80" alt="Image Description">
+                                                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3481&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
                                                     Workplace personalities
@@ -519,7 +527,7 @@
                                     <!-- End Col -->
                                     <div class="sm:self-end col-span-12 sm:col-span-5 md:col-span-4 lg:col-span-3">
                                         <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-                                                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=987&amp;q=80" alt="Image Description">
+                                                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=987&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
                                                     Women in engineering
@@ -530,7 +538,7 @@
                                     <!-- End Col -->
                                     <div class="col-span-12 md:col-span-4">
                                         <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-                                                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1606836576983-8b458e75221d?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" alt="Image Description">
+                                                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1606836576983-8b458e75221d?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
                                                     Pride 2021
@@ -541,7 +549,7 @@
                                     <!-- End Col -->
                                     <div class="col-span-12 sm:col-span-6 md:col-span-4">
                                         <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-                                                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1598929438701-ef29ab0bb61a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1035&amp;q=80" alt="Image Description">
+                                                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1598929438701-ef29ab0bb61a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1035&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
                                                     Data at Preline
@@ -552,7 +560,7 @@
                                     <!-- End Col -->
                                     <div class="col-span-12 sm:col-span-6 md:col-span-4">
                                         <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-                                                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1019&amp;q=80" alt="Image Description">
+                                                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1019&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
                                                     Empowered management
@@ -567,46 +575,55 @@
                             <section class="bg-white" data-pgc-define="2-column-section-2-images" data-pgc-section="Info-Sections">
                                 <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                                     <div class="font-light sm:text-lg">
-                                        <h2 class="font-extrabold mb-4 pb-10 tracking-tight">We didn&apos;t reinvent the wheel</h2>
-                                        <p class="mb-4 text-lg">We are strategists, designers and developers. Innovators and problem
-                            solvers. Small enough to be simple and quick, but big enough to deliver the scope you want
-                            at the pace you need. Small enough to be simple and quick, but big enough to deliver the
-                            scope you want at the pace you need.</p>
-                                        <p class="text-lg">We are strategists, designers and developers. Innovators and problem solvers.
-                            Small enough to be simple and quick.</p>
+                                        <h2 class="font-extrabold mb-4 pb-10 tracking-tight">
+                      We didn&apos;t reinvent the wheel </h2>
+                                        <p class="mb-4 text-lg">
+                      We are strategists, designers and developers. Innovators
+                      and problem solvers. Small enough to be simple and quick,
+                      but big enough to deliver the scope you want at the pace
+                      you need. Small enough to be simple and quick, but big
+                      enough to deliver the scope you want at the pace you need. </p>
+                                        <p class="text-lg">
+                      We are strategists, designers and developers. Innovators
+                      and problem solvers. Small enough to be simple and quick. </p>
                                     </div>
                                     <div class="grid grid-cols-2 gap-4 mt-8">
-                                        <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
-                                        <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
+                                        <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1"/>
+                                        <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2"/>
                                     </div>
                                 </div>
                             </section>
                         </div>
                         <div class="hidden p-4 rounded-lg" id="widgets" role="tabpanel" aria-labelledby="widgets-tab">
-                            <label for="Toggle2" class="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-800" data-pgc-define="mambaui-toggle" data-pgc-section="Widgets"><span>Off</span><span class="relative"> <input id="Toggle2" type="checkbox" class="hidden peer"> <div class="w-10 h-4 rounded-full shadow dark:bg-gray-400 peer-checked:dark:bg-violet-600"></div> <div class="absolute left-0 w-6 h-6 rounded-full shadow -inset-y-1 peer-checked:right-0 peer-checked:left-auto dark:bg-violet-600">
-</div> </span><span>On</span>
+                            <label for="Toggle2" class="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-800" data-pgc-define="mambaui-toggle" data-pgc-section="Widgets"><span>Off</span><span class="relative"> <input id="Toggle2" type="checkbox" class="hidden peer"/> <div class="w-10 h-4 rounded-full shadow dark:bg-gray-400 peer-checked:dark:bg-violet-600"></div> <div class="absolute left-0 w-6 h-6 rounded-full shadow -inset-y-1 peer-checked:right-0 peer-checked:left-auto dark:bg-violet-600"></div> </span><span>On</span>
                             </label>
                             <div class="lg:px-8 lg:py-14 mx-auto px-4 py-10 sm:px-6" data-pgc-define="preline-stats" data-pgc-section="Stats">
                                 <!-- Grid -->
                                 <div class="gap-10 grid grid-cols-2 lg:gap-32 lg:grid-cols-3 mt-20 sm:gap-24">
                                     <!-- Stats -->
                                     <div>
-                                        <h4 class="text-lg sm:text-xl font-semibold text-gray-800">Accuracy rate</h4>
-                                        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">99.95%</p>
+                                        <h4 class="text-lg sm:text-xl font-semibold text-gray-800">
+                      Accuracy rate </h4>
+                                        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">
+                      99.95% </p>
                                         <p class="mt-1 text-gray-500">in fulfilling orders</p>
                                     </div>
                                     <!-- End Stats -->
                                     <!-- Stats -->
                                     <div>
-                                        <h4 class="text-lg sm:text-xl font-semibold text-gray-800">Startup businesses</h4>
-                                        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">2,000+</p>
+                                        <h4 class="text-lg sm:text-xl font-semibold text-gray-800">
+                      Startup businesses </h4>
+                                        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">
+                      2,000+ </p>
                                         <p class="mt-1 text-gray-500">partner with Preline</p>
                                     </div>
                                     <!-- End Stats -->
                                     <!-- Stats -->
                                     <div>
-                                        <h4 class="text-lg sm:text-xl font-semibold text-gray-800">Happy customers</h4>
-                                        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">85%</p>
+                                        <h4 class="text-lg sm:text-xl font-semibold text-gray-800">
+                      Happy customers </h4>
+                                        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">
+                      85% </p>
                                         <p class="mt-1 text-gray-500">this year alone</p>
                                     </div>
                                     <!-- End Stats -->
@@ -615,36 +632,46 @@
                             </div>
                             <div x-data="{ open: false }" x-init="() => setTimeout(() => open = true, 500)" class="flex flex-col hidden justify-center py-6 sm:py-12" data-pgc-define="alpine-cookies-banner-bottom" data-pgc-section="Banners">
                                 <div x-show="open" x-transition:enter-start="opacity-0 scale-90" x-transition:enter="transition duration-200 transform ease" x-transition:leave="transition duration-200 transform ease" x-transition:leave-end="opacity-0 scale-90" class="max-w-screen-lg mx-auto fixed bg-white inset-x-5 p-5 bottom-40 rounded-lg drop-shadow-2xl flex gap-4 flex-wrap md:flex-nowrap text-center md:text-left items-center justify-center md:justify-between">
-                                    <div class="w-full">This website uses cookies to ensure you get the best experience on our website.<a href="#" class="text-indigo-600 whitespace-nowrap  hover:underline">Learn more</a>
+                                    <div class="w-full">
+                                        This website uses cookies to ensure you get the best
+                                        experience on our website.<a href="#" class="text-indigo-600 whitespace-nowrap hover:underline">Learn more</a>
                                     </div>
                                     <div class="flex gap-4 items-center flex-shrink-0">
                                         <!-- setTimeout is for demo purposes only. Remove it & add to cookies
              so that the popup won't appear next time they load. -->
-                                        <button @click="open = false" class="text-indigo-600 focus:outline-none hover:underline">Decline</button>
-                                        <button @click="open = false" class="bg-indigo-500 px-5 py-2 text-white rounded-md hover:bg-indigo-700 focus:outline-none">Allow
-                                            Coockies
+                                        <button @click="open = false" class="text-indigo-600 focus:outline-none hover:underline">
+                                            Decline
+</button>
+                                        <button @click="open = false" class="bg-indigo-500 px-5 py-2 text-white rounded-md hover:bg-indigo-700 focus:outline-none">
+                                            Allow Coockies
 </button>
                                     </div>
                                 </div>
                             </div>
                             <div data-pgc-define="flow-bite-info-popover" data-pgc-section="Tooltips">
-                                <p class="flex items-center  text-gray-500 dark:text-gray-400">This is just some informational text <button data-popover-target="popover-description" data-popover-placement="bottom-end" type="button">
+                                <p class="flex items-center text-gray-500 dark:text-gray-400">
+                  This is just some informational text <button data-popover-target="popover-description" data-popover-placement="bottom-end" type="button">
                                         <svg class="w-10 h-10 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
                                         </svg>
                                         <span class="sr-only">Show information</span>
-                                    </button></p>
+                                    </button> </p>
                                 <div data-popover="" id="popover-description" role="tooltip" class="absolute bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 duration-300 inline-block invisible max-w-7xl opacity-0 rounded-lg shadow-sm text-gray-500 transition-opacity z-10">
                                     <div class="max-w-3xl min-w-[250px] p-3">
-                                        <h3 class="dark:text-white font-semibold text-gray-900 text-xl">Activity growth - Incremental </h3>
-                                        <p class="text-lg">Report helps navigate cumulative growth of community activities. Ideally, the
-                            chart should have a growing trend, as stagnating chart signifies a significant decrease of
-                            community activity.</p>
-                                        <h3 class="dark:text-white font-semibold text-gray-900 text-xl">Calculation</h3>
-                                        <p class="text-lg">For each date bucket, the all-time volume of activities is calculated. This
-                            means that activities in period n contain all activities up to period n, plus the activities
-                            generated by your community in period.</p><a href="#" class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">Read
-                            more <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <h3 class="dark:text-white font-semibold text-gray-900 text-xl">
+                      Activity growth - Incremental </h3>
+                                        <p class="text-lg">
+                      Report helps navigate cumulative growth of community
+                      activities. Ideally, the chart should have a growing
+                      trend, as stagnating chart signifies a significant
+                      decrease of community activity. </p>
+                                        <h3 class="dark:text-white font-semibold text-gray-900 text-xl">
+                      Calculation </h3>
+                                        <p class="text-lg">
+                      For each date bucket, the all-time volume of activities is
+                      calculated. This means that activities in period n contain
+                      all activities up to period n, plus the activities
+                      generated by your community in period. </p><a href="#" class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">Read more <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
                                             </svg></a>
                                     </div>
@@ -652,24 +679,27 @@
                                 </div>
                             </div>
                             <div data-pgc-define="flowbite-tooltip" data-pgc-section="Tooltips">
-                                <button data-tooltip-target="tooltip-animation" type="button" class="bg-blue-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium hover:bg-blue-800 px-5 py-2.5 rounded-lg  text-center text-white">Animated
-                                    tooltip
+                                <button data-tooltip-target="tooltip-animation" type="button" class="bg-blue-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium hover:bg-blue-800 px-5 py-2.5 rounded-lg text-center text-white">
+                                    Animated tooltip
 </button>
-                                <div id="tooltip-animation" role="tooltip" class="absolute bg-gray-900 dark:bg-gray-700 duration-300 font-medium inline-block invisible opacity-0 px-3 py-2 rounded-lg shadow-sm  text-white tooltip transition-opacity z-10">
+                                <div id="tooltip-animation" role="tooltip" class="absolute bg-gray-900 dark:bg-gray-700 duration-300 font-medium inline-block invisible opacity-0 px-3 py-2 rounded-lg shadow-sm text-white tooltip transition-opacity z-10">
                                     Tooltip content
                                     <div class="tooltip-arrow" data-popper-arrow=""></div>
                                 </div>
                             </div>
                             <div data-pgc-define="flowbite-default-popover" data-pgc-section="Tooltips">
-                                <button data-popover-target="popover-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Default
-                                    popover
+                                <button data-popover-target="popover-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Default popover
 </button>
-                                <div data-popover="" id="popover-default" role="tooltip" class="absolute z-10 invisible inline-block w-64  text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                                <div data-popover="" id="popover-default" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
                                     <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-                                        <h3 class="dark:text-white font-semibold text-gray-900 text-lg">Popover title</h3>
+                                        <h3 class="dark:text-white font-semibold text-gray-900 text-lg">
+                      Popover title </h3>
                                     </div>
                                     <div class="px-3 py-2">
-                                        <p class="text-lg">And here&apos;s some amazing content. It&apos;s very engaging. Right?</p>
+                                        <p class="text-lg">
+                      And here&apos;s some amazing content. It&apos;s very
+                      engaging. Right? </p>
                                     </div>
                                 </div>
                             </div>
@@ -677,11 +707,12 @@
                                 <svg class="flex-shrink-0 h-10 inline me-3 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"></path>
                                 </svg><span class="sr-only">Info</span>
-                                <div><span class="font-medium">Info alert!</span> Change a few things up and try submitting again.
+                                <div><span class="font-medium">Info alert!</span> Change a few
+                                    things up and try submitting again.
                                 </div>
                             </div>
                             <div class="flex gap-4 items-center w-fit" data-pgc-define="profile-widget" data-pgc-section="Widgets">
-                                <img class="w-20 h-20 rounded-full" src="../images/people/profile-pic.png" alt="">
+                                <img class="w-20 h-20 rounded-full" src="../images/people/profile-pic.png" alt=""/>
                                 <div class="font-medium text-black">
                                     <div>Damjan Radev</div>
                                     <div class="text-gray-500 dark:text-gray-400">
@@ -702,8 +733,11 @@
                                         </svg>
                                     </div>
                                     <div class="flex-grow pl-4">
-                                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 1</h2>
-                                        <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+                                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                      STEP 1 </h2>
+                                        <p class="leading-relaxed">
+                      VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
+                      Kinfolk bespoke try-hard cliche palo santo offal. </p>
                                     </div>
                                 </li>
                                 <li class="flex relative pb-12">
@@ -716,8 +750,11 @@
                                         </svg>
                                     </div>
                                     <div class="flex-grow pl-4">
-                                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 2</h2>
-                                        <p class="leading-relaxed">Vice migas literally kitsch +1 pok pok. Truffaut hot chicken slow-carb health goth, vape typewriter.</p>
+                                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                      STEP 2 </h2>
+                                        <p class="leading-relaxed">
+                      Vice migas literally kitsch +1 pok pok. Truffaut hot
+                      chicken slow-carb health goth, vape typewriter. </p>
                                     </div>
                                 </li>
                                 <li class="flex relative pb-12">
@@ -731,8 +768,11 @@
                                         </svg>
                                     </div>
                                     <div class="flex-grow pl-4">
-                                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 3</h2>
-                                        <p class="leading-relaxed">Coloring book nar whal glossier master cleanse umami. Salvia +1 master cleanse blog taiyaki.</p>
+                                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                      STEP 3 </h2>
+                                        <p class="leading-relaxed">
+                      Coloring book nar whal glossier master cleanse umami.
+                      Salvia +1 master cleanse blog taiyaki. </p>
                                     </div>
                                 </li>
                                 <li class="flex relative pb-12">
@@ -746,8 +786,11 @@
                                         </svg>
                                     </div>
                                     <div class="flex-grow pl-4">
-                                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 4</h2>
-                                        <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+                                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                      STEP 4 </h2>
+                                        <p class="leading-relaxed">
+                      VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
+                      Kinfolk bespoke try-hard cliche palo santo offal. </p>
                                     </div>
                                 </li>
                                 <div class="flex relative">
@@ -758,8 +801,11 @@
                                         </svg>
                                     </div>
                                     <div class="flex-grow pl-4">
-                                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">FINISH</h2>
-                                        <p class="leading-relaxed">Pitchfork ugh tattooed scenester echo park gastropub whatever cold-pressed retro.</p>
+                                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                      FINISH </h2>
+                                        <p class="leading-relaxed">
+                      Pitchfork ugh tattooed scenester echo park gastropub
+                      whatever cold-pressed retro. </p>
                                     </div>
                                 </div>
                             </ul>
@@ -769,8 +815,20 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
                                             <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                                         </svg>
-                                        <p class="leading-relaxed text-lg">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90&apos;s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90&apos;s pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p><span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
-                                        <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
+                                        <p class="leading-relaxed text-lg">
+                      Edison bulb retro cloud bread echo park, helvetica
+                      stumptown taiyaki taxidermy 90&apos;s cronut +1 kinfolk.
+                      Single-origin coffee ennui shaman taiyaki vape DIY tote
+                      bag drinking vinegar cronut adaptogen squid fanny pack
+                      vaporware. Man bun next level coloring book skateboard
+                      four loko knausgaard. Kitsch keffiyeh master cleanse
+                      direct trade indigo juice before they sold out gentrify
+                      plaid gastropub normcore XOXO 90&apos;s pickled cindigo
+                      jean shorts. Slow-carb next level shoindigoitch ethical
+                      authentic, yr scenester sriracha forage franzen organic
+                      drinking vinegar. </p><span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+                                        <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
+                      HOLDEN CAULFIELD </h2>
                                         <p class="text-gray-500">Senior Product Designer</p>
                                     </div>
                                 </div>
@@ -779,7 +837,7 @@
                                         <!-- Card -->
                                         <li class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
                                             <div class="flex items-center gap-x-4 mb-3">
-                                                <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
+                                                <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100">
                                                     <svg class="flex-shrink-0 size-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                         <circle cx="13.5" cy="6.5" r=".5"/>
                                                         <circle cx="17.5" cy="10.5" r=".5"/>
@@ -789,18 +847,19 @@
                                                     </svg>
                                                 </div>
                                                 <div class="flex-shrink-0">
-                                                    <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">Build your
-                                    portfolio</h3>
+                                                    <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">
+                            Build your portfolio </h3>
                                                 </div>
                                             </div>
-                                            <p class="editable text-gray-600 dark:text-gray-400">The simplest way to keep your portfolio always
-                            up-to-date.</p>
+                                            <p class="editable text-gray-600 dark:text-gray-400">
+                        The simplest way to keep your portfolio always
+                        up-to-date. </p>
                                         </li>
                                         <!-- End Card -->
                                         <!-- Card -->
                                         <li class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
                                             <div class="flex items-center gap-x-4 mb-3">
-                                                <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
+                                                <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100">
                                                     <svg class="flex-shrink-0 size-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                         <path d="M2 3h20"/>
                                                         <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/>
@@ -808,17 +867,19 @@
                                                     </svg>
                                                 </div>
                                                 <div class="flex-shrink-0">
-                                                    <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">Get freelance work </h3>
+                                                    <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">
+                            Get freelance work </h3>
                                                 </div>
                                             </div>
-                                            <p class="editable text-gray-600 dark:text-gray-400">New design projects delivered to your inbox each
-                            morning.</p>
+                                            <p class="editable text-gray-600 dark:text-gray-400">
+                        New design projects delivered to your inbox each
+                        morning. </p>
                                         </li>
                                         <!-- End Card -->
                                         <!-- Card -->
                                         <li class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
                                             <div class="flex items-center gap-x-4 mb-3">
-                                                <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
+                                                <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100">
                                                     <svg class="flex-shrink-0 size-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                         <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/>
                                                         <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
@@ -828,17 +889,19 @@
                                                     </svg>
                                                 </div>
                                                 <div class="flex-shrink-0">
-                                                    <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">Sell your goods </h3>
+                                                    <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">
+                            Sell your goods </h3>
                                                 </div>
                                             </div>
-                                            <p class="editable text-gray-600 dark:text-gray-400">Get your goods in front of millions of potential
-                            customers with ease.</p>
+                                            <p class="editable text-gray-600 dark:text-gray-400">
+                        Get your goods in front of millions of potential
+                        customers with ease. </p>
                                         </li>
                                         <!-- End Card -->
                                         <!-- Card -->
                                         <li class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
                                             <div class="flex items-center gap-x-4 mb-3">
-                                                <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
+                                                <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100">
                                                     <svg class="flex-shrink-0 size-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                         <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z"/>
                                                         <path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z"/>
@@ -847,17 +910,19 @@
                                                     </svg>
                                                 </div>
                                                 <div class="flex-shrink-0">
-                                                    <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">Get freelance work </h3>
+                                                    <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">
+                            Get freelance work </h3>
                                                 </div>
                                             </div>
-                                            <p class="editable text-gray-600 dark:text-gray-400">New design projects delivered to your inbox each
-                            morning.</p>
+                                            <p class="editable text-gray-600 dark:text-gray-400">
+                        New design projects delivered to your inbox each
+                        morning. </p>
                                         </li>
                                         <!-- End Card -->
                                         <!-- Card -->
                                         <li class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
                                             <div class="flex items-center gap-x-4 mb-3">
-                                                <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
+                                                <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100">
                                                     <svg class="flex-shrink-0 size-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                         <path d="M16.466 7.5C15.643 4.237 13.952 2 12 2 9.239 2 7 6.477 7 12s2.239 10 5 10c.342 0 .677-.069 1-.2"/>
                                                         <path d="m15.194 13.707 3.814 1.86-1.86 3.814"/>
@@ -865,17 +930,19 @@
                                                     </svg>
                                                 </div>
                                                 <div class="flex-shrink-0">
-                                                    <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">Sell your goods </h3>
+                                                    <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">
+                            Sell your goods </h3>
                                                 </div>
                                             </div>
-                                            <p class="editable text-gray-600 dark:text-gray-400">Get your goods in front of millions of potential
-                            customers with ease.</p>
+                                            <p class="editable text-gray-600 dark:text-gray-400">
+                        Get your goods in front of millions of potential
+                        customers with ease. </p>
                                         </li>
                                         <!-- End Card -->
                                         <!-- Card -->
                                         <li class="size-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
                                             <div class="flex items-center gap-x-4 mb-3">
-                                                <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
+                                                <div class="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-blue-50 bg-blue-100">
                                                     <svg class="flex-shrink-0 size-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                         <path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"/>
                                                         <rect x="3" y="14" width="7" height="7" rx="1"/>
@@ -883,12 +950,13 @@
                                                     </svg>
                                                 </div>
                                                 <div class="flex-shrink-0">
-                                                    <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">Build your
-                                    portfolio</h3>
+                                                    <h3 class="editable block text-lg font-semibold text-gray-800 dark:text-white">
+                            Build your portfolio </h3>
                                                 </div>
                                             </div>
-                                            <p class="editable text-gray-600 dark:text-gray-400">The simplest way to keep your portfolio always
-                            up-to-date.</p>
+                                            <p class="editable text-gray-600 dark:text-gray-400">
+                        The simplest way to keep your portfolio always
+                        up-to-date. </p>
                                         </li>
                                         <!-- End Card -->
                                     </ul>
@@ -919,16 +987,17 @@
                                         <path d="M49.8106 22.053V38.5401C49.8106 38.8195 50.09 39.0291 50.2996 39.0291H52.605C52.8844 39.0291 53.094 38.7497 53.094 38.5401V22.053H58.5431C58.8226 22.053 59.0321 21.7736 59.0321 21.564V19.2586C59.0321 18.9792 58.7527 18.7696 58.5431 18.7696H53.094V14.4383C53.094 12.6918 54.3515 11.5041 55.8186 11.5041H58.5431C58.8226 11.5041 59.0321 11.2247 59.0321 11.0151V8.70973C59.0321 8.43028 58.7527 8.2207 58.5431 8.2207H55.9583C52.5351 8.2207 49.8106 11.085 49.8106 14.3684V18.7696H47.3655C47.086 18.7696 46.8765 19.049 46.8765 19.2586V21.564C46.8765 21.8435 47.1559 22.053 47.3655 22.053H49.8106Z" fill="currentColor"></path>
                                         <path d="M106.258 21.2148C104.442 19.2587 101.857 18.1409 99.1321 18.1409C96.5473 18.1409 93.9625 19.2587 92.3557 20.8655V8.57008C92.3557 8.29064 92.0763 8.08105 91.8667 8.08105H89.5613C89.2818 8.08105 89.0723 8.3605 89.0723 8.57008V28.8994C89.0723 36.4443 94.1022 39.7278 99.0623 39.7278C103.952 39.7278 109.052 36.3745 109.052 28.8994C109.052 25.8954 108.074 23.1709 106.258 21.2148ZM99.0623 36.584C94.1022 36.584 92.2858 32.6719 92.2858 28.9693C92.2858 24.4284 95.0104 21.4244 99.0623 21.4244C103.114 21.4244 105.839 24.4982 105.839 28.9693C105.769 32.6719 104.022 36.584 99.0623 36.584Z" fill="currentColor"></path>
                                     </svg>
-                                    <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
-                                    " I'm absolutely floored by the level of care and attention to detail the team at HS
-                                    have put into this theme and for one can guarantee that I will be a return customer.
-                                    " </em></p>
+                                    <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"> <em>
+                      " I'm absolutely floored by the level of care and
+                      attention to detail the team at HS have put into this
+                      theme and for one can guarantee that I will be a return
+                      customer. " </em> </p>
                                 </div>
                                 <div class="p-4 rounded-b-xl md:px-6">
                                     <h3 class="text-sm font-semibold text-gray-800 sm:text-base dark:text-gray-200">
-                                Nicole Grazioso </h3>
+                    Nicole Grazioso </h3>
                                     <p class="text-sm text-gray-500">
-                                Director Payments & Risk | HubSpot </p>
+                    Director Payments & Risk | HubSpot </p>
                                 </div>
                             </div>
                             <!-- End Card -->
@@ -938,15 +1007,15 @@
                                     <svg class="w-20 h-auto sm:w-24 text-gray-700 dark:text-gray-300" width="200" height="67" viewBox="0 0 200 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M192.914 45.0629C197.106 45.0629 200 42.1687 200 38.1767C200 36.1807 199.401 34.2845 198.403 32.9871C197.305 31.5899 195.709 30.7915 193.812 30.7915C191.317 30.7915 188.922 32.6877 186.627 36.6797L186.427 36.9791L186.327 36.6797C185.729 34.9831 185.23 33.5859 184.93 32.7875C184.731 32.1887 184.631 31.9891 184.631 31.8893C184.531 31.4901 184.132 31.1907 183.633 31.1907C183.333 31.1907 183.034 31.2905 182.735 31.4901C182.435 31.6897 182.236 31.8893 182.236 32.1887C179.94 39.3743 178.044 42.8673 176.447 42.8673C176.248 42.8673 176.048 42.7675 175.948 42.6677C175.549 42.1687 175.649 41.0709 175.749 39.5739C175.848 38.4761 175.948 37.1787 175.948 35.8813C175.848 33.2865 174.451 31.6897 172.156 31.6897C169.261 31.6897 167.365 34.7835 166.467 36.5799L166.168 37.0789L166.068 36.4801C165.868 34.1847 165.07 31.4901 162.675 31.4901C159.88 31.4901 157.685 34.7835 156.387 37.5779L156.088 38.2765V37.4781C156.287 33.7855 156.387 31.5899 156.487 30.9911C156.587 30.3923 156.487 29.9931 156.287 29.6937C156.088 29.4941 155.788 29.3943 155.19 29.3943C154.291 29.4941 153.792 29.9931 153.094 31.7895C151.996 34.7835 149.102 41.8693 146.707 41.8693C146.208 41.8693 145.908 41.6697 145.609 41.3703C144.611 40.2725 145.01 37.2785 145.609 33.0869V32.7875C145.908 30.7915 145.409 30.3923 144.311 30.1927C144.212 30.1927 144.112 30.1927 144.012 30.1927C143.114 30.1927 142.715 30.9911 141.916 33.2865C140.519 37.3783 138.623 41.5699 136.527 41.5699C136.427 41.5699 136.327 41.5699 136.327 41.5699C135.23 41.3703 135.23 39.6737 135.23 37.5779C135.23 36.3803 135.23 35.0829 135.13 33.9851C134.83 31.8893 133.533 30.5919 131.836 30.4921C128.443 30.4921 126.248 34.7835 125.15 37.3783L124.95 37.9771L124.85 37.3783C124.651 35.6817 124.551 34.0849 124.451 32.3883V32.2885C130.739 24.4043 133.533 18.6158 133.633 13.7256C133.633 10.6318 132.236 8.7356 129.741 8.7356C127.944 8.7356 123.752 10.2326 122.255 24.0051C121.956 26.5999 121.856 29.1947 121.856 31.7895C118.962 35.9811 112.774 43.1667 106.786 43.1667C101.297 43.1667 97.006 38.7755 97.006 30.9911C97.006 20.6118 104.391 14.2246 109.88 14.2246C111.078 14.2246 112.076 14.524 112.874 15.2226C113.673 15.9212 114.072 16.8194 114.072 17.8174C114.072 19.2146 113.573 20.013 113.174 20.7116C113.074 20.9112 112.974 21.1108 112.874 21.3104C112.774 21.51 112.675 21.8094 112.774 22.009C112.874 22.3084 113.273 22.4083 113.772 22.4083C115.07 22.4083 117.066 20.512 117.066 17.6178C117.066 14.6238 114.571 11.53 109.98 11.53C103.094 11.53 93.9122 19.015 93.9122 31.2905C93.9122 39.8733 99.3014 45.8613 106.687 45.8613C111.876 45.8613 117.066 42.1687 121.557 35.8813L121.856 35.4821V35.9811C121.956 38.2765 122.156 40.0729 122.255 41.3703C122.355 42.1687 122.355 42.8673 122.355 43.1667C122.355 43.8653 122.455 44.4641 122.754 44.7635C123.054 45.0629 123.453 45.2625 124.052 45.2625C125.05 45.2625 125.25 44.5639 125.649 42.8673L125.749 42.3683C126.248 40.2725 128.144 33.4861 130.938 33.4861C131.437 33.4861 131.737 33.5859 132.036 33.8853C132.635 34.5839 132.535 35.8813 132.535 37.4781C132.535 38.4761 132.435 39.4741 132.535 40.4721C132.834 43.0669 133.932 44.3643 136.028 44.4641C138.124 44.4641 140.419 42.1687 141.617 40.0729L141.816 39.6737L141.916 40.1727C142.116 41.2705 143.114 45.0629 146.108 45.0629C148.902 45.0629 151.198 42.1687 153.792 36.1807L154.092 35.3823V36.2805C153.992 38.5759 153.892 41.2705 153.892 43.4661C153.892 45.1627 154.092 45.7615 154.79 45.7615H154.99C155.689 45.7615 156.188 45.3623 156.487 44.4641C158.483 37.6777 160.08 34.4841 161.776 34.4841C163.373 34.4841 163.573 37.4781 163.673 42.7675V43.1667C163.673 44.9631 163.772 45.8613 164.97 45.8613C165.868 45.8613 166.068 45.1627 166.467 43.4661C166.567 43.1667 166.667 42.7675 166.766 42.3683C168.363 36.8793 169.661 34.6837 171.257 34.6837C172.655 34.6837 172.755 36.0809 172.755 36.5799C172.854 37.5779 172.754 38.6757 172.555 39.6737C172.455 40.6717 172.355 41.5699 172.355 42.5679C172.455 44.6637 173.653 45.8613 175.649 45.9611C178.343 45.9611 180.639 42.8673 182.735 36.7795L182.834 36.3803L183.034 36.7795C183.433 37.7775 183.932 39.0749 184.331 40.5719V40.6717V40.7715C182.335 45.2625 180.838 50.2526 180.838 52.9472C180.838 56.4402 182.435 58.7356 184.93 58.8354C186.327 58.8354 189.421 58.3364 189.521 53.2466C189.521 51.1508 189.022 48.2566 188.024 44.5639L187.924 44.1647L188.323 44.3643C190.02 44.5639 191.517 45.0629 192.914 45.0629ZM124.651 27.8973C124.751 26.5999 124.85 25.4023 124.95 24.2047C125.948 16.7196 127.944 11.4302 129.94 11.4302C130.838 11.4302 131.337 12.1288 131.337 13.526C131.337 16.9192 129.142 21.8094 124.95 27.9971L124.651 28.4961V27.8973ZM186.826 54.9432C186.527 55.3424 186.128 55.542 185.529 55.542C184.93 55.542 184.431 55.3424 184.132 54.9432C183.234 53.7456 183.533 50.9512 184.93 45.8613C185.13 45.2625 185.329 44.6637 185.529 44.0649L185.729 43.5659L185.828 44.0649C187.525 49.8534 187.924 53.546 186.826 54.9432ZM187.425 39.8733L187.325 39.5739V39.4741C189.222 35.4821 191.517 33.1867 193.413 33.1867C195.609 33.1867 197.106 35.1827 197.106 37.9771C197.106 39.8733 196.307 40.8713 195.609 41.4701C194.81 42.1687 193.812 42.4681 192.715 42.4681C190.12 42.5679 188.423 41.1707 187.425 39.8733ZM64.2715 44.3643C67.2655 44.1647 69.6607 40.0729 70.4591 38.3763L70.6587 37.8773L70.7585 38.3763C71.1577 40.7715 72.5549 44.8633 76.6467 44.9631C78.4431 44.9631 80.4391 43.8653 82.5349 41.7695L82.7345 41.5699L82.8343 41.7695C84.2315 44.0649 86.0279 45.3623 88.0239 45.1627C90.9182 44.9631 92.7146 42.9671 92.8144 41.5699C92.8144 41.1707 92.7146 40.8713 92.515 40.6717C92.2156 40.3723 91.9162 40.3723 91.6168 40.5719L91.517 40.6717C90.8184 41.3703 89.6208 42.5679 88.2236 42.5679C86.5269 42.6677 85.3293 41.6697 84.5309 39.5739V39.4741L84.6307 39.3743C89.2216 33.2865 92.515 24.1049 92.2156 17.9172C92.1158 15.023 91.2176 11.6298 88.1238 11.6298H87.8244C86.6267 11.7296 85.5289 12.2286 84.6307 13.3264C81.7365 16.6198 80.2395 24.6039 80.7385 33.6857C80.8383 35.5819 81.1377 37.3783 81.7365 38.9751V39.0749L81.6367 39.1747C79.9401 41.1707 78.2435 42.2685 76.8463 42.2685C73.5529 42.2685 73.6527 36.7795 73.9521 32.1887C74.0519 31.1907 74.0519 30.5919 73.7525 30.1927C73.5529 29.8933 73.1537 29.7935 72.6547 29.7935H72.5549C71.3573 29.7935 71.1577 29.9931 70.5589 31.7895C69.3613 35.3823 66.8663 41.3703 64.3713 41.3703C63.6727 41.3703 63.1737 41.1707 62.7745 40.6717C61.5769 39.1747 62.4751 35.3823 63.1737 32.2885C63.2735 31.7895 63.4731 31.1907 63.5729 30.6917C63.7725 29.9931 63.6727 29.3943 63.4731 29.0949C63.1737 28.7955 62.6747 28.5959 62.0759 28.6957C60.978 28.7955 60.3792 29.1947 59.98 31.1907L59.8802 31.5899V31.6897C59.3812 30.9911 58.483 30.1927 56.8862 30.1927C56.7864 30.1927 56.5868 30.1927 56.3872 30.1927C54.5908 30.2925 52.5948 31.5899 51.0978 33.3863C49.4012 35.5819 48.503 38.2765 48.8024 41.0709C48.8024 41.1707 48.8024 41.3703 48.9022 41.4701V41.5699L48.8024 41.6697C47.8044 42.7675 46.7066 43.3663 45.7086 43.3663C44.1118 43.3663 43.2136 42.1687 43.2136 40.1727C43.2136 36.7795 45.509 26.6997 45.509 23.0071C45.509 19.1148 43.8124 17.019 40.7186 16.9192C36.3273 16.9192 32.8343 21.9092 29.5409 32.1887C29.2415 33.1867 28.9421 34.1847 28.6427 35.1827L28.1437 36.7795L28.2435 35.1827C28.5429 31.6897 28.7425 28.2965 28.8423 24.8035C29.0419 19.8134 28.3433 16.6198 26.7465 15.023C25.9481 14.1248 24.8503 13.7256 23.3533 13.7256C17.9641 13.7256 15.3693 22.8075 13.4731 29.2945C12.8743 31.1907 11.7764 35.5819 11.0778 38.5759L11.477 37.8773C11.7764 34.0849 12.7745 24.7037 12.6747 19.6138C12.5749 14.1248 10.7784 11.6298 6.78643 11.6298C4.59082 11.6298 3.19361 12.7276 2.29541 13.6258C0.798403 14.9232 0 17.019 0 18.8154C0 19.9132 0.698603 20.9112 1.1976 20.9112C1.49701 20.9112 1.69661 20.4122 1.79641 20.2126C3.09381 16.1208 4.69062 14.1248 6.68663 14.1248C7.58483 14.1248 8.18363 14.4242 8.68263 14.9232C10.2794 16.6198 9.98004 21.3104 9.48104 29.8933C9.38124 32.4881 9.18164 35.6817 8.98204 39.1747C8.98204 39.7735 8.88224 40.3723 8.88224 40.9711C8.68263 43.4661 8.58283 45.3623 9.48104 45.4621C10.6786 45.6617 11.477 45.1627 11.8762 43.9651C12.475 42.1687 13.7725 37.2785 16.3673 28.3963C18.8623 19.9132 20.7585 16.7196 23.1537 16.7196C25.9481 16.7196 26.1477 21.51 25.6487 31.5899C25.5489 33.6857 25.3493 36.1807 25.2495 38.7755C25.2495 39.1747 25.2495 39.4741 25.2495 39.8733C25.1497 42.0689 25.0499 43.7655 25.6487 44.4641C25.8483 44.6637 26.1477 44.7635 26.4471 44.7635C27.6447 44.7635 28.0439 43.6657 28.6427 41.9691C28.7425 41.6697 28.8423 41.3703 28.9421 40.9711C33.0339 29.5939 36.1277 19.7136 40.2196 19.7136C41.4172 19.7136 42.4152 20.7116 42.4152 22.7077C42.4152 27.1987 40.2196 35.8813 40.2196 40.2725C40.2196 41.8693 40.7186 43.2665 41.517 44.2645C42.4152 45.2625 43.6128 45.8613 45.1098 45.8613C46.507 45.8613 47.9042 45.1627 49.4012 43.8653L49.501 43.7655L49.6008 43.8653C50.5988 45.1627 52.0958 45.8613 53.7924 45.6617C56.3872 45.4621 58.483 43.1667 59.2814 41.0709L59.481 40.6717L59.6806 41.0709C60.2794 42.6677 61.5769 44.6637 64.2715 44.3643ZM87.7246 14.6238C88.024 14.6238 88.3233 14.7236 88.523 15.023C89.521 16.4202 89.521 21.4102 87.8244 27.0989C86.8263 30.3923 85.5289 33.3863 83.9321 35.9811L83.6327 36.3803L83.5329 35.8813C83.3333 34.4841 83.2335 33.0869 83.2335 31.8893C82.9341 23.3065 85.5289 14.7236 87.7246 14.6238ZM59.481 34.6837C58.5828 38.2765 56.8862 42.5679 53.7924 42.8673H53.493C52.1956 42.8673 51.497 42.0689 51.3972 40.3723C51.1976 38.2765 52.0958 35.8813 53.6926 34.1847C54.6906 33.0869 55.7884 32.4881 56.7864 32.4881C58.1836 32.5879 59.0818 33.5859 59.481 34.6837ZM73.7525 21.51C72.6547 21.51 71.6567 22.4082 71.6567 23.5061C71.6567 24.6039 72.5549 25.5021 73.6527 25.5021V25.7017V25.5021C74.7505 25.5021 75.6487 24.6039 75.7485 23.5061C75.8483 22.4082 74.9501 21.51 73.7525 21.51ZM145.309 21.51C144.212 21.51 143.214 22.4082 143.214 23.5061C143.214 24.6039 144.112 25.5021 145.21 25.5021V25.7017V25.5021C146.307 25.5021 147.305 24.6039 147.305 23.5061C147.405 22.4082 146.507 21.51 145.309 21.51Z" fill="currentColor"></path>
                                     </svg>
-                                    <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
-                                    " With Preline, we're able to easily track our performance in full detail. It's
-                                    become an essential tool for us to grow and engage with our audience. " </em></p>
+                                    <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"> <em>
+                      " With Preline, we're able to easily track our performance
+                      in full detail. It's become an essential tool for us to
+                      grow and engage with our audience. " </em> </p>
                                 </div>
                                 <div class="p-4 rounded-b-xl md:px-6">
                                     <h3 class="text-sm font-semibold text-gray-800 sm:text-base dark:text-gray-200">
-                                Josh Tyson </h3>
-                                    <p class="text-sm text-gray-500">
-                                Product Manager | Capsule </p>
+                    Josh Tyson </h3>
+                                    <p class="text-sm text-gray-500">Product Manager | Capsule</p>
                                 </div>
                             </div>
                             <!-- End Card -->
@@ -959,8 +1028,7 @@
                                             <path d="M110.659 30.7161C114.431 30.7161 114.152 26.4546 114.152 26.4546V17.9316H117.086V26.3847C117.086 26.3847 117.086 26.4546 117.086 26.6642C117.086 27.9217 116.946 33.3009 110.728 33.3009H110.519C104.301 33.3009 104.162 27.9915 104.162 26.6642C104.162 26.5245 104.162 26.3847 104.162 26.3847V17.9316H107.096V26.3847C107.166 26.3847 106.886 30.7161 110.659 30.7161Z" fill="currentColor"></path>
                                             <path d="M136.926 28.3405C136.088 29.8076 134.411 30.6459 132.595 30.6459C130.08 30.6459 128.054 29.0392 127.705 26.5242H139.93C139.93 26.1749 139.93 25.6859 139.93 25.3366C139.93 20.5861 136.717 17.5122 132.455 17.5122C128.194 17.5122 124.771 20.5162 124.771 25.3366C124.771 30.1569 128.194 33.2308 132.455 33.2308C135.11 33.2308 137.625 32.113 139.022 29.8775L136.926 28.3405ZM132.525 20.2368C134.97 20.2368 136.717 21.7737 137.136 24.2887H127.774C128.124 21.7038 130.01 20.2368 132.525 20.2368Z" fill="currentColor"></path>
                                             <path d="M80.9681 17.582C78.8723 17.582 76.7066 18.5601 75.7286 20.2367V17.8615H72.7944V40.2168H75.7286V30.7158C76.7066 32.4623 78.8723 33.3006 80.9681 33.3006C85.0898 33.3006 88.513 30.2966 88.513 25.4762C88.513 20.7257 85.0898 17.582 80.9681 17.582ZM80.6886 30.576C78.2435 30.576 75.6587 28.8295 75.6587 25.616C75.6587 22.4024 78.1737 20.3066 80.8284 20.3066C83.5529 20.3066 85.7186 22.3325 85.7186 25.3365C85.6487 28.4104 83.3433 30.576 80.6886 30.576Z" fill="currentColor"></path>
-                                            <path d="M122.605 9.68799H119.67V32.9515H122.605V9.68799Z" fill="currentColor">
-</path>
+                                            <path d="M122.605 9.68799H119.67V32.9515H122.605V9.68799Z" fill="currentColor"></path>
                                             <path d="M64.4113 17.4424C64.3414 17.4424 64.2716 17.4424 64.2017 17.4424C64.2017 17.4424 61.6867 17.4424 59.3115 18.4204L59.5909 19.1889L60.1498 20.7957C60.9881 20.4464 62.3853 20.0272 64.2017 19.9574C64.2716 19.9574 64.3414 19.9574 64.4113 19.9574C67.6249 19.9574 67.6947 22.8915 67.6947 22.8915V23.6599L62.6648 23.5901C62.3155 23.5901 60.2895 23.5901 58.8225 24.9873C58.4732 25.3366 58.1937 25.6859 57.9841 26.1051C57.7047 26.7338 57.4951 27.4324 57.4951 28.2009C57.4951 29.1789 57.7746 30.0871 58.1937 30.8556C58.4033 31.2049 58.6827 31.5542 58.9622 31.8336C59.9402 32.7418 61.3374 33.3007 62.8744 33.3007C63.0141 33.3007 63.1538 33.3007 63.2237 33.3007C64.9702 33.2308 66.577 32.5322 67.6249 30.8556V32.9514H70.2097V23.4504C70.2796 21.0053 68.7426 17.4424 64.4113 17.4424ZM63.1538 30.9254C62.2456 30.9953 60.1498 30.5063 60.1498 28.2009C60.1498 27.5721 60.7087 26.1051 62.5251 26.1051C64.3414 26.1051 67.555 26.1051 67.555 26.1051C67.6249 28.8995 65.9482 30.7857 63.1538 30.9254Z" fill="currentColor"></path>
                                             <path d="M49.1118 30.3667C44.4311 30.3667 40.8682 26.5942 40.8682 21.9136C40.8682 17.233 44.501 13.3906 49.1118 13.3906C51.3473 13.3906 53.3034 14.2988 54.7704 15.696L56.5169 13.3208C54.6307 11.5743 51.976 10.5264 49.1118 10.5264C42.8243 10.5264 37.8643 15.6262 37.8643 21.9136C37.8643 28.201 42.8243 33.3008 49.1118 33.3008C51.6966 33.3008 54.002 32.4625 55.8183 31.1351L54.8403 28.4106C53.2335 29.5284 51.0678 30.3667 49.1118 30.3667Z" fill="currentColor"></path>
                                             <path d="M0 30.2965H3.63273V28.061H8.24351V30.2965H11.8064V12.9712H0V30.2965Z" fill="currentColor"></path>
@@ -984,38 +1052,33 @@
                                             </clipPath>
                                         </defs>
                                     </svg>
-                                    <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"><em>
-                                    " In September, I will be using this theme for 2 years. I went through multiple
-                                    updates and changes and I'm very glad to see the consistency and effort made by the
-                                    team. " </em></p>
+                                    <p class="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white"> <em>
+                      " In September, I will be using this theme for 2 years. I
+                      went through multiple updates and changes and I'm very
+                      glad to see the consistency and effort made by the team. " </em> </p>
                                 </div>
                                 <div class="p-4 rounded-b-xl md:px-6">
                                     <h3 class="text-sm font-semibold text-gray-800 sm:text-base dark:text-gray-200">
-                                Luisa </h3>
+                    Luisa </h3>
                                     <p class="text-sm text-gray-500">
-                                Senior Director of Operations | Fitbit </p>
+                    Senior Director of Operations | Fitbit </p>
                                 </div>
                             </div>
                             <!-- End Card -->
                         </div>
                         <!-- End Grid -->
                     </div>
-                    <h2>Meet our team</h2>
-                    <a href="https://wind-ui.com/components/layouts/" class="underline">WIND UI GRID
-                LAYOUTS</a>
+                    <h2>Meet our team</h2><a href="https://wind-ui.com/components/layouts/" class="underline">WIND UI GRID LAYOUTS</a>
                     <div class="flex h-fit justify-center w-fit">
                         <div class="antialiased sans-serif">
                             <div x-data="app" x-cloak>
                                 <div class="container md:py-10 mx-auto px-4 py-2">
                                     <div>
-                                        <div class="hidden">
-                                            <span class="font-bold my-1 text-gray-700 block">Results (would
-                                        normally be hidden)</span>
-                                            <input type="text" name="date_from" x-model="dateFromYmd">
-                                            <input type="text" name="date_to" x-model="dateToYmd">
+                                        <div class="hidden"><span class="font-bold my-1 text-gray-700 block">Results (would normally be hidden)</span>
+                                            <input type="text" name="date_from" x-model="dateFromYmd"/>
+                                            <input type="text" name="date_to" x-model="dateToYmd"/>
                                         </div>
-                                        <label for="datepicker" class="block font-bold mb-1 text-gray-700">Select Date
-                                            Range
+                                        <label for="datepicker" class="block font-bold mb-1 text-gray-700">Select Date Range
 </label>
                                         <div class="relative" @keydown.escape="closeDatepicker()" @click.outside="closeDatepicker()">
                                             <div class="inline-flex items-center border rounded-md mt-3 bg-gray-200">
@@ -1026,7 +1089,7 @@
                                             <div class="bg-white mt-2 rounded-lg shadow p-4 absolute" style="width: 17rem" x-show="showDatepicker" x-transition>
                                                 <div class="flex flex-col items-center">
                                                     <div class="w-full flex justify-between items-center mb-2">
-                                                        <div> <span x-text="MONTH_NAMES[month]" class="text-lg font-bold text-gray-800"></span> <span x-text="year" class="ml-1 text-lg text-gray-600 font-normal"></span>
+                                                        <div><span x-text="MONTH_NAMES[month]" class="text-lg font-bold text-gray-800"></span><span x-text="year" class="ml-1 text-lg text-gray-600 font-normal"></span>
                                                         </div>
                                                         <div>
                                                             <button type="button" class="transition ease-in-out duration-100 inline-flex cursor-pointer hover:bg-gray-200 p-1 rounded-full" @click="if (month == 0) {year--; month=11;} else {month--;} getNoOfDays()">
@@ -1054,8 +1117,7 @@
                                                         </template>
                                                         <template x-for="(date, dateIndex) in no_of_days" :key="dateIndex">
                                                             <div style="width: 14.28%">
-                                                                <div @click="getDateValue(date, false)" @mouseover="getDateValue(date, true)" x-text="date" class="p-1 cursor-pointer text-center text-sm leading-none leading-loose transition ease-in-out duration-100" :class="{'font-bold': isToday(date) == true, 'bg-blue-800 text-white rounded-l-full': isDateFrom(date) == true, 'bg-blue-800 text-white rounded-r-full': isDateTo(date) == true, 'bg-blue-200': isInRange(date) == true }">
-</div>
+                                                                <div @click="getDateValue(date, false)" @mouseover="getDateValue(date, true)" x-text="date" class="p-1 cursor-pointer text-center text-sm leading-none leading-loose transition ease-in-out duration-100" :class="{'font-bold': isToday(date) == true, 'bg-blue-800 text-white rounded-l-full': isDateFrom(date) == true, 'bg-blue-800 text-white rounded-r-full': isDateTo(date) == true, 'bg-blue-200': isInRange(date) == true }"></div>
                                                             </div>
                                                         </template>
                                                     </div>
@@ -1066,221 +1128,253 @@
                                 </div>
                             </div>
                             <script>
-                        const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-                        const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                const MONTH_NAMES = [
+                  "January",
+                  "February",
+                  "March",
+                  "April",
+                  "May",
+                  "June",
+                  "July",
+                  "August",
+                  "September",
+                  "October",
+                  "November",
+                  "December",
+                ];
+                const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-                        document.addEventListener('alpine:init', () => {
-                            Alpine.data('app', () => ({
-                                showDatepicker: false,
-                                dateFromYmd: '',
-                                dateToYmd: '',
-                                outputDateFromValue: '',
-                                outputDateToValue: '',
-                                dateFromValue: '',
-                                dateToValue: '',
-                                currentDate: null,
-                                dateFrom: null,
-                                dateTo: null,
-                                endToShow: '',
-                                selecting: false,
-                                month: '',
-                                year: '',
-                                no_of_days: [],
-                                blankdays: [],
+                document.addEventListener("alpine:init", () => {
+                  Alpine.data("app", () => ({
+                    showDatepicker: false,
+                    dateFromYmd: "",
+                    dateToYmd: "",
+                    outputDateFromValue: "",
+                    outputDateToValue: "",
+                    dateFromValue: "",
+                    dateToValue: "",
+                    currentDate: null,
+                    dateFrom: null,
+                    dateTo: null,
+                    endToShow: "",
+                    selecting: false,
+                    month: "",
+                    year: "",
+                    no_of_days: [],
+                    blankdays: [],
 
-                                convertFromYmd(dateYmd) {
-                                    const year = Number(dateYmd.substr(0, 4));
-                                    const month = Number(dateYmd.substr(5, 2)) - 1;
-                                    const date = Number(dateYmd.substr(8, 2));
+                    convertFromYmd(dateYmd) {
+                      const year = Number(dateYmd.substr(0, 4));
+                      const month = Number(dateYmd.substr(5, 2)) - 1;
+                      const date = Number(dateYmd.substr(8, 2));
 
-                                    return new Date(year, month, date);
-                                },
+                      return new Date(year, month, date);
+                    },
 
-                                convertToYmd(dateObject) {
-                                    const year = dateObject.getFullYear();
-                                    const month = dateObject.getMonth() + 1;
-                                    const date = dateObject.getDate();
+                    convertToYmd(dateObject) {
+                      const year = dateObject.getFullYear();
+                      const month = dateObject.getMonth() + 1;
+                      const date = dateObject.getDate();
 
-                                    return year + "-" + ('0' + month).slice(-2) + "-" + ('0' + date).slice(-2);
-                                },
+                      return (
+                        year +
+                        "-" +
+                        ("0" + month).slice(-2) +
+                        "-" +
+                        ("0" + date).slice(-2)
+                      );
+                    },
 
-                                init() {
-                                    this.selecting = (this.endToShow === 'to' && this.dateTo) || (this.endToShow === 'from' && this.dateFrom);
-                                    if (!this.dateFrom) {
-                                        if (this.dateFromYmd) {
-                                            this.dateFrom = this.convertFromYmd(this.dateFromYmd);
-                                        }
-                                    }
-                                    if (!this.dateTo) {
-                                        if (this.dateToYmd) {
-                                            this.dateTo = this.convertFromYmd(this.dateToYmd);
-                                        }
-                                    }
-                                    if (!this.dateFrom) {
-                                        this.dateFrom = this.dateTo;
-                                    }
-                                    if (!this.dateTo) {
-                                        this.dateTo = this.dateFrom;
-                                    }
-                                    if (this.endToShow === 'from' && this.dateFrom) {
-                                        this.currentDate = this.dateFrom;
-                                    } else if (this.endToShow === 'to' && this.dateTo) {
-                                        this.currentDate = this.dateTo;
-                                    } else {
-                                        this.currentDate = new Date();
-                                    }
-                                    currentMonth = this.currentDate.getMonth();
-                                    currentYear = this.currentDate.getFullYear();
-                                    if (this.month !== currentMonth || this.year !== currentYear) {
-                                        this.month = currentMonth;
-                                        this.year = currentYear;
-                                        this.getNoOfDays();
-                                    }
-                                    this.setDateValues();
-                                },
+                    init() {
+                      this.selecting =
+                        (this.endToShow === "to" && this.dateTo) ||
+                        (this.endToShow === "from" && this.dateFrom);
+                      if (!this.dateFrom) {
+                        if (this.dateFromYmd) {
+                          this.dateFrom = this.convertFromYmd(this.dateFromYmd);
+                        }
+                      }
+                      if (!this.dateTo) {
+                        if (this.dateToYmd) {
+                          this.dateTo = this.convertFromYmd(this.dateToYmd);
+                        }
+                      }
+                      if (!this.dateFrom) {
+                        this.dateFrom = this.dateTo;
+                      }
+                      if (!this.dateTo) {
+                        this.dateTo = this.dateFrom;
+                      }
+                      if (this.endToShow === "from" && this.dateFrom) {
+                        this.currentDate = this.dateFrom;
+                      } else if (this.endToShow === "to" && this.dateTo) {
+                        this.currentDate = this.dateTo;
+                      } else {
+                        this.currentDate = new Date();
+                      }
+                      currentMonth = this.currentDate.getMonth();
+                      currentYear = this.currentDate.getFullYear();
+                      if (
+                        this.month !== currentMonth ||
+                        this.year !== currentYear
+                      ) {
+                        this.month = currentMonth;
+                        this.year = currentYear;
+                        this.getNoOfDays();
+                      }
+                      this.setDateValues();
+                    },
 
-                                isToday(date) {
-                                    const today = new Date();
-                                    const d = new Date(this.year, this.month, date);
+                    isToday(date) {
+                      const today = new Date();
+                      const d = new Date(this.year, this.month, date);
 
-                                    return today.toDateString() === d.toDateString();
-                                },
+                      return today.toDateString() === d.toDateString();
+                    },
 
-                                isDateFrom(date) {
-                                    const d = new Date(this.year, this.month, date);
+                    isDateFrom(date) {
+                      const d = new Date(this.year, this.month, date);
 
-                                    if (!this.dateFrom) {
-                                        return false;
-                                    }
+                      if (!this.dateFrom) {
+                        return false;
+                      }
 
-                                    return d.getTime() === this.dateFrom.getTime();
-                                },
+                      return d.getTime() === this.dateFrom.getTime();
+                    },
 
-                                isDateTo(date) {
-                                    const d = new Date(this.year, this.month, date);
+                    isDateTo(date) {
+                      const d = new Date(this.year, this.month, date);
 
-                                    if (!this.dateTo) {
-                                        return false;
-                                    }
+                      if (!this.dateTo) {
+                        return false;
+                      }
 
-                                    return d.getTime() === this.dateTo.getTime();
-                                },
+                      return d.getTime() === this.dateTo.getTime();
+                    },
 
-                                isInRange(date) {
-                                    const d = new Date(this.year, this.month, date);
+                    isInRange(date) {
+                      const d = new Date(this.year, this.month, date);
 
-                                    return d > this.dateFrom && d < this.dateTo;
-                                },
+                      return d > this.dateFrom && d < this.dateTo;
+                    },
 
-                                outputDateValues() {
-                                    if (this.dateFrom) {
-                                        this.outputDateFromValue = this.dateFrom.toDateString();
-                                        this.dateFromYmd = this.convertToYmd(this.dateFrom);
-                                    }
-                                    if (this.dateTo) {
-                                        this.outputDateToValue = this.dateTo.toDateString();
-                                        this.dateToYmd = this.convertToYmd(this.dateTo);
-                                    }
-                                },
+                    outputDateValues() {
+                      if (this.dateFrom) {
+                        this.outputDateFromValue = this.dateFrom.toDateString();
+                        this.dateFromYmd = this.convertToYmd(this.dateFrom);
+                      }
+                      if (this.dateTo) {
+                        this.outputDateToValue = this.dateTo.toDateString();
+                        this.dateToYmd = this.convertToYmd(this.dateTo);
+                      }
+                    },
 
-                                setDateValues() {
-                                    if (this.dateFrom) {
-                                        this.dateFromValue = this.dateFrom.toDateString();
-                                    }
-                                    if (this.dateTo) {
-                                        this.dateToValue = this.dateTo.toDateString();
-                                    }
-                                },
+                    setDateValues() {
+                      if (this.dateFrom) {
+                        this.dateFromValue = this.dateFrom.toDateString();
+                      }
+                      if (this.dateTo) {
+                        this.dateToValue = this.dateTo.toDateString();
+                      }
+                    },
 
-                                getDateValue(date, temp) {
-                                    // if we are in mouse over mode but have not started selecting a range, there is nothing more to do.
-                                    if (temp && !this.selecting) {
-                                        return;
-                                    }
-                                    let selectedDate = new Date(this.year, this.month, date);
-                                    if (this.endToShow === 'from') {
-                                        this.dateFrom = selectedDate;
-                                        if (!this.dateTo) {
-                                            this.dateTo = selectedDate;
-                                        } else if (selectedDate > this.dateTo) {
-                                            this.endToShow = 'to';
-                                            this.dateFrom = this.dateTo;
-                                            this.dateTo = selectedDate;
-                                        }
-                                    } else if (this.endToShow === 'to') {
-                                        this.dateTo = selectedDate;
-                                        if (!this.dateFrom) {
-                                            this.dateFrom = selectedDate;
-                                        } else if (selectedDate < this.dateFrom) {
-                                            this.endToShow = 'from';
-                                            this.dateTo = this.dateFrom;
-                                            this.dateFrom = selectedDate;
-                                        }
-                                    }
-                                    this.setDateValues();
+                    getDateValue(date, temp) {
+                      // if we are in mouse over mode but have not started selecting a range, there is nothing more to do.
+                      if (temp && !this.selecting) {
+                        return;
+                      }
+                      let selectedDate = new Date(this.year, this.month, date);
+                      if (this.endToShow === "from") {
+                        this.dateFrom = selectedDate;
+                        if (!this.dateTo) {
+                          this.dateTo = selectedDate;
+                        } else if (selectedDate > this.dateTo) {
+                          this.endToShow = "to";
+                          this.dateFrom = this.dateTo;
+                          this.dateTo = selectedDate;
+                        }
+                      } else if (this.endToShow === "to") {
+                        this.dateTo = selectedDate;
+                        if (!this.dateFrom) {
+                          this.dateFrom = selectedDate;
+                        } else if (selectedDate < this.dateFrom) {
+                          this.endToShow = "from";
+                          this.dateTo = this.dateFrom;
+                          this.dateFrom = selectedDate;
+                        }
+                      }
+                      this.setDateValues();
 
-                                    if (!temp) {
-                                        if (this.selecting) {
-                                            this.outputDateValues();
-                                            this.closeDatepicker();
-                                        }
-                                        this.selecting = !this.selecting;
-                                    }
-                                },
+                      if (!temp) {
+                        if (this.selecting) {
+                          this.outputDateValues();
+                          this.closeDatepicker();
+                        }
+                        this.selecting = !this.selecting;
+                      }
+                    },
 
-                                getNoOfDays() {
-                                    let daysInMonth = new Date(this.year, this.month + 1, 0).getDate();
+                    getNoOfDays() {
+                      let daysInMonth = new Date(
+                        this.year,
+                        this.month + 1,
+                        0
+                      ).getDate();
 
-                                    // find where to start calendar day of week
-                                    let dayOfWeek = new Date(this.year, this.month).getDay();
-                                    let blankdaysArray = [];
-                                    for (var i = 1; i <= dayOfWeek; i++) {
-                                        blankdaysArray.push(i);
-                                    }
+                      // find where to start calendar day of week
+                      let dayOfWeek = new Date(this.year, this.month).getDay();
+                      let blankdaysArray = [];
+                      for (var i = 1; i <= dayOfWeek; i++) {
+                        blankdaysArray.push(i);
+                      }
 
-                                    let daysArray = [];
-                                    for (var i = 1; i <= daysInMonth; i++) {
-                                        daysArray.push(i);
-                                    }
+                      let daysArray = [];
+                      for (var i = 1; i <= daysInMonth; i++) {
+                        daysArray.push(i);
+                      }
 
-                                    this.blankdays = blankdaysArray;
-                                    this.no_of_days = daysArray;
-                                },
+                      this.blankdays = blankdaysArray;
+                      this.no_of_days = daysArray;
+                    },
 
-                                closeDatepicker() {
-                                    this.endToShow = '';
-                                    this.showDatepicker = false;
-                                }
-                            }))
-                        })
-                    </script>
+                    closeDatepicker() {
+                      this.endToShow = "";
+                      this.showDatepicker = false;
+                    },
+                  }));
+                });
+              </script>
                         </div>
                     </div>
-                    <div id="about" class="relative bg-white overflow-hidden mt-16"> 
-                        <div class="max-w-7xl mx-auto"> 
-                            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"> 
-                                <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"> 
-                                    <polygon points="50,0 100,0 50,100 0,100"></polygon>                                     
-                                </svg>                                 
-                                <div class="pt-1"></div>                                 
-                                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"> 
-                                    <div class="sm:text-center lg:text-left"> 
-                                        <h2 class="my-6 text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"> 
-                        About me </h2> 
-                                        <p> 
-                        Donec porttitor, enim ut dapibus lobortis, lectus sem tincidunt dui, eget ornare lectus ex non
-                        libero. Nam rhoncus diam ultrices porttitor laoreet. Ut mollis fermentum ex, vel viverra lorem
-                        volutpat sodales. In ornare porttitor odio sit amet laoreet. Sed laoreet, nulla a posuere
-                        ultrices, purus nulla tristique turpis, hendrerit rutrum augue quam ut est. Fusce malesuada
-                        posuere libero, vitae dapibus eros facilisis euismod. Sed sed lobortis justo, ut tincidunt
-                        velit. Mauris in maximus eros. </p> 
-                                    </div>                                     
-                                </main>                                 
-                            </div>                             
-                        </div>                         
-                        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"> 
-                            <img class="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_960_720.jpg" alt=""> 
-                        </div>                         
+                    <div id="about" class="relative bg-white overflow-hidden mt-16">
+                        <div class="max-w-7xl mx-auto">
+                            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                                <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                                    <polygon points="50,0 100,0 50,100 0,100"></polygon>
+                                </svg>
+                                <div class="pt-1"></div>
+                                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                                    <div class="sm:text-center lg:text-left">
+                                        <h2 class="my-6 text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
+                      About me </h2>
+                                        <p>
+                      Donec porttitor, enim ut dapibus lobortis, lectus sem
+                      tincidunt dui, eget ornare lectus ex non libero. Nam
+                      rhoncus diam ultrices porttitor laoreet. Ut mollis
+                      fermentum ex, vel viverra lorem volutpat sodales. In
+                      ornare porttitor odio sit amet laoreet. Sed laoreet, nulla
+                      a posuere ultrices, purus nulla tristique turpis,
+                      hendrerit rutrum augue quam ut est. Fusce malesuada
+                      posuere libero, vitae dapibus eros facilisis euismod. Sed
+                      sed lobortis justo, ut tincidunt velit. Mauris in maximus
+                      eros. </p>
+                                    </div>
+                                </main>
+                            </div>
+                        </div>
+                        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                            <img class="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_960_720.jpg" alt=""/>
+                        </div>
                     </div>
                 </div>
                 <!-- Icon Blocks -->

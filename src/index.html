@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" class="dark min-h-[10vh]" data-pgc-master="master.html">
     <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title data-pgc-field="title">{{meta.siteName}}</title>
-        <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
+        <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link">
         <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -27,20 +27,21 @@
                     </li>
                     <li><a href="/blog">Blog</a>
                     </li>
+                    <li><a href="/contact">Contact</a>
+                    </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
                     <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                         </svg>                         
-                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"/>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
                         </svg>
-                    </button>
-                    <a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
+                    </button><a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
                 </div>
                 <label class="cursor-pointer place-self-end px-3 py-6 relative self-center z-40 md:hidden" for="mobile-menu">
-                    <input class="peer hidden" type="checkbox" id="mobile-menu"/>
+                    <input class="peer hidden" type="checkbox" id="mobile-menu">
                     <div class="after:absolute after:bg-black after:block after:bottom-[-0.35rem] after:content-[''] after:dark:bg-white after:duration-200 after:ease-out after:h-full after:right-0 after:transition-all after:w-full before:absolute before:bg-black before:block before:content-[''] before:dark:bg-white before:duration-200 before:ease-out before:h-full before:top-[-0.35rem] before:transition-all before:w-full before:z-50 bg-black bg-transparent block content-[''] dark:bg-white h-[1px] peer-checked:bg-transparent relative w-7 z-50 after:peer-checked:-rotate-45 after:peer-checked:bottom-0 after:peer-checked:transform after:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:top-0 before:peer-checked:transform before:peer-checked:w-full"></div>
                     <div class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block">&nbsp;</div>
                     <div class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0">
@@ -108,7 +109,6 @@
                     </ul>
                 </div>
             </section>             
-
             <section class="hidden p-[10%] rounded-bl-3xl rounded-br-3xl text-black text-center">
                 <h2 class="pb-20 text-center"> Our operations</h2>
                 <p class="pb-24">We specialize in small business web design and development for clients anywhere in the EU. We code on the JamStack ensuring best performance, which helps drive more customers to your business which translates to more revenue.</p>
@@ -127,7 +127,6 @@
                     </li>
                 </ul>
             </section>             
-
             <section class="bg-white fle flex flex-col items-center p-[10%] py-32 rounded-b-3xl text-black md:py-64">
                 <h2 class="pb-20 text-center"><span class="text-green-300">
     0€  Down </span>,  100€ Per Month,<br/> 12 Month <span class="text-slate-400">Minimum Contract</span></h2>
@@ -144,7 +143,7 @@
                                     <rect width="62" height="45" fill="white"/>
                                 </clippath>
                             </defs>
-                        </svg>                                                                                                                                                                                                                                                                                                                                        Hosting fees included
+                        </svg>                                                                                                                                                                                                                                                                                                                                                                Hosting fees included
                     </li>
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,7 +155,7 @@
                                     <rect width="62" height="45" fill="white"/>
                                 </clippath>
                             </defs>
-                        </svg>                                                                                                                                                                                                                                                                                                                                 Unlimited edits
+                        </svg>                                                                                                                                                                                                                                                                                                                                                         Unlimited edits
                     </li>
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -168,7 +167,7 @@
                                     <rect width="62" height="45" fill="white"/>
                                 </clippath>
                             </defs>
-                        </svg>                                                                                                                                                                                                                                                                                                                                 24/7 Customer service
+                        </svg>                                                                                                                                                                                                                                                                                                                                                         24/7 Customer service
                     </li>
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -180,7 +179,7 @@
                                     <rect width="62" height="45" fill="white"/>
                                 </clippath>
                             </defs>
-                        </svg>                                                                                                                                                                                                                                                                                                                                 Web deisgn and development
+                        </svg>                                                                                                                                                                                                                                                                                                                                                         Web deisgn and development
                     </li>
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,7 +191,7 @@
                                     <rect width="62" height="45" fill="white"/>
                                 </clippath>
                             </defs>
-                        </svg>                                                                                                                                                                                                                                                                                                                                     JamStack site with perfect scores
+                        </svg>                                                                                                                                                                                                                                                                                                                                                             JamStack site with perfect scores
                     </li>
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -204,11 +203,10 @@
                                     <rect width="62" height="45" fill="white"/>
                                 </clippath>
                             </defs>
-                        </svg>                                                                                                                                                                                                                                                                                                                                 Analytics and tracking
+                        </svg>                                                                                                                                                                                                                                                                                                                                                         Analytics and tracking
                     </li>
                 </ul>
             </section>             
-
             <section class="bg-primary-800 py-24 py-64 text-black text-white">
                 <div class="container mx-auto">
                     <h2 class="pb-6 text-center">Packages</h2>
@@ -229,7 +227,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                            Starting at 5k**€**
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                    Starting at 5k**€**
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -241,7 +239,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                         5.000€  minimum upfront cost
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                 5.000€  minimum upfront cost
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -253,7 +251,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                            Shopify intergation
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                    Shopify intergation
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +263,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                        Editable content
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                Editable content
                                     </li>
                                 </ul>
                                 <custombutton class="bg-blue mt-16 w-full">
@@ -288,7 +286,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                        100€ per month**
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                100€ per month**
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -300,7 +298,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                        Unlimited Edits
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                Unlimited Edits
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -312,7 +310,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                        Includes Hosting
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                Includes Hosting
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -324,7 +322,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                        24/7 Customer Service
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                24/7 Customer Service
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -336,7 +334,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                        Lifetime Updates
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                Lifetime Updates
                                     </li>
                                 </ul>
                                 <custombutton class="mt-16 w-full">
@@ -359,7 +357,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                        100€ per month**
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                100€ per month**
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -371,7 +369,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                        Unlimited Edits
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                Unlimited Edits
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -383,7 +381,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                        Includes Hosting
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                Includes Hosting
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -395,7 +393,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                        24/7 Customer Service
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                24/7 Customer Service
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -407,7 +405,7 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                        Lifetime Updates
+                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                Lifetime Updates
                                     </li>
                                 </ul>
                                 <custombutton class="mt-16 w-full">
@@ -451,11 +449,11 @@
                 <div class="container mx-auto">
                     <p class="text-green-700 uppercase">FAQ</p>
                     <h2>Answers to our frequently asked questions</h2>
-                    <div class="container pt-20" data-pgc="flowbite-accordion-simple" data-pgc-no-update>
+                    <div class="container py-32" data-pgc="flowbite-accordion-simple">
                         <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
                             <div id="accordion-flush-heading-1">
-                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
-                                    <h4 class="editable text-2xl text-3xl">What is Flowbite?</h4> 
+                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
+                                    <h4 class="editable text-3xl">QUestion</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                                     </svg>
@@ -463,12 +461,12 @@
                             </div>
                             <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
                                 <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                    <p class="editable text-white px-10 mb-2">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+                                    <p class="editable text-white px-10 mb-2">Answer</p>
                                 </div>
                             </div>
                             <div id="accordion-flush-heading-2">
                                 <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
-                                    <h4 class="editable text-2xl text-3xl">Is there a Figma file available?</h4> 
+                                    <h4 class="editable text-3xl">QUestion</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                                     </svg>
@@ -476,26 +474,65 @@
                             </div>
                             <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
                                 <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                    <p class="editable text-white px-10 mb-2">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+                                    <p class="editable text-white px-10 mb-2">Answer</p>
                                 </div>
                             </div>
                             <div id="accordion-flush-heading-3">
-                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-2">
-                                    <h4 class="editable text-2xl text-3xl">Is there a Figma file available?</h4> 
+                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                                    <h4 class="editable text-3xl">QUestion</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                                     </svg>
                                 </button>
                             </div>
-                            <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                            <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
                                 <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                    <p class="editable text-white px-10 mb-2">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+                                    <p class="editable text-white px-10 mb-2">Answer</p>
+                                </div>
+                            </div>
+                            <div id="accordion-flush-heading-4">
+                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
+                                    <h4 class="editable text-3xl">QUestion</h4>
+                                    <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                    <p class="editable text-white px-10 mb-2">Answer</p>
+                                </div>
+                            </div>
+                            <div id="accordion-flush-heading-5">
+                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
+                                    <h4 class="editable text-3xl">QUestion</h4>
+                                    <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+                                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                    <p class="editable text-white px-10 mb-2">Answer</p>
+                                </div>
+                            </div>
+                            <div id="accordion-flush-heading-6">
+                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-6" aria-expanded="false" aria-controls="accordion-flush-body-6">
+                                    <h4 class="editable text-3xl">QUestion</h4>
+                                    <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
+                                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                    <p class="editable text-white px-10 mb-2">Answer</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>                                                    
+            </section>
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
         <script src="/static/js/alpine.js"></script>
