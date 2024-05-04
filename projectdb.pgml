@@ -1,7 +1,7 @@
 <project>
     <documents></documents>
     <dmdesigns>
-        <dmdesign active>
+        <dmdesign>
             <dmdesignskill skill="tw.colors">
                 <dmcolor key="primary" color="#272727" shade-50="#dfdfdf" shade-100="#b6b6b6" shade-200="#8f8f8f" shade-300="#6a6a6a" shade-400="#474747" shade-500="#272727" shade-600="#212121" shade-700="#1b1b1b" shade-800="#151515" shade-900="#0e0e0e"/>
                 <dmcolor key="red" color="rgba(239,68,68,1)" shade-50="rgba(254,242,242,1)" shade-100="rgba(254,226,226,1)" shade-200="rgba(254,202,202,1)" shade-300="rgba(252,165,165,1)" shade-400="rgba(248,113,113,1)" shade-500="rgba(239,68,68,1)" shade-600="rgba(220,38,38,1)" shade-700="rgba(185,28,28,1)" shade-800="rgba(153,27,27,1)" shade-900="rgba(127,29,29,1)"/>
@@ -19,7 +19,7 @@
             <dmdesignskill skill="background" image_for_colors="true" advanced="true" filter_blur="0" filter_brightness="100" filter_contrast="100" filter_grayscale="0" filter_hue-rotate="0" filter_invert="0" filter_opacity="100" filter_saturate="100" filter_sepia="0" color="accent-50"></dmdesignskill>
             <dmdesignskill skill="tailwind"></dmdesignskill>
         </dmdesign>
-        <dmdesign>
+        <dmdesign active>
             <dmdesignskill skill="tw.colors">
                 <dmcolor key="gray" color="rgba(107,114,128,1)" shade-50="rgba(249,250,251,1)" shade-100="rgba(243,244,246,1)" shade-200="rgba(229,231,235,1)" shade-300="rgba(209,213,219,1)" shade-400="rgba(156,163,175,1)" shade-500="rgba(107,114,128,1)" shade-600="rgba(75,85,99,1)" shade-700="rgba(55,65,81,1)" shade-800="rgba(31,41,55,1)" shade-900="rgba(17,24,39,1)"/>
                 <dmcolor key="red" color="rgba(239,68,68,1)" shade-50="rgba(254,242,242,1)" shade-100="rgba(254,226,226,1)" shade-200="rgba(254,202,202,1)" shade-300="rgba(252,165,165,1)" shade-400="rgba(248,113,113,1)" shade-500="rgba(239,68,68,1)" shade-600="rgba(220,38,38,1)" shade-700="rgba(185,28,28,1)" shade-800="rgba(153,27,27,1)" shade-900="rgba(127,29,29,1)"/>

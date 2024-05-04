@@ -1,12 +1,19 @@
+const EleventyPreactPlugin = require("./11ty/PreactPlugin.cjs");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
-
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+const EleventySveltePlugin = require("./11ty/SveltePlugin.cjs");
+const EleventyVuePlugin = require("./11ty/VuePlugin.cjs");
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
+  eleventyConfig.addWatchTarget("./lib/svelte");
+
+  eleventyConfig.addPlugin(EleventySveltePlugin);
+  eleventyConfig.addPlugin(EleventyPreactPlugin);
+  eleventyConfig.addPlugin(EleventyVuePlugin);
+
   eleventyConfig.setUseGitIgnore(false);
 
   // Merge data instead of overriding
@@ -69,6 +76,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/uploads");
   eleventyConfig.addPassthroughCopy("./src/css/styles.css");
   eleventyConfig.addPassthroughCopy("tailwind_theme/tailwind.css");
+  eleventyConfig.addPassthroughCopy("src/js");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
@@ -115,6 +123,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: "src",
     },
-    htmlTemplateEngine: "njk",
+    htmlTemplateEngine: "liquid",
+    markdownTemplateEngine: "liquid",
   };
 };

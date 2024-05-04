@@ -1,19 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="dark min-h-[10vh]" data-pgc-master="master.html">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <title data-pgc-field="title">{{meta.siteName}}</title>
-        <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link">
+        <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
         <script>
-    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    console.log('here')
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark')
-    }
-</script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        console.log("here");
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+        <script type="module">
+        import "/js/is-land.js";
+        import "/js/is-land-autoinit.js";
+      </script>
     </head>
     <body class="dark:text-accent-50 text-accent-900">
         <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-24 items-center justify-center shadow w-full z-[100]" data-pgc="wa.Header">
@@ -38,49 +46,63 @@
                         <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
                         </svg>
-                    </button><a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
+                    </button>                     <a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
                 </div>
-                <label class="cursor-pointer place-self-end px-3 py-6 relative self-center z-40 md:hidden" for="mobile-menu">
-                    <input class="peer hidden" type="checkbox" id="mobile-menu">
-                    <div class="after:absolute after:bg-black after:block after:bottom-[-0.35rem] after:content-[''] after:dark:bg-white after:duration-200 after:ease-out after:h-full after:right-0 after:transition-all after:w-full before:absolute before:bg-black before:block before:content-[''] before:dark:bg-white before:duration-200 before:ease-out before:h-full before:top-[-0.35rem] before:transition-all before:w-full before:z-50 bg-black bg-transparent block content-[''] dark:bg-white h-[1px] peer-checked:bg-transparent relative w-7 z-50 after:peer-checked:-rotate-45 after:peer-checked:bottom-0 after:peer-checked:transform after:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:top-0 before:peer-checked:transform before:peer-checked:w-full"></div>
-                    <div class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block">&nbsp;</div>
-                    <div class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0">
-                        <div class="dark:bg-base float-right min-h-full pt-12 px-6 shadow-2xl w-[40%]">
-                            <menu>
-                                <li><a href="/">Home</a>
-                                </li>
-                                <li><a href="/contact">Contact</a>
-                                </li>
-                            </menu>
+                <is-land on:visible autoinit="svelte-ssr" import="/lib/svelte/drawerButton.client.js">
+                    <div class="flex">
+                        <div class="m-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 cursor-pointer duration-100 hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
                         </div>
                     </div>
-                </label>
+                    <aside class="">
+                        <div class="fixed inset-0 w-full h-full z-50 overflow-hidden invisible">
+                            <div class="w-screen h-full bg-gray-500 cursor-pointer duration-500 transition-opacity overflow-hidden opacity-0"></div>
+                            <div class="absolute right-0 top-0 shadow-xl overflow-y-auto bg-white transition-all duration-300 h-full max-w-lg w-0"></div>
+                        </div>
+                    </aside>
+                </is-land>
             </nav>
-            <section data-empty-placeholder></section>
-            <main data-empty-placeholder></main>
         </header>
         <main class="pt-24" data-pgc-field="mainContent">
-            <section class="bg-primary-800 flex flex-col h-[80vh] items-center justify-center mx-auto" data-pg-name="hero-section"> 
-                <p class="editable text-green-700 uppercase">100% HAND-CODED WEBSITES STARTING AT 100&euro;/MO</p> 
-                <h1 class="editable text-8xl text-center text-white uppercase">SMALL BUSINESS WEB DESIGN AND DEVELOPMENT</h1> 
+            <section class="bg-primary-800 flex flex-col h-[80vh] items-center justify-center mx-auto" data-pg-name="hero-section">
+                <p class="editable text-green-700 uppercase">
+          100% HAND-CODED WEBSITES STARTING AT 100&euro;/MO </p>
+                <h1 class="editable text-8xl text-center text-white uppercase">
+          SMALL BUSINESS WEB DESIGN AND DEVELOPMENT </h1>
+                {% assign component = "lib/svelte/drawerButton.svelte" | svelte:
+                page.url %}
+
+                <!-- Component CSS is added to the <head> in layout.html, we don’t need duplicated CSS littered throughout every use of the component -->
+                <is-land on:visible autoinit="svelte-ssr"  import="{{ component.clientJsUrl }}" props={{prop:'taest'}}>
+                    {{ component.html }}
+
+</is-land>
             </section>
             <section class="text-gray-600 body-font">
                 <div class="container flex flex-col items-center mx-auto px-5 py-40 md:flex-row">
                     <div class="flex flex-col gap-12 items-center mb-16 text-center md:items-start md:mb-0 md:pr-16 md:text-left lg:pr-24">
-                        <p class="editable text-green-700 uppercase">100% HAND-CODED WEBSITES STARTING AT 100&euro;/MO</p>
-                        <h1 class="editable font-medium mb-4 pb-32 text-3xl text-gray-900 title-font sm:text-4xl">Before they sold out <br class="hidden lg:inline-block"/>readymade gluten </h1>
+                        <p class="editable text-green-700 uppercase">
+              100% HAND-CODED WEBSITES STARTING AT 100&euro;/MO </p>
+                        <h1 class="editable font-medium mb-4 pb-32 text-3xl text-gray-900 title-font sm:text-4xl">
+              Before they sold out <br class="hidden lg:inline-block"/>readymade gluten </h1>
                         <div class="flex gap-24 justify-center">
                             <div class="flex gap-4">
                                 <svg width="60" height="60" viewbox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-20 w-20">
                                     <path d="M12.0249 16.6883L14.6971 19.3605L20.0414 14.0161M28.058 16.6883C28.058 23.3295 22.6743 28.7132 16.0332 28.7132C9.39201 28.7132 4.0083 23.3295 4.0083 16.6883C4.0083 10.0472 9.39201 4.66345 16.0332 4.66345C22.6743 4.66345 28.058 10.0472 28.058 16.6883Z" stroke="#4AD697" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <p class="editable leading-relaxed mb-8">Copper mug try-hard pitchfork pour-over freegan heirloom neutra&nbsp;</p>
+                                <p class="editable leading-relaxed mb-8">
+                  Copper mug try-hard pitchfork pour-over freegan heirloom
+                  neutra&nbsp; </p>
                             </div>
                             <div class="flex gap-4">
                                 <svg width="60" height="60" viewbox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-20 w-20">
                                     <path d="M12.0249 16.6883L14.6971 19.3605L20.0414 14.0161M28.058 16.6883C28.058 23.3295 22.6743 28.7132 16.0332 28.7132C9.39201 28.7132 4.0083 23.3295 4.0083 16.6883C4.0083 10.0472 9.39201 4.66345 16.0332 4.66345C22.6743 4.66345 28.058 10.0472 28.058 16.6883Z" stroke="#4AD697" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <p class="editable leading-relaxed mb-8">Copper mug try-hard pitchfork pour-over freegan heirloom neutra&nbsp;</p>
+                                <p class="editable leading-relaxed mb-8">
+                  Copper mug try-hard pitchfork pour-over freegan heirloom
+                  neutra&nbsp; </p>
                             </div>
                         </div>
                     </div>
@@ -90,50 +112,69 @@
                 </div>
             </section>
             <section class="bg-primary-800 body-font text-gray-600">
-                <div class="container  flex flex-col gap-12 items-center mx-auto px-5 py-64">
-                    <h2 class="editable text-5xl text-white">Unleash the full power of data</h2>
-                    <p class="editable text-accent-100">Everything you need to convert, engage, and retain more users.</p>
-                    <ul class="-m-4 flex  text-center text-white">
-                        <li class="border-r-[1px] p-4 pr-12 pr-24 ">
-                            <h4 class="editable font-medium text-3xl text-primarylight-400 title-font sm:text-4xl">2.7K</h4>
+                <div class="container flex flex-col gap-12 items-center mx-auto px-5 py-64">
+                    <h2 class="editable text-5xl text-white">
+            Unleash the full power of data </h2>
+                    <p class="editable text-accent-100">
+            Everything you need to convert, engage, and retain more users. </p>
+                    <ul class="-m-4 flex text-center text-white">
+                        <li class="border-r-[1px] p-4 pr-12 pr-24">
+                            <h4 class="editable font-medium text-3xl text-primarylight-400 title-font sm:text-4xl">
+                2.7K </h4>
                             <p class="editable leading-relaxed">Users</p>
                         </li>
                         <li class="border-r-[1px] p-4 pl-12 pr-24">
-                            <h4 class="editable font-medium text-3xl text-primarylight-400 title-font sm:text-4xl">1.8K</h4>
+                            <h4 class="editable font-medium text-3xl text-primarylight-400 title-font sm:text-4xl">
+                1.8K </h4>
                             <p class="editable leading-relaxed">Subscribes</p>
                         </li>
-                        <li class="p-4 ">
-                            <h4 class="editable font-medium text-3xl text-primarylight-400 title-font sm:text-4xl">35</h4>
+                        <li class="p-4">
+                            <h4 class="editable font-medium text-3xl text-primarylight-400 title-font sm:text-4xl">
+                35 </h4>
                             <p class="editable leading-relaxed">Downloads</p>
                         </li>
                     </ul>
                 </div>
-            </section>             
+            </section>
             <section class="hidden p-[10%] rounded-bl-3xl rounded-br-3xl text-black text-center">
-                <h2 class="pb-20 text-center"> Our operations</h2>
-                <p class="pb-24">We specialize in small business web design and development for clients anywhere in the EU. We code on the JamStack ensuring best performance, which helps drive more customers to your business which translates to more revenue.</p>
+                <h2 class="pb-20 text-center">Our operations</h2>
+                <p class="pb-24">
+          We specialize in small business web design and development for clients
+          anywhere in the EU. We code on the JamStack ensuring best performance,
+          which helps drive more customers to your business which translates to
+          more revenue. </p>
                 <ul class="gap-14 gird-cols-1 grid text-left md:pl-[30vw]">
                     <li class="flex flex-col gap-10 pb-14">
                         <h3>Mobile first design</h3>
-                        <p>All our websites are created for mobiles first, after that they are adjusted for tablet and desktop.</p>
+                        <p>
+              All our websites are created for mobiles first, after that they
+              are adjusted for tablet and desktop. </p>
                     </li>
                     <li class="flex flex-col gap-10 pb-14">
                         <h3>Optimization</h3>
-                        <p>JamStack websites are speed optimized by design, after the site is completed we run tests on it, to get it to a perfect 100% google score. Which is guranteed to rank you higher on search engines.</p>
+                        <p>
+              JamStack websites are speed optimized by design, after the site is
+              completed we run tests on it, to get it to a perfect 100% google
+              score. Which is guranteed to rank you higher on search engines. </p>
                     </li>
                     <li class="flex flex-col gap-10 pb-14">
                         <h3>SEO</h3>
-                        <p>With perfect speed scores, the last piece of the puzzle is perfect SEO scores, having us as a partner…</p>
+                        <p>
+              With perfect speed scores, the last piece of the puzzle is perfect
+              SEO scores, having us as a partner… </p>
                     </li>
                 </ul>
-            </section>             
+            </section>
             <section class="bg-white fle flex flex-col items-center p-[10%] py-32 rounded-b-3xl text-black md:py-64">
-                <h2 class="pb-20 text-center"><span class="text-green-300">
-    0€  Down </span>,  100€ Per Month,<br/> 12 Month <span class="text-slate-400">Minimum Contract</span></h2>
-                <p class="editable pb-4 text-center">Yes, we start you at 0**€, for a standard 5 page website, if you need more we have custom pricing based on the scope of work. You own everything, the domain the content and the listing. Cancel anytime with 
-    no fees.</p>
+                <h2 class="pb-20 text-center"> <span class="text-green-300"> 0€ Down </span>, 100€ Per Month,<br/>
+          12 Month <span class="text-slate-400">Minimum Contract</span> </h2>
+                <p class="editable pb-4 text-center">
+          Yes, we start you at 0**€, for a standard 5 page website, if you need
+          more we have custom pricing based on the scope of work. You own
+          everything, the domain the content and the listing. Cancel anytime
+          with no fees. </p>
                 <ul class="gap-20 grid pt-20 text-3xl">
-                    <li class="delay-0 duration-200 ease-linear flex font-bold gap-12 items-center transition will-change-scroll" style="transition: opacity 1;">
+                    <li class="delay-0 duration-200 ease-linear flex font-bold gap-12 items-center transition will-change-scroll" style="transition: opacity 1">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_282_159)">
                                 <path d="M0.621726 27.8193C-0.151754 27.1241 -0.211796 25.938 0.488019 25.1701C1.18834 24.4018 2.38312 24.3427 3.15711 25.0374L20.3387 40.5036L58.7346 0.58399C59.4557 -0.16783 60.654 -0.197883 61.4113 0.517874C62.1691 1.23313 62.1989 2.42272 61.4784 3.17504L21.8084 44.4194L21.8059 44.4169C21.1015 45.1522 19.931 45.1998 19.1686 44.5151L0.621726 27.8193Z" fill="#4AD697"/>
@@ -143,7 +184,8 @@
                                     <rect width="62" height="45" fill="white"/>
                                 </clippath>
                             </defs>
-                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                Hosting fees included
+                        </svg>
+                        Hosting fees included
                     </li>
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +197,8 @@
                                     <rect width="62" height="45" fill="white"/>
                                 </clippath>
                             </defs>
-                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                         Unlimited edits
+                        </svg>
+                        Unlimited edits
                     </li>
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -167,7 +210,8 @@
                                     <rect width="62" height="45" fill="white"/>
                                 </clippath>
                             </defs>
-                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                         24/7 Customer service
+                        </svg>
+                        24/7 Customer service
                     </li>
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,7 +223,8 @@
                                     <rect width="62" height="45" fill="white"/>
                                 </clippath>
                             </defs>
-                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                         Web deisgn and development
+                        </svg>
+                        Web deisgn and development
                     </li>
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -191,7 +236,8 @@
                                     <rect width="62" height="45" fill="white"/>
                                 </clippath>
                             </defs>
-                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                             JamStack site with perfect scores
+                        </svg>
+                        JamStack site with perfect scores
                     </li>
                     <li class="flex font-bold gap-12 items-center">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,19 +249,23 @@
                                     <rect width="62" height="45" fill="white"/>
                                 </clippath>
                             </defs>
-                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                         Analytics and tracking
+                        </svg>
+                        Analytics and tracking
                     </li>
                 </ul>
-            </section>             
-            <section class="bg-primary-800 py-24 py-64 text-black text-white">
+            </section>
+            <section class="bg-primary-800 py-64 text-black text-white">
                 <div class="container mx-auto">
                     <h2 class="pb-6 text-center">Packages</h2>
-                    <p class="editable max-w-5xl mx-auto pb-32 text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit for official consequat enim to main purpose. If you haven’t tried out Flaro App for them help.</p>
+                    <p class="editable max-w-5xl mx-auto pb-32 text-center">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit for official consequat enim to main purpose. If you
+            haven’t tried out Flaro App for them help. </p>
                     <ul class="gap-24 grid md:gap-10 lg:grid-cols-3">
                         <li>
                             <div class="bg-Secondary-500 flex flex-col justify-between min-h- min-h-[600px] p-14 rounded-3xl text-black text-neutral">
                                 <h3 class="pb-10">E-Commerce</h3>
-                                <p class="font-bold pb-24 text-left"><span class="text-4xl">5000€</span> <br/><span class="text-3xl text-neutral-300">minimum uprfront cost</span></p>
+                                <p class="font-bold pb-24 text-left"> <span class="text-4xl">5000€</span> <br/><span class="text-3xl text-neutral-300">minimum uprfront cost</span> </p>
                                 <ul class="flex flex-col gap-10 text-left">
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -227,7 +277,8 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Starting at 5k**€**
+                                        </svg>
+                                        Starting at 5k**€**
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -239,7 +290,8 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 5.000€  minimum upfront cost
+                                        </svg>
+                                        5.000€ minimum upfront cost
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -251,7 +303,8 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Shopify intergation
+                                        </svg>
+                                        Shopify intergation
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -263,18 +316,22 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Editable content
+                                        </svg>
+                                        Editable content
                                     </li>
                                 </ul>
                                 <custombutton class="bg-blue mt-16 w-full">
-                                    <button class="border-[1px] border-black py-6 rounded-full text-black w-full">Start Project</button>
+                                    <button class="border-[1px] border-black py-6 rounded-full text-black w-full">
+                                        Start Project
+</button>
                                 </custombutton>
                             </div>
                         </li>
                         <li>
                             <div class="bg-white flex flex-col justify-between min-h- min-h-[600px] p-14 rounded-3xl text-black text-neutral">
                                 <h3 class="pb-10">Standard</h3>
-                                <p class="font-bold pb-24 text-5xl text-left">100€ <span class="text-3xl text-neutral-300">/ per month</span></p>
+                                <p class="font-bold pb-24 text-5xl text-left">
+                  100€ <span class="text-3xl text-neutral-300">/ per month</span> </p>
                                 <ul class="flex flex-col gap-10">
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -286,7 +343,8 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                100€ per month**
+                                        </svg>
+                                        100€ per month**
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -298,7 +356,8 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Unlimited Edits
+                                        </svg>
+                                        Unlimited Edits
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -310,7 +369,8 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Includes Hosting
+                                        </svg>
+                                        Includes Hosting
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -322,7 +382,8 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                24/7 Customer Service
+                                        </svg>
+                                        24/7 Customer Service
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -334,18 +395,22 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Lifetime Updates
+                                        </svg>
+                                        Lifetime Updates
                                     </li>
                                 </ul>
                                 <custombutton class="mt-16 w-full">
-                                    <button class="border-[1px] border-black py-6 rounded-full text-black w-full">Start Project</button>
+                                    <button class="border-[1px] border-black py-6 rounded-full text-black w-full">
+                                        Start Project
+</button>
                                 </custombutton>
                             </div>
                         </li>
                         <li>
                             <div class="bg-Secondary-800 flex flex-col justify-between min-h- min-h-[600px] p-14 rounded-3xl text-neutral">
                                 <h3 class="pb-10">Bonus</h3>
-                                <p class="font-bold pb-24 text-5xl text-left">0€ <span class="text-3xl text-neutral-300">/ per month</span></p>
+                                <p class="font-bold pb-24 text-5xl text-left">
+                  0€ <span class="text-3xl text-neutral-300">/ per month</span> </p>
                                 <ul class="flex flex-col gap-10">
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -357,7 +422,8 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                100€ per month**
+                                        </svg>
+                                        100€ per month**
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -369,7 +435,8 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Unlimited Edits
+                                        </svg>
+                                        Unlimited Edits
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -381,7 +448,8 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Includes Hosting
+                                        </svg>
+                                        Includes Hosting
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -393,7 +461,8 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                24/7 Customer Service
+                                        </svg>
+                                        24/7 Customer Service
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -405,11 +474,14 @@
                                                     <rect width="25" height="19" fill="white"/>
                                                 </clippath>
                                             </defs>
-                                        </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Lifetime Updates
+                                        </svg>
+                                        Lifetime Updates
                                     </li>
                                 </ul>
                                 <custombutton class="mt-16 w-full">
-                                    <button class="border-[1px] border-black py-6 rounded-full text-black w-full">Start Project</button>
+                                    <button class="border-[1px] border-black py-6 rounded-full text-black w-full">
+                                        Start Project
+</button>
                                 </custombutton>
                             </div>
                         </li>
@@ -417,31 +489,46 @@
                 </div>
             </section>
             <section class="container dark:bg-white mx-auto pt-32 text-black">
-                <h2 class="pb-10 px-[10%] text-6xl text-center md:pb-24">Advantages of becoming <span class="text-Secondary-400">our partner</span></h2>
+                <h2 class="pb-10 px-[10%] text-6xl text-center md:pb-24">
+          Advantages of becoming <span class="text-Secondary-400">our partner</span> </h2>
                 <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                     <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
-                        <h4 class="editable">Heading 4</h4> 
-                        <p class="editable">We’re not a 1 off design and develop agency, you get us as a lifetime partner</p>
+                        <h4 class="editable">Heading 4</h4>
+                        <p class="editable">
+              We’re not a 1 off design and develop agency, you get us as a
+              lifetime partner </p>
                     </li>
                     <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
                         <h4 class="editable">Heading 4</h4>
-                        <p class="editable">Everything is optimized to the highest standards, you get an actual developer working on your site and not just designers that will make it “look nice”.</p>
+                        <p class="editable">
+              Everything is optimized to the highest standards, you get an
+              actual developer working on your site and not just designers that
+              will make it “look nice”. </p>
                     </li>
                     <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
                         <h4 class="editable">Heading 4</h4>
-                        <p class="editable">We take care of all the rest of the technical stuff, so you can focus fully on your business and just get the benefits of online presence</p>
+                        <p class="editable">
+              We take care of all the rest of the technical stuff, so you can
+              focus fully on your business and just get the benefits of online
+              presence </p>
                     </li>
                     <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
                         <h4 class="editable">Heading 4</h4>
-                        <p class="editable">Everything is optimized to the highest standards, you get an actual developer working on your site and not just designers that will make it “look nice”.</p>
+                        <p class="editable">
+              Everything is optimized to the highest standards, you get an
+              actual developer working on your site and not just designers that
+              will make it “look nice”. </p>
                     </li>
                     <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
                         <h4 class="editable">Heading 4</h4>
-                        <p class="editable">We start at 100€ per month, making it affordable for everyone</p>
+                        <p class="editable">
+              We start at 100€ per month, making it affordable for everyone </p>
                     </li>
                     <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
                         <h4 class="editable">Heading 4</h4>
-                        <p class="editable">We gurantee fast delivery as we’ve optimized and streamlined our design/development process over the years</p>
+                        <p class="editable">
+              We gurantee fast delivery as we’ve optimized and streamlined our
+              design/development process over the years </p>
                     </li>
                 </ul>
             </section>
@@ -451,28 +538,28 @@
                     <h2>Answers to our frequently asked questions</h2>
                     <div class="container py-32" data-pgc="flowbite-accordion-simple">
                         <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-                            <div id="accordion-flush-heading-1">
-                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
+                            <div id="accordion-flush-heading-">
+                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-" aria-expanded="false" aria-controls="accordion-flush-body-">
                                     <h4 class="text-3xl">What is the best thing about the product?</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                                     </svg>
                                 </button>
                             </div>
-                            <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                            <div id="accordion-flush-body-" class="hidden" aria-labelledby="accordion-flush-heading-">
                                 <div class="py-5 border-b border-gray-200 dark:border-gray-700">
                                     <p class="text-white px-10 mb-2">The best thing about the product is that it is very easy to use and it is very affordable.</p>
                                 </div>
                             </div>
-                            <div id="accordion-flush-heading-2">
-                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                            <div id="accordion-flush-heading-">
+                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-" aria-expanded="false" aria-controls="accordion-flush-body-">
                                     <h4 class="text-3xl">What is the best thing about the product?</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                                     </svg>
                                 </button>
                             </div>
-                            <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                            <div id="accordion-flush-body-" class="hidden" aria-labelledby="accordion-flush-heading-">
                                 <div class="py-5 border-b border-gray-200 dark:border-gray-700">
                                     <p class="text-white px-10 mb-2">The best thing about the product is that it is very easy to use and it is very affordable.</p>
                                 </div>
@@ -485,47 +572,53 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
         <script src="/static/js/alpine.js"></script>
         <script>
-    var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+      var themeToggleDarkIcon = document.getElementById(
+        "theme-toggle-dark-icon"
+      );
+      var themeToggleLightIcon = document.getElementById(
+        "theme-toggle-light-icon"
+      );
 
-// Change the icons inside the button based on previous settings
-if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    themeToggleLightIcon.classList.remove('hidden');
-} else {
-    themeToggleDarkIcon.classList.remove('hidden');
-}
+      // Change the icons inside the button based on previous settings
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        themeToggleLightIcon.classList.remove("hidden");
+      } else {
+        themeToggleDarkIcon.classList.remove("hidden");
+      }
 
-var themeToggleBtn = document.getElementById('theme-toggle');
+      var themeToggleBtn = document.getElementById("theme-toggle");
 
-themeToggleBtn.addEventListener('click', function() {
+      themeToggleBtn.addEventListener("click", function () {
+        // toggle icons inside button
+        themeToggleDarkIcon.classList.toggle("hidden");
+        themeToggleLightIcon.classList.toggle("hidden");
 
-    // toggle icons inside button
-    themeToggleDarkIcon.classList.toggle('hidden');
-    themeToggleLightIcon.classList.toggle('hidden');
+        // if set via local storage previously
+        if (localStorage.getItem("color-theme")) {
+          if (localStorage.getItem("color-theme") === "light") {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("color-theme", "dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("color-theme", "light");
+          }
 
-    // if set via local storage previously
-    if (localStorage.getItem('color-theme')) {
-        if (localStorage.getItem('color-theme') === 'light') {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('color-theme', 'dark');
+          // if NOT set via local storage previously
         } else {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('color-theme', 'light');
+          if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("color-theme", "light");
+          } else {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("color-theme", "dark");
+          }
         }
-
-    // if NOT set via local storage previously
-    } else {
-        if (document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('color-theme', 'light');
-        } else {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('color-theme', 'dark');
-        }
-    }
-    
-});
-</script>
+      });
+    </script>
         <footer class="bg-primary-50 border-t-2 dark:bg-primary-800 pt-14" data-pgc="wa.Footer">
             <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto">
                 <div class="mx-auto pr-24">
@@ -586,7 +679,7 @@ themeToggleBtn.addEventListener('click', function() {
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">List item</a> <a class="pl-10">List item</a>
+                        <li><a class="pr-10 border-r-[1px]">List item</a><a class="pl-10">List item</a>
                         </li>
                         <li class="justify-self-end self-end">List item</li>
                     </ul>
