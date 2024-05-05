@@ -3686,6 +3686,9 @@ body, html {
   .md\:flex{
     display: flex;
   }
+  .md\:hidden{
+    display: none;
+  }
   .md\:h-96{
     height: 24rem;
   }
