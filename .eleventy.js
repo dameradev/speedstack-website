@@ -9,6 +9,7 @@ const EleventyVuePlugin = require("./11ty/VuePlugin.cjs");
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
   eleventyConfig.addWatchTarget("./lib/svelte");
+  eleventyConfig.addWatchTarget("./lib/preact");
 
   eleventyConfig.addPlugin(EleventySveltePlugin);
   eleventyConfig.addPlugin(EleventyPreactPlugin);
