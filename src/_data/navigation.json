@@ -5,8 +5,8 @@
       "text": "Home"
     },
     {
-      "route": "/about",
-      "text": "About"
+      "route": "/services",
+      "text": "Services"
     },
     {
       "route": "/components",

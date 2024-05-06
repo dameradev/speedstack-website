@@ -29,7 +29,7 @@
                 <ul class="flex hidden items-center justify-around min-w-[50%] md:flex" id="navbar-dropdown">
                     <li><a href="/">Home</a>
                     </li>
-                    <li><a href="/about">About</a>
+                    <li><a href="/services">Services</a>
                     </li>
                     <li><a href="/components">Components</a>
                     </li>
@@ -57,7 +57,7 @@
                               import Drawer from "/lib/preact/drawer.client.js";
               
                               render(
-                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/about","text":"About"},{"route":"/components","text":"Components"},{"route":"/blog","text":"Blog"},{"route":"/contact","text":"Contact"}]')}  />`,
+                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/components","text":"Components"},{"route":"/blog","text":"Blog"},{"route":"/contact","text":"Contact"}]')}  />`,
                                 document.getElementById("drawer-preact")
                               );</script>
                         </template>

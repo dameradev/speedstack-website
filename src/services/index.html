@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en" class="dark min-h-[10vh]" data-pgc-master="master.html">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title data-pgc-field="title">pageee</title>
+        <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
+        <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        console.log("here");
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+        <script type="module">
+      import "/js/is-land.js";
+      import "/js/is-land-autoinit.js";
+    </script>
+    </head>
+    <body class="dark:text-accent-50 text-accent-900">
+        <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-24 items-center justify-center shadow w-full z-[100]" data-pgc="wa.Header">
+            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4">SpeedStack</a>
+                <ul class="flex hidden items-center justify-around min-w-[50%] md:flex" id="navbar-dropdown">
+                    <li><a href="/">Home</a>
+                    </li>
+                    <li><a href="/services">Services</a>
+                    </li>
+                    <li><a href="/components">Components</a>
+                    </li>
+                    <li><a href="/blog">Blog</a>
+                    </li>
+                    <li><a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="flex gap-12 justify-end">
+                    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>                         
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <is-land on:visible>
+                        <div id="drawer-preact" class="block md:hidden"></div>
+                        <template data-island>
+                            <script type="module">import {
+                                render,
+                                html,
+                              } from "https://unpkg.com/htm/preact/index.mjs?module";
+                              import Drawer from "/lib/preact/drawer.client.js";
+              
+                              render(
+                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/components","text":"Components"},{"route":"/blog","text":"Blog"},{"route":"/contact","text":"Contact"}]')}  />`,
+                                document.getElementById("drawer-preact")
+                              );</script>
+                        </template>
+                    </is-land><a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
+                </div>
+            </nav>
+        </header>
+        <main class="pt-24" data-pgc-field="mainContent">
+            <section class="bg-primary-800 mx-auto py-64">
+                <div class="container mx-auto">
+                    <h1 class="[&>span]:text-green-600 px-32 text-8xl uppercase">
+            We gurantee <br/>{% assign textChangerPreact =
+            "./lib/preact/textChanger.mjs" | preact %} 
+            {% assign messages = "['Hello, world!', 'Welcome to our site!', 'Check out our features!', 'Contact us today!']" %} <is-land on:visible>
+                            <div id="text-changer-preact"></div>
+                            <template data-island>
+                                <script type="module">
+                  import { render, html } from "https://unpkg.com/htm/preact/index.mjs?module";
+                  import TextChanger from "{{ textChangerPreact.clientJsUrl }}";
+            
+                  render(
+                    html`<${TextChanger} messages=${['High core vital scores.', 'High SEO ranking', 'Frequent updates']} interval=${2500} />`,
+                    document.getElementById('text-changer-preact')
+                  );
+                </script>
+                            </template>
+                        </is-land> </h1>
+                </div>
+            </section>
+            <section class="bg-black py-32 md:py-64">
+                <div class="px-4 mx-auto  sm:px-6 lg:px-8 container">
+                    <div class="grid grid-cols-1 md:items-center gap-y-8 md:grid-cols-2 md:gap-x-16">
+                        <svg width="396" height="278" viewBox="0 0 396 278" fill="none" xmlns="http://www.w3.org/2000/svg" class="justify-self-center self-center">
+                            <g clip-path="url(#clip0_378_266)">
+                                <path d="M77.1989 77.1037L57.0542 69.9106V61.0157L77.1989 53.8225V60.8002L62.0087 65.8607V64.969L77.1989 70.1409V77.1186V77.1037Z" fill="white"/>
+                                <path d="M79.2935 87.2619L89.8635 46.7854H98.9776L88.4076 87.2619H79.2935Z" fill="white"/>
+                                <path d="M101.072 77.1038V70.1261L116.262 64.9541V65.8458L101.072 60.7854V53.8077L121.217 61.0009V69.8957L101.072 77.0889V77.1038Z" fill="white"/>
+                                <path d="M43.1416 19.0159C44.9098 19.0159 46.3431 17.5254 46.3431 15.6868C46.3431 13.8482 44.9098 12.3577 43.1416 12.3577C41.3735 12.3577 39.9402 13.8482 39.9402 15.6868C39.9402 17.5254 41.3735 19.0159 43.1416 19.0159Z" fill="white"/>
+                                <path d="M55.5909 19.0159C57.359 19.0159 58.7923 17.5254 58.7923 15.6868C58.7923 13.8482 57.359 12.3577 55.5909 12.3577C53.8227 12.3577 52.3894 13.8482 52.3894 15.6868C52.3894 17.5254 53.8227 19.0159 55.5909 19.0159Z" fill="white"/>
+                                <path d="M68.0403 19.0159C69.8084 19.0159 71.2418 17.5254 71.2418 15.6868C71.2418 13.8482 69.8084 12.3577 68.0403 12.3577C66.2722 12.3577 64.8389 13.8482 64.8389 15.6868C64.8389 17.5254 66.2722 19.0159 68.0403 19.0159Z" fill="white"/>
+                                <path d="M361.371 2.31104H34.1687C29.2459 2.31104 25.2551 6.30339 25.2551 11.2282V210.75C25.2551 215.675 29.2459 219.667 34.1687 219.667H361.371C366.294 219.667 370.284 215.675 370.284 210.75V11.2282C370.284 6.30339 366.294 2.31104 361.371 2.31104Z" stroke="white" stroke-width="6.22" stroke-miterlimit="10"/>
+                                <path d="M25.2551 192.544H370.656V204.463C370.656 213.061 363.681 220.038 355.087 220.038H40.8242C32.23 220.038 25.2551 213.061 25.2551 204.463V192.544Z" fill="white"/>
+                                <path d="M228.039 220.038H167.872V274.285H228.039V220.038Z" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M0 275.028H396" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M140.389 81.8224H303.061" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M111.42 159.848H248.837" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M215.411 133.839H332.773" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M84.679 133.839H202.784" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M140.389 57.3002H244.38" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M57.1953 107.831H140.389" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M259.236 57.3002H332.773" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M153.016 107.831H236.209" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M259.236 159.848H320.888" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M249.58 107.831H332.773" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_378_266">
+                                    <rect width="396" height="278" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="text-center md:text-left lg:pr-16">
+                            <h2 class="font-bold text-5xl">Web development done differently</h2>
+                            <p class="mt-8 text-gray-400 text-lg sm:mt-8">We custom code your site, meaning we don&rsquo;t use traditional web builders. Which gives us fine grain control of everything, from how the site looks, to the performance and SEO scores.</p>
+                            <a href="/jamstack" title="" class="font-bold inline-flex items-center mt-8 text-green-700">More about jamstack</a>
+                            <a href="/jamstack" title="" class="font-bold inline-flex items-center mt-8 text-green-700"><svg class="w-5 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-gray-50 py-32 md:py-64">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class=" mx-auto text-center ">
+                        <h2 class="editable font-bold leading-tight text-3xl  sm:text-4xl xl:text-5xl">Logos, graphics and Branding</h2>
+                        <p class="editable max-w-5xl mt-10 mx-auto text-black">We have our own in-house designer, weather you have a exisiting graphics or need something 
+completly new, we can help build your businsess&rsquo;s brand.</p>
+                    </div>
+                    <ul class="gap-y-4 grid grid-cols-1 max-w-5xl mt-8 mx-auto text-black text-center sm:gap-x-8 sm:grid-cols-2 sm:mt-12 sm:text-left lg:mt-20">
+                        <li class="space-y-4 sm:space-y-8">
+                            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                                <div class="p-9">
+                                    <svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                    </svg>
+                                    <h3 class="editable font-bold mt-8 text-2xl  sm:mt-20">Predictive Insights</h3>
+                                    <p class="editable mt-6 text-base ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend nullam consectetur placerat pellentesque ut massa volutpat at. Diam pretium orci dui sagittis.</p>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                                <div class="p-9">
+                                    <svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                                    </svg>
+                                    <h3 class="editable font-bold mt-8 text-2xl  sm:mt-20">Filtered Data</h3>
+                                    <p class="editable mt-6 text-base ">Eleifend nullam consectetur placerat pellentesque ut massa volutpat at. Diam pretium orci dui sagittis. Norem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="space-y-4 sm:space-y-8">
+                            <div class="relative">
+                                <div class="absolute -inset-1">
+                                    <div class="w-full h-full rotate-180 opacity-30 blur-lg filter" style="background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"></div>
+                                </div>
+                                <div class="relative overflow-hidden bg-white shadow-md rounded-xl">
+                                    <div class="p-9">
+                                        <svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                                        </svg>
+                                        <h3 class="editable font-bold mt-8 text-2xl  sm:mt-20">Fastest Speed</h3>
+                                        <p class="editable mt-6 text-base ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend nullam consectetur placerat pellentesque ut massa volutpat at. Diam pretium orci dui sagittis.</p>
+                                        <p class="editable mt-6 text-base ">Eleifend nullam consectetur placerat pelle tesque ut massa volutpat bonur los.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                                <div class="p-9">
+                                    <svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                                    </svg>
+                                    <h3 class="editable font-bold mt-8 text-2xl  sm:mt-20">Everything in Cloud</h3>
+                                    <p class="editable mt-6 text-base ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend nullam consectetur placerat pellentesque ut massa volutpat at. Diam pretium orci dui sagittis.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="py-32 md:py-64 bg-primary-800">
+                <div class="px-4 mx-auto container sm:px-6 lg:px-8">
+                    <div class="gap-y-8 grid grid-cols-1 md:gap-x-32 md:grid-cols-2 md:items-center">
+                        <div>
+                            <img class="max-w-3xl mx-auto w-full" src="https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/5/illustration.png" alt=""/>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold  sm:text-4xl xl:text-5xl ">Collaborative <span class="text-green-400">Web Design</span> Process</h2>
+                            <p class="leading-7 mt-4 text-gray-400 sm:mt-8">Create custom landing pages with Rareblocks that converts more visitors than any website. With lots of unique blocks, you can easily build a page.</p>
+                            <svg class="w-auto h-4 mt-8 text-gray-300 sm:mt-10" viewBox="0 0 172 16" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 11 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 46 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 81 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 116 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 151 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 18 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 53 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 88 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 123 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 158 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 25 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 60 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 95 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 130 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 165 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 32 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 67 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 102 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 137 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 172 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 39 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 74 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 109 1)"/>
+                                <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 144 1)"/>
+                            </svg>
+                            <ul class="mt-24 space-y-5 flex-col">
+                                <li class="flex items-center ">
+                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span class="ml-3 text-lg font-bold"> 150+ Handcoded UI Blocks </span>
+                                </li>
+                                <li class="flex items-center ">
+                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span class="ml-3 text-lg font-bold"> Fully Responsive on Any Device </span>
+                                </li>
+                                <li class="flex items-center ">
+                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span class="ml-3 text-lg font-bold"> Just Copy & Paste </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Modal toggle -->
+            <!-- Main modal -->
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+        <script src="/static/js/alpine.js"></script>
+        <script>
+      var themeToggleDarkIcon = document.getElementById(
+        "theme-toggle-dark-icon"
+      );
+      var themeToggleLightIcon = document.getElementById(
+        "theme-toggle-light-icon"
+      );
+
+      // Change the icons inside the button based on previous settings
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        themeToggleLightIcon.classList.remove("hidden");
+      } else {
+        themeToggleDarkIcon.classList.remove("hidden");
+      }
+
+      var themeToggleBtn = document.getElementById("theme-toggle");
+
+      themeToggleBtn.addEventListener("click", function () {
+        // toggle icons inside button
+        themeToggleDarkIcon.classList.toggle("hidden");
+        themeToggleLightIcon.classList.toggle("hidden");
+
+        // if set via local storage previously
+        if (localStorage.getItem("color-theme")) {
+          if (localStorage.getItem("color-theme") === "light") {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("color-theme", "dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("color-theme", "light");
+          }
+
+          // if NOT set via local storage previously
+        } else {
+          if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("color-theme", "light");
+          } else {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("color-theme", "dark");
+          }
+        }
+      });
+    </script>
+        <footer class="bg-primary-50 border-t-2 dark:bg-primary-800 pt-14" data-pgc="wa.Footer">
+            <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto">
+                <div class="mx-auto pr-24">
+                    <p>LOGO</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>
+                <div class="flex gap-8 justify-end">
+                    <div>
+                        <p class="font-bold mb-4">Services</p>
+                        <ul class="flex flex-col gap-2">
+                            <li><a>Shopify</a>
+                            </li>
+                            <li><a>Pwa<div id="dropdownNavbar" class="dark:bg-gray-700 dark:divide-gray-600 divide-gray-100 divide-y font-normal h-[250px] hidden rounded-lg shadow z-[100]">
+                                        <ul class="border-b-[1px] border-l-[1px] border-r-[1px] dark:bg-base dark:border-white dark:text-gray-200 flex flex-col py-2 text-gray-700 text-sm" aria-labelledby="dropdownLargeButton">
+                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                            </li>
+                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                            </li>
+                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                            </li>
+                                        </ul>
+                                        <div class="hidden py-1"><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                                        </div>
+                                    </div></a>
+                            </li>
+                            <li><a>Ecommerce</a>
+                            </li>
+                            <li><a>Booking</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-4">About Us</p>
+                        <ul class="flex flex-col gap-2">
+                            <li><a>Shopify</a>
+                            </li>
+                            <li><a>Pwa</a>
+                            </li>
+                            <li><a>Ecommerce</a>
+                            </li>
+                            <li><a>Booking</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-4">Company</p>
+                        <ul class="flex flex-col gap-2">
+                            <li><a>Shopify</a>
+                            </li>
+                            <li><a>Pwa</a>
+                            </li>
+                            <li><a>Ecommerce</a>
+                            </li>
+                            <li><a>Booking</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
+                    <ul class="flex justify-between py-8">
+                        <li><a class="pr-10 border-r-[1px]">List item</a> <a class="pl-10">List item</a>
+                        </li>
+                        <li class="justify-self-end self-end">List item</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto">
+                <div class="mx-auto pr-24">
+                    <p>LOGO</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>
+                <div class="flex gap-8 justify-end">
+                    <div>
+                        <p class="font-bold mb-4">Services</p>
+                        <ul class="flex flex-col gap-2">
+                            <li><a>Shopify</a>
+                            </li>
+                            <li><a>Pwa<div id="dropdownNavbar" class="dark:bg-gray-700 dark:divide-gray-600 divide-gray-100 divide-y font-normal h-[250px] hidden rounded-lg shadow z-[100]">
+                                        <ul class="border-b-[1px] border-l-[1px] border-r-[1px] dark:bg-base dark:border-white dark:text-gray-200 flex flex-col py-2 text-gray-700 text-sm" aria-labelledby="dropdownLargeButton">
+                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                            </li>
+                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                            </li>
+                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                            </li>
+                                        </ul>
+                                        <div class="hidden py-1"><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                                        </div>
+                                    </div></a>
+                            </li>
+                            <li><a>Ecommerce</a>
+                            </li>
+                            <li><a>Booking</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-4">About Us</p>
+                        <ul class="flex flex-col gap-2">
+                            <li><a>Shopify</a>
+                            </li>
+                            <li><a>Pwa</a>
+                            </li>
+                            <li><a>Ecommerce</a>
+                            </li>
+                            <li><a>Booking</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-4">Company</p>
+                        <ul class="flex flex-col gap-2">
+                            <li><a>Shopify</a>
+                            </li>
+                            <li><a>Pwa</a>
+                            </li>
+                            <li><a>Ecommerce</a>
+                            </li>
+                            <li><a>Booking</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
+                    <ul class="flex justify-between py-8">
+                        <li><a class="pr-10 border-r-[1px]">List item</a> <a class="pl-10">List item</a>
+                        </li>
+                        <li class="justify-self-end self-end">List item</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
