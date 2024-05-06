@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <title data-pgc-edit="title">pageee</title>
+        <title data-pgc-edit="title">SpeedStack - Custom Web Development and Design</title>
+        <meta property="og:description" data-pgc-edit="description[content]" content="Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria"/>We design and code on the Jamstack, ensuring great performance and SEO, primearly focused on small businesses in Vienna
         <link href="../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-edit="style-link[rel, href]"/>
         <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -25,12 +26,10 @@
     </head>
     <body data-pgc-section="body" class="dark:text-accent-50 text-accent-900">
         <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-24 items-center justify-center shadow w-full z-[100]" data-pgc-define="wa.Header" data-pgc-define-name="Header" data-pgc-section="Headers And Footers">
-            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3">
-                <a href="/" class="font-bold mt-4">{{meta.siteName}}</a>
+            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4">{{meta.siteName}}</a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] md:flex" id="navbar-dropdown">
                     {% for item in navigation.primaryNavigation %}
-                    <li>
-                        <a href="{{item.route}}">{{item.text}}</a>
+                    <li><a href="{{item.route}}">{{item.text}}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -61,7 +60,8 @@
                               );
                             </script>
                         </template>
-                    </is-land><a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
+                    </is-land>
+                    <a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
                 </div>
             </nav>
         </header>
@@ -129,25 +129,36 @@
                     <div>
                         <p class="font-bold mb-4">Services</p>
                         <ul class="flex flex-col gap-2">
-                            <li><a>Shopify</a>
-                            </li>
                             <li>
-                                <a>Pwa <div id="dropdownNavbar" class="dark:bg-gray-700 dark:divide-gray-600 divide-gray-100 divide-y font-normal h-[250px] hidden rounded-lg shadow z-[100]">
+                                <a>Shopify</a>
+                            </li>
+                            <li><a>Pwa <div id="dropdownNavbar" class="dark:bg-gray-700 dark:divide-gray-600 divide-gray-100 divide-y font-normal h-[250px] hidden rounded-lg shadow z-[100]">
                                         <ul class="border-b-[1px] border-l-[1px] border-r-[1px] dark:bg-base dark:border-white dark:text-gray-200 flex flex-col py-2 text-gray-700 text-sm" aria-labelledby="dropdownLargeButton">
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
                                             </li>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
                                             </li>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
                                             </li>
                                         </ul>
-                                        <div class="hidden py-1">
-                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                                        <div class="hidden py-1"><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
                                         </div>
                                     </div></a>
+                            </li>
+                            <li>
+                                <a>Ecommerce</a>
+                            </li>
+                            <li>
+                                <a>Booking</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-4">About Us</p>
+                        <ul class="flex flex-col gap-2">
+                            <li><a>Shopify</a>
+                            </li>
+                            <li><a>Pwa</a>
                             </li>
                             <li><a>Ecommerce</a>
                             </li>
@@ -156,44 +167,23 @@
                         </ul>
                     </div>
                     <div>
-                        <p class="font-bold mb-4">About Us</p>
-                        <ul class="flex flex-col gap-2">
-                            <li>
-                                <a>Shopify</a>
-                            </li>
-                            <li>
-                                <a>Pwa</a>
-                            </li>
-                            <li>
-                                <a>Ecommerce</a>
-                            </li>
-                            <li>
-                                <a>Booking</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
                         <p class="font-bold mb-4">Company</p>
                         <ul class="flex flex-col gap-2">
-                            <li>
-                                <a>Shopify</a>
+                            <li><a>Shopify</a>
                             </li>
-                            <li>
-                                <a>Pwa</a>
+                            <li><a>Pwa</a>
                             </li>
-                            <li>
-                                <a>Ecommerce</a>
+                            <li><a>Ecommerce</a>
                             </li>
-                            <li>
-                                <a>Booking</a>
+                            <li><a>Booking</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li>
-                            <a class="pr-10 border-r-[1px]">List item</a><a class="pl-10">List item</a>
+                        <li><a class="pr-10 border-r-[1px]">List item</a>
+                            <a class="pl-10">List item</a>
                         </li>
                         <li class="justify-self-end self-end">List item</li>
                     </ul>
