@@ -26,17 +26,23 @@
     </head>
     <body class="dark:text-accent-50 text-accent-900">
         <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-40 items-center justify-center py-10 shadow shadow-lg w-full z-[100]" data-pgc="wa.Header">
-            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3">
+                <a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
-                    <li><a href="/">Home</a>
+                    <li>
+                        <a href="/">Home</a>
                     </li>
-                    <li><a href="/services">Services</a>
+                    <li>
+                        <a href="/services">Services</a>
                     </li>
-                    <li><a href="/components">Components</a>
+                    <li>
+                        <a href="/components">Components</a>
                     </li>
-                    <li><a href="/blog">Blog</a>
+                    <li>
+                        <a href="/blog">Blog</a>
                     </li>
-                    <li><a href="/contact">Contact</a>
+                    <li>
+                        <a href="/contact">Contact</a>
                     </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
@@ -62,18 +68,17 @@
                                 document.getElementById("drawer-preact")
                               );</script>
                         </template>
-                    </is-land><a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
+                    </is-land>
+                    <a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
                 </div>
             </nav>
         </header>
         <main class="pt-24" data-pgc-field="mainContent">
             <section class="bg-primary-800 flex flex-col h-[80vh] items-center justify-center max-w-screen mx-auto px-14" data-pg-name="hero-section">
-                <p class="editable text-green-800 uppercase">
-          100% HAND-CODED WEBSITES STARTING AT 100&euro;/MO </p>
-                <h1 class="editable text-center text-white uppercase md:text-8xl">
-          SMALL BUSINESS WEB DESIGN AND DEVELOPMEN </h1>
+                <p class="editable text-green-800 uppercase">100% HAND-CODED WEBSITES STARTING AT $118/MO</p>
+                <h1 class="editable text-center text-white uppercase md:text-8xl">SMALL BUSINESS WEB DESIGN AND DEVELOPMENT</h1>
             </section>
-            <section class="hidden xl:block font-serif">
+            <section class="font-serif hidden xl:block">
                 {% assign marqueePreact = "./lib/preact/marquee.mjs" | preact %}
                 <is-land on:visible>
                     <div id="marquee-preact"></div>
@@ -102,13 +107,13 @@
                 </is-land>
             </section>
             <section class="text-gray-600 body-font">
-                <div class="container flex flex-col items-center mx-auto px-5 py-40 md:flex-row">
+                <div class="container flex flex-col items-center max-w-screen mx-auto px-5 py-32 md:flex-row md:py-40">
                     <div class="flex flex-col gap-12 items-center mb-16 text-center md:items-start md:mb-0 md:pr-16 md:text-left lg:pr-24">
                         <p class="editable text-green-800 uppercase">
               100% HAND-CODED WEBSITES STARTING AT $118/MO </p>
-                        <h1 class="editable mb-4 pb-32 text-5xl text-gray-900 sm:text-5xl">
-              We Code on the JamStack, Ensuring Great Performance and SEO </h1>
-                        <ul class="flex gap-12 justify-center">
+                        <h2 class="editable mb-4 text-gray-900 md:pb-32 md:text-2xl">
+              We Code on the JamStack, Ensuring Great Performance and SEO </h2>
+                        <ul class="flex flex-col gap-12 justify-center px-12 md:flex-row">
                             <li class="flex gap-4 items-center">
                                 <svg width="60" height="60" viewbox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-20 w-20">
                                     <path d="M12.0249 16.6883L14.6971 19.3605L20.0414 14.0161M28.058 16.6883C28.058 23.3295 22.6743 28.7132 16.0332 28.7132C9.39201 28.7132 4.0083 23.3295 4.0083 16.6883C4.0083 10.0472 9.39201 4.66345 16.0332 4.66345C22.6743 4.66345 28.058 10.0472 28.058 16.6883Z" stroke="#4AD697" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -135,28 +140,28 @@
                 </div>
             </section>
             <section class="bg-primary-800 body-font text-gray-600">
-                <div class="container flex flex-col gap-12 items-center mx-auto px-5 py-64">
+                <div class="container flex flex-col gap-12 items-center mx-auto px-5 py-32 md:py-40">
                     <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" width="56" height="56" rx="28" fill="#F9F5EF"/>
                         <path d="M29.6667 16.3334L18 30.3334H28.5L27.3333 39.6667L39 25.6667H28.5L29.6667 16.3334Z" stroke="#4AD697" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <h2 class="editable text-5xl text-center text-white">
+                    <h2 class="editable text-center text-white">
             SpeedStack In Numbers </h2>
                     <p class="editable text-accent-100">
             We&apos;re a young company with an already proven record </p>
-                    <ul class="-m-4 flex text-center text-white">
-                        <li class="border-r-[1px] p-4 pr-12 pr-24">
-                            <h4 class="editable font-medium text-3xl text-green-400 title-font sm:text-4xl">
+                    <ul class="-m-4 flex flex-col text-center text-white md:flex-row">
+                        <li class="md:border-r-[1px] md:pr-24">
+                            <h4 class="editable font-medium text-green-400 title-font sm:text-4xl">
                 6 </h4>
                             <p class="editable leading-relaxed">Projects Completed</p>
                         </li>
-                        <li class="border-r-[1px] p-4 pl-12 pr-24">
-                            <h4 class="editable font-medium text-3xl text-green-400 title-font sm:text-4xl">
+                        <li class="md:border-r-[1px] md:pl-12 md:pr-24">
+                            <h4 class="editable font-medium text-green-400 title-font sm:text-4xl">
                 3 </h4>
                             <p class="editable leading-relaxed">Satisfied Clients</p>
                         </li>
                         <li class="p-4">
-                            <h4 class="editable font-medium text-3xl text-green-400 title-font sm:text-4xl">
+                            <h4 class="editable font-medium text-green-400 title-font sm:text-4xl">
                 20 </h4>
                             <p class="editable leading-relaxed">Ready made Templates</p>
                         </li>
@@ -192,15 +197,15 @@
                     </li>
                 </ul>
             </section>
-            <section class="bg-white fle flex flex-col items-center p-[10%] py-32 rounded-b-3xl text-black md:py-64">
-                <h2 class="pb-20 text-5xl text-center"><span class="text-green-400"> 0 $ Down </span>, $118 Per Month,<br>
+            <section class="bg-white fle flex flex-col items-center px-12 py-32 rounded-b-3xl text-black md:py-40">
+                <h2 class="pb-20 text-center"><span class="text-green-400">$0 Down</span>, $118 Per Month,<br>
           12 Month <span class="text-slate-400">Minimum Contract</span></h2>
                 <p class="editable pb-4 text-center">
           Yes, we start you at $0, for a standard 5 page website, if you need
           more we have custom pricing based on the scope of work. <br/>
           You own everything, the domain the content and the listing. Cancel
           anytime with no fees. </p>
-                <ul class="gap-20 grid pt-20 text-3xl">
+                <ul class="gap-20 grid pt-20 text-base md:text-3xl">
                     <li class="delay-0 duration-200 ease-linear flex font-bold gap-12 items-center transition will-change-scroll" style="transition: opacity 1">
                         <svg width="50" height="35" viewbox="0 0 62 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_282_159)">
@@ -281,18 +286,15 @@
                     </li>
                 </ul>
             </section>
-            <section class="bg-primary-800 py-64 text-black text-white">
+            <section class="bg-primary-800 px-12 py-32 text-black text-white md:py-40">
                 <div class="container mx-auto">
-                    <h2 class="pb-6 text-6xl text-center">Packages</h2>
-                    <p class="editable max-w-5xl mx-auto pb-32 text-center">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit for official consequat enim to main purpose. If you
-            haven’t tried out Flaro App for them help. </p>
+                    <h2 class="pb-12 text-center">Packages</h2>
+                    <p class="editable max-w-5xl mx-auto pb-32 text-center">We also do tailored packages/offers based on your needs.<br>Book a <a href="/free-consultation-call" class="text-green-400 underline">Free Consulataion Call</a>&nbsp;to see what fits your needs.</p>
                     <ul class="gap-24 grid md:gap-10 lg:grid-cols-3">
                         <li>
                             <div class="bg-green-400 flex flex-col justify-between min-h- min-h-[600px] p-14 rounded-3xl text-black text-neutral">
                                 <h3 class="pb-10">E-Commerce</h3>
-                                <p class="font-bold pb-12 text-left"> <span class="text-4xl">$7500</span> <br/><span class="text-3xl text-neutral-300">minimum uprfront cost</span> </p>
+                                <p class="font-bold pb-12 text-left"> <span class="text-4xl">$7500</span> <br/><span class="text-neutral-300">minimum uprfront cost</span> </p>
                                 <ul class="flex flex-col gap-10 text-left">
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -358,7 +360,7 @@
                             <div class="bg-white flex flex-col justify-between min-h- min-h-[600px] p-14 rounded-3xl text-black text-neutral">
                                 <h3 class="pb-10">Standard</h3>
                                 <p class="font-bold pb-12 text-5xl text-left">
-                  $118 <span class="text-3xl text-neutral-300">/ per month</span> </p>
+                  $118 <span class="text-neutral-300">/ per month</span> </p>
                                 <ul class="flex flex-col gap-10">
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -505,8 +507,8 @@
                     </ul>
                 </div>
             </section>
-            <section class="container dark:bg-white mx-auto py-32 text-black md:py-64">
-                <h2 class="pb-10 px-[10%] text-5xl text-center md:pb-24">
+            <section class="container dark:bg-white mx-auto py-32 text-black md:py-40">
+                <h2 class="not-italic pb-10 px-[10%] text-center md:pb-24">
           Advantages of becoming <span class="text-green-400">our partner</span> </h2>
                 <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                     <li class="flex flex-col gap-24 h-[500px] items-center justify-center p-32 text-center transition-all">
@@ -549,14 +551,14 @@
                     </li>
                 </ul>
             </section>
-            <section class="bg-primary-800 py-64">
+            <section class="bg-primary-800 px-12 py-32 md:py-40">
                 <div class="container mx-auto">
                     <p class="text-green-800 uppercase">FAQ</p>
-                    <h2 class="text-5xl">Answers to our frequently asked questions</h2>
-                    <div class="container py-32" data-pgc="flowbite-accordion-simple">
+                    <h2>Answers to our frequently asked questions</h2>
+                    <div class="container py-12" data-pgc="flowbite-accordion-simple">
                         <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
                             <div id="accordion-flush-heading-">
-                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-" aria-expanded="false" aria-controls="accordion-flush-body-">
+                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-" aria-expanded="false" aria-controls="accordion-flush-body-">
                                     <h4 class="text-3xl">What is the best thing about the product?</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -569,7 +571,7 @@
                                 </div>
                             </div>
                             <div id="accordion-flush-heading-">
-                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-" aria-expanded="false" aria-controls="accordion-flush-body-">
+                                <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold font-medium gap-3 items-center justify-between px-10 py-5 rtl:text-right text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-" aria-expanded="false" aria-controls="accordion-flush-body-">
                                     <h4 class="text-3xl">What is the best thing about the product?</h4>
                                     <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -646,57 +648,75 @@
                     <div>
                         <p class="font-bold mb-4">Services</p>
                         <ul class="flex flex-col gap-2">
-                            <li><a>Shopify</a>
+                            <li>
+                                <a>Shopify</a>
                             </li>
-                            <li><a>Pwa<div id="dropdownNavbar" class="dark:bg-gray-700 dark:divide-gray-600 divide-gray-100 divide-y font-normal h-[250px] hidden rounded-lg shadow z-[100]">
+                            <li>
+                                <a>Pwa<div id="dropdownNavbar" class="dark:bg-gray-700 dark:divide-gray-600 divide-gray-100 divide-y font-normal h-[250px] hidden rounded-lg shadow z-[100]">
                                         <ul class="border-b-[1px] border-l-[1px] border-r-[1px] dark:bg-base dark:border-white dark:text-gray-200 flex flex-col py-2 text-gray-700 text-sm" aria-labelledby="dropdownLargeButton">
-                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                            <li>
+                                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
                                             </li>
-                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                            <li>
+                                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
                                             </li>
-                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                            <li>
+                                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
                                             </li>
                                         </ul>
-                                        <div class="hidden py-1"><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                                        <div class="hidden py-1">
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
                                         </div>
                                     </div></a>
                             </li>
-                            <li><a>Ecommerce</a>
+                            <li>
+                                <a>Ecommerce</a>
                             </li>
-                            <li><a>Booking</a>
+                            <li>
+                                <a>Booking</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <p class="font-bold mb-4">About Us</p>
                         <ul class="flex flex-col gap-2">
-                            <li><a>Shopify</a>
+                            <li>
+                                <a>Shopify</a>
                             </li>
-                            <li><a>Pwa</a>
+                            <li>
+                                <a>Pwa</a>
                             </li>
-                            <li><a>Ecommerce</a>
+                            <li>
+                                <a>Ecommerce</a>
                             </li>
-                            <li><a>Booking</a>
+                            <li>
+                                <a>Booking</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <p class="font-bold mb-4">Company</p>
                         <ul class="flex flex-col gap-2">
-                            <li><a>Shopify</a>
+                            <li>
+                                <a>Shopify</a>
                             </li>
-                            <li><a>Pwa</a>
+                            <li>
+                                <a>Pwa</a>
                             </li>
-                            <li><a>Ecommerce</a>
+                            <li>
+                                <a>Ecommerce</a>
                             </li>
-                            <li><a>Booking</a>
+                            <li>
+                                <a>Booking</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">List item</a><a class="pl-10">List item</a>
+                        <li>
+                            <a class="pr-10 border-r-[1px]">List item</a>
+                            <a class="pl-10">List item</a>
                         </li>
                         <li class="justify-self-end self-end">List item</li>
                     </ul>

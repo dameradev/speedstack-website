@@ -54,6 +54,10 @@
     h2 {
         font-size: 3.6rem;
 
+        @media (min-width: 1280px) {
+            font-size: 5.2rem;
+        }
+
         /* 72px */
         line-height: 1.3;
     }
