@@ -116,7 +116,7 @@ primarylight: {'50': '#e3ebe9',
 
 const pg_fonts = {sans: ["'Nunito Sans', sans-serif",
 ],
-serif: ["'Sansita', serif",
+serif: ["'Righteous', sans-serif",
 ],
 }   
 
