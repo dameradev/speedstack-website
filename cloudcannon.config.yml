@@ -61,10 +61,10 @@ collection_groups:
       - pages
   - heading: Posts
     collections:
-      - posts
+      - collections/posts
   - heading: Ebooks
     collections:
-      - ebooks
+      - collections/faq
   - heading: Site Settings
     collections:
       - data
