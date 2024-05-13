@@ -8,19 +8,22 @@ paths:
   includes: _includes
   pages: ''
 collections_config:
-  post:
-    path: posts
+ faq:
+    path: collections/faqs
     output: true
-    description: ''
+    description: 'Frequently Asked Questions'
     icon: notes
-    _editables:
-    _inputs:
-    _select_data:
-    _structures:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-    schemas:
+  post:
+    path: collections/posts
+    output: true
+    description: 'Blog posts'
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
   pages:
     path: ''
     output: true
