@@ -55,21 +55,6 @@ collections_config:
     new_preview_url:
     schemas:
     schema_key:
-collection_groups:
-  - heading: Pages
-    collections:
-      - pages
-  - heading: Posts
-    collections:
-      - collections/posts
-  - heading: Ebooks
-    collections:
-      - collections/faq
-  - heading: Site Settings
-    collections:
-      - data
-      - site_navigation
-      - theme_palette
 _enabled_editors:
   - content
   - data
