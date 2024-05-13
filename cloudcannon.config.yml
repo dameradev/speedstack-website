@@ -8,7 +8,7 @@ paths:
   includes: _includes
   pages: ''
 collections_config:
- faq:
+  faq:
     path: collections/faqs
     output: true
     description: 'Frequently Asked Questions'
