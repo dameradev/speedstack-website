@@ -25,7 +25,7 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
   pages:
-    path: ''
+    path: '/'
     output: true
     url:
     filter: strict
