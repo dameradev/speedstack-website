@@ -16,6 +16,10 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas:
+      default:
+        name: New FAQ
+        path: schemas/faq.mdx
   post:
     path: collections/posts
     output: true
@@ -51,6 +55,21 @@ collections_config:
     new_preview_url:
     schemas:
     schema_key:
+collection_groups:
+  - heading: Pages
+    collections:
+      - pages
+  - heading: Posts
+    collections:
+      - posts
+  - heading: Ebooks
+    collections:
+      - ebooks
+  - heading: Site Settings
+    collections:
+      - data
+      - site_navigation
+      - theme_palette
 _enabled_editors:
   - content
   - data
