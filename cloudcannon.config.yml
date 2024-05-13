@@ -19,7 +19,7 @@ collections_config:
     schemas:
       default:
         name: New FAQ
-        path: schemas/faq.mdx
+        path: /schemas/faq.md
   post:
     path: collections/posts
     output: true
