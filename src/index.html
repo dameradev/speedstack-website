@@ -570,10 +570,9 @@
                         </div>
                         {% endif %}
                         <div id="accordion-flush-body-{{ forloop.index }}" class="hidden" aria-labelledby="accordion-flush-heading-{{ forloop.index }}">
-                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                                <p class="text-white px-10 mb-2">
-        {{ faq.content }} </p>
-                            </div>
+                            <div class="py-5 px-10 border-b border-gray-200 dark:border-gray-700 [&>*>a]:text-green-400 [&>*>a]:underline">
+                                {{ faq.content }}
+</div>
                         </div>
                         {% endfor %}
                     </div>

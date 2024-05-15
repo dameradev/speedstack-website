@@ -4330,6 +4330,15 @@ body, html {
   text-align: right;
 }
 
+    .\[\&\>\*\>a\]\:text-green-400>*>a{
+  --tw-text-opacity: 1;
+  color: rgb(92 199 126 / var(--tw-text-opacity));
+}
+
+    .\[\&\>\*\>a\]\:underline>*>a{
+  text-decoration-line: underline;
+}
+
     .\[\&\>blockquote\]\:my-8>blockquote{
   margin-top: 2rem;
   margin-bottom: 2rem;
