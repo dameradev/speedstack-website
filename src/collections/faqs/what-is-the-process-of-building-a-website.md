@@ -11,9 +11,13 @@ Before we start, we offer a free consultation, on this meeting, we'll present to
 
 [Book a free consultation]()<br><br>Before this meeting we ask all our clients to fill out this <a href="https://docs.google.com/forms/d/1dtqeeshhtozp2vVflnWmww7c-LlSKrjvTTCrQVhJx3E/edit" target="_blank" rel="noopener">questionnaire</a>, so we can better prepare for your project.
 
+&nbsp;
+
 ### Internal Process
 
 We create an evaluation, and determine the tasks that need to be done in order to successfully finish the project.  <br><br>When this evaluation is done, we have a rough time-estimate for project completion.<br><br>Before we finalize the contract, you need to decide which pricing option fits you best
+
+&nbsp;
 
 ### 2 price options
 
