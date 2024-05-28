@@ -1,7 +1,7 @@
 ---
 _schema: default
 question: How does the pricing work
-homepage: true
+homepage: false
 services: true
 jamstack: true
 ---
