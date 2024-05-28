@@ -1873,10 +1873,6 @@ p {
   max-width: fit-content;
 }
 
-.max-w-lg{
-  max-width: 32rem;
-}
-
 .max-w-md{
   max-width: 28rem;
 }
@@ -2094,10 +2090,6 @@ p {
 .gap-x-4{
   -moz-column-gap: 1rem;
        column-gap: 1rem;
-}
-
-.gap-y-12{
-  row-gap: 3rem;
 }
 
 .gap-y-32{
@@ -2325,6 +2317,11 @@ p {
 .border-accent-500{
   --tw-border-opacity: 1;
   border-color: rgb(127 127 127 / var(--tw-border-opacity));
+}
+
+.border-accent-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(76 76 76 / var(--tw-border-opacity));
 }
 
 .border-accent-950{
@@ -4324,6 +4321,9 @@ body, html {
   }
   .xl\:h-\[600px\]{
     height: 600px;
+  }
+  .xl\:min-h-\[70vh\]{
+    min-height: 70vh;
   }
   .xl\:w-1\/2{
     width: 50%;
