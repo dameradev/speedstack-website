@@ -32,15 +32,11 @@
                     </li>
                     <li><a href="/services">Services</a>
                     </li>
-                    <li><a href="/components">Components</a>
-                    </li>
                     <li><a href="/blog">Blog</a>
-                    </li>
-                    <li><a href="/contact">Contact</a>
                     </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
-                    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <button id="theme-toggle" type="button" class="dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hidden hover:bg-gray-100 p-2.5 rounded-lg text-gray-500 text-sm">
                         <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                         </svg>                         
@@ -58,51 +54,68 @@
                               import Drawer from "/lib/preact/drawer.client.js";
               
                               render(
-                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/components","text":"Components"},{"route":"/blog","text":"Blog"},{"route":"/contact","text":"Contact"}]')}  />`,
+                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/blog","text":"Blog"}]')}  />`,
                                 document.getElementById("drawer-preact")
                               );</script>
                         </template>
-                    </is-land><a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
+                    </is-land><a href="/contact" class="border-[1px] border-accent-500 hidden justify-self-end px-8 py-2 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
                 </div>
             </nav>
         </header>
         <main class="pt-24" data-pgc-field="mainContent">
-            <section class="bg-base container mx-auto px-0 py-32"> 
-                <form class="bg-black px-32 py-24 rounded-3xl text-white"> 
-                    <h3 class="mb-14 text-6xl">Start Project</h3> 
-                    <div class="gap-10 grid grid-cols-2"> 
-                        <div class="mb-5"> 
-                            <label for="email" class="block mb-2 text-gray-900 dark:text-white">Your email</label>                             
-                            <input type="email" id="email" class="bg-base block border-none dark:focus:border-blue-500 dark:focus:ring-blue-500 dark:placeholder-gray-400 dark:text-white focus:border-blue-500 focus:ring-blue-500 p-2.5 p-6 rounded-3xl rounded-full text-xl w-full" placeholder="name@flowbite.com" required/> 
-                        </div>                         
-                        <div class="mb-5"> 
-                            <label for="name" class="block mb-2 font-medium text-gray-900 dark:text-white">Your Name</label>                             
-                            <input type="text" id="name" class="bg-base block border-none dark:bg-gray-700 dark:focus:border-blue-500 dark:focus:ring-blue-500 dark:placeholder-gray-400 dark:text-white focus:border-blue-500 focus:ring-blue-500 p-2.5 p-6 rounded-3xl text-gray-900 text-xl w-full" required placeholder='John Doe'/> 
-                        </div>                         
-                        <div class="col-span-2 flex gap-5 items-center justify-end mb-5"> 
-                            <div class="flex items-center h-5"> 
-                                <input id="remember" type="radio" value="" class="w-4 h-4  base bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required/> 
-                            </div>                             
-                            <label for="remember" class="ms-2 font-medium text-gray-900 dark:text-gray-300">Shopify</label>                             
-                            <div class="flex items-center h-5"> 
-                                <input id="remember" type="radio" value="" class="w-4 h-4  base bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required/> 
-                            </div>                             
-                            <label for="remember" class="ms-2 font-medium text-gray-900 dark:text-gray-300">Booking system</label>                             
-                            <div class="flex items-center h-5"> 
-                                <input id="remember" type="radio" value="" class="w-4 h-4  base bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required/> 
-                            </div>                             
-                            <label for="remember" class="ms-2 font-medium text-gray-900 dark:text-gray-300">Landing page</label>                             
-                        </div>                         
-                        <div class="mb-5 col-span-2"> 
-                            <label for="large-input" class="block mb-2 font-medium text-gray-900 dark:text-white">How can we help</label>                             
-                            <input type="text" id="large-input" class="bg-base bg-gray-50 block border-none dark:bg-gray-700 dark:focus:border-blue-500 dark:focus:ring-blue-500 dark:placeholder-gray-400 dark:text-white focus:border-blue-500 focus:ring-blue-500 p-4 p-6 rounded-3xl text-base text-gray-900 w-full"> 
-                        </div>                         
-                    </div>                     
-                    <button type="submit" class="bg-primary dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium hover:bg-blue-800 px-5 py-2.5 rounded-lg sm:w-auto text-center text-white w-full">Submit</button>                     
-                </form>                 
-            </section>
-            <div class="container py-32">
+            <section class="bg-gray-900 bg-green-800 overflow-hidden py-32 md:py-64">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 mx-auto gap-y-12 lg:grid-cols-2 lg:gap-x-16 xl:gap-x-24">
+                        <div class="relative flex flex-col justify-between max-w-lg lg:py-12 lg:max-w-none">
+                            <p class="font-normal mt-4 text-base text-gray-400 uppercase sm:mt-6 sm:text-lg lg:max-w-xs">interested?</p>
+                            <div class="mt-6 lg:mt-auto">
+                                <h2 class="font-normal text-white">We will help you&nbsp;&nbsp;<span class="text-green-400
+">grow your business</span> faster and easier.</h2>
+                                <p class="mt-4 text-base font-normal text-gray-400 sm:text-lg sm:mt-6">We will be happy to advise you in the areas of branding, UI/UX design, web development. and will send you a non-binding offer for your project after an initial consultation.</p>
+                            </div>
+                        </div>
+                        <div class="relative flex items-center justify-center">
+                            <div class="absolute right-0 transform translate-x-4 -translate-y-1/2 top-1/2">
 </div>
+                            <div class="bg-white overflow-hidden relative rounded-3xl">
+                                <div class="max-w-2xl p-14 text-accent-600">
+                                    <p class="font-normal text-xl">Let us know about your project & we will help you grow your business from scratch.</p>
+                                    <form action="#" method="POST" class="mt-8 space-y-4">
+                                        <div>
+                                            <label for="" class="sr-only"> Full name </label>
+                                            <div>
+                                                <input type="text" name="" id="" placeholder="First & Last name" class="block border-[1px] border-accent-400 focus:border-white focus:ring-1 focus:ring-white placeholder-gray-500 px-5 py-4 rounded-xl text-base text-white w-full"/>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="" class="sr-only"> Email address </label>
+                                            <div>
+                                                <input type="email" name="" id="" placeholder="Email address" class="block border-[1px] border-accent-400 focus:border-white focus:ring-1 focus:ring-white placeholder-gray-500 px-5 py-4 rounded-xl text-base text-white w-full"/>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="" class="sr-only"> Phone number </label>
+                                            <div>
+</div>
+                                        </div>
+                                        <div>
+                                            <label for="" class="sr-only"> Message </label>
+                                            <div>
+                                                <textarea name="" id="" placeholder="Write your message" rows="4" class="block border-[1px] border-accent-400 focus:border-white focus:ring-1 focus:ring-white mt-6 placeholder-gray-500 px-5 py-4 resize-y rounded-xl text-base text-white w-full"></textarea>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="group inline-flex mt-2 relative w-full">
+                                                <button type="button" class="bg-black border border-transparent inline-flex items-center justify-center mt-10 px-8 py-3 relative rounded-full text-accent-100 uppercase w-full" role="button">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- Modal toggle -->
             <!-- Main modal -->
         </main>
@@ -187,7 +200,7 @@
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a> <a class="pl-10">Terms &amp; Conditions</a> <a class="pl-10"></a>
+                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
                         </li>
                         <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
                     </ul>

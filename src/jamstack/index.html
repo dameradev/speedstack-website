@@ -29,19 +29,18 @@
             <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3">
                 <a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
-                    <li><a href="/">Home</a>
+                    <li>
+                        <a href="/">Home</a>
                     </li>
-                    <li><a href="/services">Services</a>
+                    <li>
+                        <a href="/services">Services</a>
                     </li>
-                    <li><a href="/components">Components</a>
-                    </li>
-                    <li><a href="/blog">Blog</a>
-                    </li>
-                    <li><a href="/contact">Contact</a>
+                    <li>
+                        <a href="/blog">Blog</a>
                     </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
-                    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <button id="theme-toggle" type="button" class="dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hidden hover:bg-gray-100 p-2.5 rounded-lg text-gray-500 text-sm">
                         <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                         </svg>                         
@@ -59,19 +58,19 @@
                               import Drawer from "/lib/preact/drawer.client.js";
               
                               render(
-                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/components","text":"Components"},{"route":"/blog","text":"Blog"},{"route":"/contact","text":"Contact"}]')}  />`,
+                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/blog","text":"Blog"}]')}  />`,
                                 document.getElementById("drawer-preact")
                               );</script>
                         </template>
                     </is-land>
-                    <a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
+                    <a href="/contact" class="border-[1px] border-accent-500 hidden justify-self-end px-8 py-2 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
                 </div>
             </nav>
         </header>
         <main class="pt-24" data-pgc-field="mainContent">
             <section class="bg-primary-800 mx-auto py-64">
                 <div class="container mx-auto">
-                    <h1 class="[&>span]:text-green-600 px-32 uppercase md:text-8xl">
+                    <h1 class="[&>span]:text-green-600 uppercase md:text-6xl lg:text-8xl xl:px-32">
             We gurantee <br/>{% assign textChangerPreact =
             "./lib/preact/textChanger.mjs" | preact %}  <is-land on:visible>
                             <div id="text-changer-preact"></div>
@@ -89,11 +88,55 @@
                         </is-land> </h1>
                 </div>
             </section>
+            <section class="bg-black px-10 py-32 md:py-64">
+                <div class="px-4 mx-auto  sm:px-6 lg:px-8 container">
+                    <div class="gap-y-8 grid grid-cols-1 md:gap-x-16 md:items-center lg:grid-cols-2">
+                        <svg width="396" height="278" viewBox="0 0 396 278" fill="none" xmlns="http://www.w3.org/2000/svg" class="justify-self-center self-center">
+                            <g clip-path="url(#clip0_378_266)">
+                                <path d="M77.1989 77.1037L57.0542 69.9106V61.0157L77.1989 53.8225V60.8002L62.0087 65.8607V64.969L77.1989 70.1409V77.1186V77.1037Z" fill="white"/>
+                                <path d="M79.2935 87.2619L89.8635 46.7854H98.9776L88.4076 87.2619H79.2935Z" fill="white"/>
+                                <path d="M101.072 77.1038V70.1261L116.262 64.9541V65.8458L101.072 60.7854V53.8077L121.217 61.0009V69.8957L101.072 77.0889V77.1038Z" fill="white"/>
+                                <path d="M43.1416 19.0159C44.9098 19.0159 46.3431 17.5254 46.3431 15.6868C46.3431 13.8482 44.9098 12.3577 43.1416 12.3577C41.3735 12.3577 39.9402 13.8482 39.9402 15.6868C39.9402 17.5254 41.3735 19.0159 43.1416 19.0159Z" fill="white"/>
+                                <path d="M55.5909 19.0159C57.359 19.0159 58.7923 17.5254 58.7923 15.6868C58.7923 13.8482 57.359 12.3577 55.5909 12.3577C53.8227 12.3577 52.3894 13.8482 52.3894 15.6868C52.3894 17.5254 53.8227 19.0159 55.5909 19.0159Z" fill="white"/>
+                                <path d="M68.0403 19.0159C69.8084 19.0159 71.2418 17.5254 71.2418 15.6868C71.2418 13.8482 69.8084 12.3577 68.0403 12.3577C66.2722 12.3577 64.8389 13.8482 64.8389 15.6868C64.8389 17.5254 66.2722 19.0159 68.0403 19.0159Z" fill="white"/>
+                                <path d="M361.371 2.31104H34.1687C29.2459 2.31104 25.2551 6.30339 25.2551 11.2282V210.75C25.2551 215.675 29.2459 219.667 34.1687 219.667H361.371C366.294 219.667 370.284 215.675 370.284 210.75V11.2282C370.284 6.30339 366.294 2.31104 361.371 2.31104Z" stroke="white" stroke-width="6.22" stroke-miterlimit="10"/>
+                                <path d="M25.2551 192.544H370.656V204.463C370.656 213.061 363.681 220.038 355.087 220.038H40.8242C32.23 220.038 25.2551 213.061 25.2551 204.463V192.544Z" fill="white"/>
+                                <path d="M228.039 220.038H167.872V274.285H228.039V220.038Z" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M0 275.028H396" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M140.389 81.8224H303.061" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M111.42 159.848H248.837" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M215.411 133.839H332.773" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M84.679 133.839H202.784" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M140.389 57.3002H244.38" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M57.1953 107.831H140.389" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M259.236 57.3002H332.773" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M153.016 107.831H236.209" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M259.236 159.848H320.888" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                                <path d="M249.58 107.831H332.773" stroke="white" stroke-width="8" stroke-miterlimit="10"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_378_266">
+                                    <rect width="396" height="278" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="text-center md:text-left lg:pr-16">
+                            <h2 class="font-bold text-5xl">What is the Jamstack?</h2>
+                            <p class="mt-8 text-gray-400 text-lg sm:mt-8">Jamstack allow you to deploy your website globally with ease, it enables developers to create performing, scalable and secure websites.</p>
+                            <p class="mt-8 text-gray-400 text-lg sm:mt-8">It allows us to separate the front from the backend, in comparison with WordPress and other traditional web servers, where both are typically connected, which exposes you to more security risks, and is typically much slower to load.</p>
+                            <p class="mt-8 text-gray-400 text-lg sm:mt-8">With Jamstack, the end product is a static site, which still retains the dynamic features availabe with traditional web builders, without the need for a database.</p>
+                            <p class="mt-8 text-gray-400 text-lg sm:mt-8">
+Jamstack represents the optimal approach for modern web development by seamlessly combining the advantages of both static and dynamic websites.</p>
+                            <a href="/jamstack" title="" class="font-bold inline-flex items-center mt-8 text-green-700"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="bg-white flex flex-col items-center justify-center py-[10% py-[10%] text-accent-950 text-center w-full" data-pg-name="benefits"> 
                 <div class="container mx-auto">
                     <p class="text-green-700 uppercase">Headless e-commerce solutions</p>
                     <h2 class="pb-20">Benefits of jam-stack</h2>
-                    <ul class="gap-10 grid grid-cols-1 md:grid-cols-3"> 
+                    <ul class="gap-20 grid grid-cols-1 md:grid-cols-3"> 
                         <li class="benefits__list-element flex flex-col items-center text-center"> 
                             <svg width="55" height="60" viewbox="0 0 55 60" fill="none" xmlns="http://www.w3.org/2000/svg"> 
                                 <g clip-path="url(#clip0_211_114)"> 
@@ -213,8 +256,8 @@ and our services</h2>
             </section>
             <section class="container md:py-64 mx-auto py-32 text-accent-950">
                 <h2 class="pb-20 text-center">Partners</h2>
-                <ul class="flex gap-40 justify-between">
-                    <li class="flex gap-10 items-center text-left">
+                <ul class="flex gap-40 justify-between px-10">
+                    <li class="flex flex-col gap-10 items-center text-left lg:flex-row">
                         <svg width="120" height="67" viewBox="0 0 120 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M93.4977 20.9429C92.6711 16.0286 89.0428 12.1019 84.3353 10.724C84.4041 10.2418 84.473 9.75956 84.473 9.27732C84.473 4.20235 80.3625 0.0918547 75.2876 0.0918547C72.7156 0.0918547 70.4193 1.14818 68.7429 2.8475C68.2836 1.63042 67.1355 0.757801 65.7576 0.757801C63.9894 0.757801 62.5427 2.20451 62.5427 3.97271C62.5427 5.74092 63.7598 6.52168 66.3088 7.73876C66.6532 7.8995 66.9977 8.08321 67.3192 8.26692C67.5259 8.38174 67.7096 8.49656 67.9162 8.61138C68.054 8.70323 68.2148 8.79508 68.3525 8.88694C68.4444 8.93287 68.5133 9.00176 68.6051 9.04768C69.3859 9.57585 70.0978 10.1499 70.7867 10.77C70.8326 10.7929 70.8556 10.8389 70.9015 10.8618C71.1771 11.1144 71.4526 11.39 71.7052 11.6885C71.7741 11.7574 71.843 11.8493 71.9119 11.9181C72.2104 12.2396 72.486 12.5841 72.7386 12.9285C74.8972 15.776 76.1831 19.3354 76.1831 23.1703C76.1831 27.0053 74.8742 30.5646 72.7386 33.4121C72.486 33.7566 72.1875 34.0781 71.9119 34.4225C71.843 34.4914 71.7741 34.5833 71.7052 34.6522C71.4526 34.9277 71.1771 35.2033 70.9015 35.4789C70.8556 35.5018 70.8326 35.5478 70.7867 35.5707C70.0978 36.1907 69.3859 36.7878 68.6051 37.293C68.5133 37.3389 68.4444 37.4078 68.3525 37.4537C68.2148 37.5456 68.077 37.6375 67.9162 37.7293C67.7325 37.8441 67.5259 37.9589 67.3192 38.0738C66.9747 38.2575 66.6532 38.4412 66.3088 38.6019C63.7368 39.796 62.5427 40.5768 62.5427 42.368C62.5427 44.1362 63.9894 45.5829 65.7576 45.5829C67.1355 45.5829 68.2836 44.7103 68.7429 43.4932C70.4193 45.1925 72.7386 46.2488 75.2876 46.2488C80.3625 46.2488 84.473 42.1383 84.473 37.0634C84.473 36.5582 84.4041 36.0989 84.3353 35.6166C89.0428 34.2388 92.6481 30.2891 93.4977 25.3978C93.6126 24.6859 93.6815 23.9741 93.6815 23.2392C93.6815 22.3666 93.6126 21.6318 93.4977 20.9429ZM53.4262 38.5101C53.0817 38.3493 52.7372 38.1656 52.4158 37.9819C52.2091 37.8671 52.0254 37.7523 51.8187 37.6375C51.6809 37.5456 51.5202 37.4537 51.3824 37.3619C51.2905 37.316 51.2216 37.2471 51.1298 37.2011C50.349 36.6959 49.6372 36.0989 48.9482 35.4789C48.9023 35.4559 48.8794 35.41 48.8334 35.387C48.5579 35.1115 48.2823 34.8588 48.0297 34.5603C47.9608 34.4914 47.8919 34.3996 47.823 34.3307C47.5245 34.0092 47.2489 33.6647 46.9963 33.3203C44.8377 30.4728 43.5518 26.9134 43.5518 23.0785C43.5518 19.2436 44.8607 15.6842 46.9963 12.8367C47.2489 12.4922 47.5475 12.1707 47.823 11.8263C47.8919 11.7574 47.9608 11.6655 48.0297 11.5967C48.2823 11.3211 48.5579 11.0455 48.8334 10.77C48.8794 10.747 48.9023 10.7011 48.9482 10.6781C49.6372 10.0581 50.349 9.46103 51.1298 8.95583C51.2216 8.9099 51.2905 8.84101 51.3824 8.79508C51.5202 8.70323 51.658 8.61137 51.8187 8.51952C52.0024 8.4047 52.2091 8.28988 52.4158 8.17507C52.7602 7.99136 53.0817 7.80765 53.4262 7.6469C55.9981 6.45279 57.1922 5.67203 57.1922 3.88086C57.1922 2.11266 55.7455 0.665946 53.9773 0.665946C52.5995 0.665946 51.4513 1.53857 50.992 2.75564C49.3157 1.05633 46.9963 0 44.4474 0C39.3724 0 35.2619 4.1105 35.2619 9.18547C35.2619 9.69067 35.3308 10.1499 35.3997 10.6322C30.6921 12.01 27.0868 15.9598 26.2372 20.851C26.1224 21.5629 26.0535 22.2748 26.0535 23.0096C26.0535 23.7444 26.1224 24.4563 26.2372 25.1682C27.0639 30.0824 30.6921 34.0092 35.3997 35.387C35.3308 35.8693 35.2619 36.3515 35.2619 36.8337C35.2619 41.9087 39.3724 46.0192 44.4474 46.0192C47.0193 46.0192 49.3157 44.9629 50.992 43.2636C51.4513 44.4806 52.5995 45.3532 53.9773 45.3532C55.7455 45.3532 57.1922 43.9065 57.1922 42.1383C57.1922 40.4849 55.9981 39.7042 53.4262 38.5101Z" fill="#407AFC"/>
                             <path d="M69.8911 23.101C69.8911 17.5668 65.4132 13.0889 59.879 13.0889C54.3447 13.0889 49.8668 17.5668 49.8668 23.101C49.8668 28.6353 54.3447 33.1132 59.879 33.1132C65.4132 33.1132 69.8911 28.6353 69.8911 23.101Z" fill="#407AFC"/>
@@ -222,7 +265,7 @@ and our services</h2>
                         </svg>
                         <p>With lots of unique blocks, you can easily build without coding. With lots of unique blocks, you can easily build without coding.</p>
                     </li>
-                    <li class="flex gap-10 items-center text-left">
+                    <li class="flex flex-col gap-10 items-center text-left lg:flex-row">
                         <svg width="83" height="51" viewBox="0 0 83 51" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="83" height="51" fill="url(#pattern0_476_483)"/>
                             <defs>
@@ -235,9 +278,9 @@ and our services</h2>
                         <p>With lots of unique blocks, you can easily build without coding. With lots of unique blocks, you can easily build without coding.</p>
                     </li>
                 </ul>
-                <div class="flex gap-20 items-center justify-between mt-32">
-                    <h3 class="pl-32 text-4xl"><span class="text-green-400">Technologies</span> we use</h3>
-                    <img src="../images/image%2018.png">
+                <div class="flex flex-col gap-20 items-center justify-between mt-32 lg:flex-row">
+                    <h3 class="text-4xl lg:pl-32"><span class="text-green-400">Technologies</span> we use</h3>
+                    <img src="../images/image%2018.png" class="editable">
                 </div>
             </section>
             <section class="bg-primary-800 body-font text-gray-600">
@@ -269,11 +312,11 @@ and our services</h2>
                 </div>
             </section>
             <section class="container md:py-64 mx-auto py-32 text-accent-950">
-                <div class="flex gap-20 items-center">
-                    <h2><span class="text-green-400">Jamstack</span> vs WordPress  A Comparative Analysis</h2>
+                <div class="flex flex-col gap-20 items-center lg:flex-row">
+                    <h2 class="min-w-[50%]"><span class="text-green-400">Jamstack</span> vs WordPress <br/> A Comparative Analysis</h2>
                     <p>Yes, Jamstack really does sound exquisite. However, around 65% of websites are still made with the use of Wordpress. Well, we don't know why, since there's a much better solution.</p>
                 </div>
-                <div class="flex grid grid-cols-[1fr_1fr] justify-between justify-items-center mt-32 mx-auto">
+                <div class="grid grid-cols-1 justify-between justify-items-center mt-32 mx-auto px-10 md:grid-cols-2">
                     <ul class="bg-green-300 max-w-fit p-20 rounded-2xl">
                         <li>
                             <h3 class="mb-14 text-center"><span class="text-white">Your Jamstack</span> Website</h3>
@@ -281,37 +324,37 @@ and our services</h2>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                        Increased UX (User Experience) = Higher Conversion Rates
+                                    </svg>                                                                                                            Increased UX (User Experience) = Higher Conversion Rates
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                        Significantly increased SEO results = larger traffic
+                                    </svg>                                                                                                            Significantly increased SEO results = larger traffic
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                        Much better speed and application performance
+                                    </svg>                                                                                                            Much better speed and application performance
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                        Scalability without increased costs
+                                    </svg>                                                                                                            Scalability without increased costs
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                        Maximum security and hack prevention
+                                    </svg>                                                                                                            Maximum security and hack prevention
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                        Flexibility and omni-channel readiness
+                                    </svg>                                                                                                            Flexibility and omni-channel readiness
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                        Cheap (or free) hosting & smaller maintenance costs
+                                    </svg>                                                                                                            Cheap (or free) hosting & smaller maintenance costs
                                 </li>
                             </ul>                             
                         </li>
@@ -331,7 +374,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                     Filled with glitches & bugs
+                                    </svg>                                                                         Filled with glitches & bugs
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -343,7 +386,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                     Requires never-ending SEO optimizations
+                                    </svg>                                                                         Requires never-ending SEO optimizations
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -355,7 +398,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                     Lower page speed and performance
+                                    </svg>                                                                         Lower page speed and performance
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -367,7 +410,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                     Costs increase significantly as you scale
+                                    </svg>                                                                         Costs increase significantly as you scale
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -379,7 +422,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                     Favorite target for hackers
+                                    </svg>                                                                         Favorite target for hackers
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -391,7 +434,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                     Needs many additional plugins, which aren't always compatible and Tawess
+                                    </svg>                                                                         Needs many additional plugins, which aren't always compatible and Tawess
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -403,13 +446,83 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                     Requires hosting and expensive maintenance to work
+                                    </svg>                                                                         Requires hosting and expensive maintenance to work
                                     property
                                 </li>
                             </ul>                             
                         </li>
                         <li></li>
                     </ul>
+                </div>
+            </section>
+            <section class="bg-primary-800 px-10 py-32 text-center md:py-64">
+                <h2 class="pb-10 pb-20">Case Studies</h2>
+                <p class="max-w-7xl mx-auto">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p>
+                <ul class="container flex flex-col gap-20 items-center justify-center mt-20 mx-auto lg:flex-row">
+                    <li class="bg-primary-600 max-w-3xl p-20 rounded-2xl text-left">
+                        <h3 class="pb-10">Salinas Data</h3>
+                        <p class="pb-10">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p>
+                        <a class="btn">READ MORE</a>
+                    </li>
+                    <li class="bg-primary-600 max-w-3xl p-20 rounded-2xl text-left">
+                        <h3 class="pb-10">Nonstop Dogwear</h3>
+                        <p class="pb-10">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p>
+                        <a>READ MORE</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="bg-gray-900 bg-green-800 overflow-hidden py-32 md:py-64">
+                <div class="container mx-auto px-4">
+                    <div class="gap-y-32 grid grid-cols-1 justify-items-center mx-auto lg:gap-x-16 lg:grid-cols-2 xl:gap-x-24">
+                        <div class="flex flex-col justify-between max-w-2xl relative lg:max-w-none lg:py-12">
+                            <p class="font-normal mt-4 text-base text-gray-400 uppercase sm:mt-6 sm:text-lg lg:max-w-xs">interested?</p>
+                            <div class="mt-6 lg:mt-auto">
+                                <h2 class="font-normal text-white">We will help you 
+to <span class="text-green-400
+">grow your business</span> faster and easier.</h2>
+                                <p class="mt-4 text-base font-normal text-gray-400 sm:text-lg sm:mt-6">We will be happy to advise you in the areas of branding, UI/UX design, web development. and will send you a non-binding offer for your project after an initial consultation.</p>
+                            </div>
+                        </div>
+                        <div class="relative flex items-center justify-center">
+                            <div class="absolute right-0 transform translate-x-4 -translate-y-1/2 top-1/2">
+</div>
+                            <div class="bg-white overflow-hidden relative rounded-3xl">
+                                <div class="max-w-2xl p-14 text-accent-600">
+                                    <p class="font-normal text-xl">Let us know about your project & we will help you grow your business from scratch.</p>
+                                    <form action="#" method="POST" class="mt-8 space-y-4">
+                                        <div>
+                                            <label for="" class="sr-only"> Full name </label>
+                                            <div>
+                                                <input type="text" name="" id="" placeholder="First & Last name" class="block border-[1px] border-accent-400 focus:border-white focus:ring-1 focus:ring-white placeholder-gray-500 px-5 py-4 rounded-xl text-base text-white w-full"/>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="" class="sr-only"> Email address </label>
+                                            <div>
+                                                <input type="email" name="" id="" placeholder="Email address" class="block border-[1px] border-accent-400 focus:border-white focus:ring-1 focus:ring-white placeholder-gray-500 px-5 py-4 rounded-xl text-base text-white w-full"/>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="" class="sr-only"> Phone number </label>
+                                            <div>
+</div>
+                                        </div>
+                                        <div>
+                                            <label for="" class="sr-only"> Message </label>
+                                            <div>
+                                                <textarea name="" id="" placeholder="Write your message" rows="4" class="block border-[1px] border-accent-400 focus:border-white focus:ring-1 focus:ring-white mt-6 placeholder-gray-500 px-5 py-4 resize-y rounded-xl text-base text-white w-full"></textarea>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="group inline-flex mt-2 relative w-full">
+                                                <button type="button" class="bg-black border border-transparent inline-flex items-center justify-center mt-10 px-8 py-3 relative rounded-full text-accent-100 uppercase w-full" role="button">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -465,36 +578,47 @@ and our services</h2>
     </script>
         <footer class="bg-primary-50 dark:bg-primary-800 pb-20 pt-32 shadow-xl" data-pgc="wa.Footer">
             <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto">
-                <div class="mx-auto pr-24"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+                <div class="mx-auto pr-24">
+                    <a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
                     <p class="mt-2">Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria</p>
                 </div>
                 <div class="flex gap-8 justify-end">
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li><a class="cursor-pointer underline">Pricing</a>
+                            <li>
+                                <a class="cursor-pointer underline">Pricing</a>
                             </li>
-                            <li><a class="cursor-pointer underline">Free consulatation</a>
+                            <li>
+                                <a class="cursor-pointer underline">Free consulatation</a>
                             </li>
-                            <li><a class="cursor-pointer underline">Contact us</a>
+                            <li>
+                                <a class="cursor-pointer underline">Contact us</a>
                             </li>
-                            <li><a spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
+                            <li>
+                                <a spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li><a class="cursor-pointer underline">Services</a>
+                            <li>
+                                <a class="cursor-pointer underline">Services</a>
                             </li>
-                            <li><a class="cursor-pointer underline">Jamstack</a>
+                            <li>
+                                <a class="cursor-pointer underline">Jamstack</a>
                             </li>
-                            <li><a class="cursor-pointer underline">Blog</a>
+                            <li>
+                                <a class="cursor-pointer underline">Blog</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a> <a class="pl-10">Terms &amp; Conditions</a> <a class="pl-10"></a>
+                        <li>
+                            <a class="pr-10 border-r-[1px]">Privacy Policy</a>
+                            <a class="pl-10">Terms &amp; Conditions</a>
+                            <a class="pl-10"></a>
                         </li>
                         <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
                     </ul>

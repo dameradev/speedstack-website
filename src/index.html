@@ -32,15 +32,11 @@
                     </li>
                     <li><a href="/services">Services</a>
                     </li>
-                    <li><a href="/components">Components</a>
-                    </li>
                     <li><a href="/blog">Blog</a>
-                    </li>
-                    <li><a href="/contact">Contact</a>
                     </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
-                    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <button id="theme-toggle" type="button" class="dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hidden hover:bg-gray-100 p-2.5 rounded-lg text-gray-500 text-sm">
                         <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                         </svg>                         
@@ -58,11 +54,11 @@
                               import Drawer from "/lib/preact/drawer.client.js";
               
                               render(
-                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/components","text":"Components"},{"route":"/blog","text":"Blog"},{"route":"/contact","text":"Contact"}]')}  />`,
+                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/blog","text":"Blog"}]')}  />`,
                                 document.getElementById("drawer-preact")
                               );</script>
                         </template>
-                    </is-land><a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
+                    </is-land><a href="/contact" class="border-[1px] border-accent-500 hidden justify-self-end px-8 py-2 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
                 </div>
             </nav>
         </header>
@@ -70,7 +66,7 @@
             <section class="bg-primary-800 flex flex-col h-[80vh] items-center justify-center max-w-screen mx-auto px-14" data-pg-name="hero-section">
                 <p class="editable text-green-800 uppercase">
           100% HAND-CODED WEBSITES STARTING AT $118/MO </p>
-                <h1 class="editable text-center text-white uppercase md:text-8xl">
+                <h1 class="editable text-center text-white uppercase md:text-6xl lg:text-8xl">
           SMALL BUSINESS WEB DESIGN AND DEVELOPMENT </h1>
             </section>
             <section class="font-serif hidden xl:block">
@@ -555,8 +551,8 @@
                         {% for faq in faqs %}
                         {% if faq.data.homepage %}
                         <div id="accordion-flush-heading-{{ forloop.index }}">
-                            <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex font-bold  gap-3 items-center justify-between px-10 py-5 rtl:text-right text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-{{ forloop.index }}" aria-expanded="false" aria-controls="accordion-flush-body-{{ forloop.index }}">
-                                <h4 class="text-3xl">
+                            <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex gap-3 justify-between px-10 py-5 text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-{{ forloop.index }}" aria-expanded="false" aria-controls="accordion-flush-body-{{ forloop.index }}">
+                                <h4 class="text-2xl text-left font-sans">
         {{ faq.data.question }} </h4>
                                 <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -657,7 +653,7 @@
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a> <a class="pl-10">Terms &amp; Conditions</a> <a class="pl-10"></a>
+                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
                         </li>
                         <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
                     </ul>

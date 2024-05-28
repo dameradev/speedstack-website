@@ -8,17 +8,11 @@
       "route": "/services",
       "text": "Services"
     },
-    {
-      "route": "/components",
-      "text": "Components"
-    },
+  
     {
       "route": "/blog",
       "text": "Blog"
-    },
-    {
-      "route": "/contact",
-      "text": "Contact"
     }
+
   ]
 }

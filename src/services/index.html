@@ -26,21 +26,21 @@
     </head>
     <body class="dark:text-accent-50 text-accent-900">
         <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-40 items-center justify-center py-10 shadow shadow-lg w-full z-[100]" data-pgc="wa.Header">
-            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3">
+                <a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
-                    <li><a href="/">Home</a>
+                    <li>
+                        <a href="/">Home</a>
                     </li>
-                    <li><a href="/services">Services</a>
+                    <li>
+                        <a href="/services">Services</a>
                     </li>
-                    <li><a href="/components">Components</a>
-                    </li>
-                    <li><a href="/blog">Blog</a>
-                    </li>
-                    <li><a href="/contact">Contact</a>
+                    <li>
+                        <a href="/blog">Blog</a>
                     </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
-                    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <button id="theme-toggle" type="button" class="dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hidden hover:bg-gray-100 p-2.5 rounded-lg text-gray-500 text-sm">
                         <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                         </svg>                         
@@ -58,18 +58,19 @@
                               import Drawer from "/lib/preact/drawer.client.js";
               
                               render(
-                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/components","text":"Components"},{"route":"/blog","text":"Blog"},{"route":"/contact","text":"Contact"}]')}  />`,
+                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/blog","text":"Blog"}]')}  />`,
                                 document.getElementById("drawer-preact")
                               );</script>
                         </template>
-                    </is-land><a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
+                    </is-land>
+                    <a href="/contact" class="border-[1px] border-accent-500 hidden justify-self-end px-8 py-2 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
                 </div>
             </nav>
         </header>
         <main class="pt-24" data-pgc-field="mainContent">
             <section class="bg-primary-800 mx-auto py-64">
                 <div class="container mx-auto">
-                    <h1 class="[&>span]:text-green-600 px-32 uppercase md:text-8xl">
+                    <h1 class="[&>span]:text-green-600 uppercase md:text-6xl lg:text-8xl xl:px-32">
             We gurantee <br/>{% assign textChangerPreact =
             "./lib/preact/textChanger.mjs" | preact %}  <is-land on:visible>
                             <div id="text-changer-preact"></div>
@@ -296,36 +297,47 @@ completly new, we can help build your businsess&rsquo;s brand.</p>
     </script>
         <footer class="bg-primary-50 dark:bg-primary-800 pb-20 pt-32 shadow-xl" data-pgc="wa.Footer">
             <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto">
-                <div class="mx-auto pr-24"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+                <div class="mx-auto pr-24">
+                    <a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
                     <p class="mt-2">Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria</p>
                 </div>
                 <div class="flex gap-8 justify-end">
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li><a class="cursor-pointer underline">Pricing</a>
+                            <li>
+                                <a class="cursor-pointer underline">Pricing</a>
                             </li>
-                            <li><a class="cursor-pointer underline">Free consulatation</a>
+                            <li>
+                                <a class="cursor-pointer underline">Free consulatation</a>
                             </li>
-                            <li><a class="cursor-pointer underline">Contact us</a>
+                            <li>
+                                <a class="cursor-pointer underline">Contact us</a>
                             </li>
-                            <li><a spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
+                            <li>
+                                <a spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li><a class="cursor-pointer underline">Services</a>
+                            <li>
+                                <a class="cursor-pointer underline">Services</a>
                             </li>
-                            <li><a class="cursor-pointer underline">Jamstack</a>
+                            <li>
+                                <a class="cursor-pointer underline">Jamstack</a>
                             </li>
-                            <li><a class="cursor-pointer underline">Blog</a>
+                            <li>
+                                <a class="cursor-pointer underline">Blog</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a> <a class="pl-10">Terms &amp; Conditions</a> <a class="pl-10"></a>
+                        <li>
+                            <a class="pr-10 border-r-[1px]">Privacy Policy</a>
+                            <a class="pl-10">Terms &amp; Conditions</a>
+                            <a class="pl-10"></a>
                         </li>
                         <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
                     </ul>
