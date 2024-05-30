@@ -1689,20 +1689,12 @@ p {
   height: 250px;
 }
 
-.h-\[40\%\]{
-  height: 40%;
-}
-
 .h-\[500px\]{
   height: 500px;
 }
 
-.h-\[60\%\]{
-  height: 60%;
-}
-
-.h-\[80vh\]{
-  height: 80vh;
+.h-\[70vh\]{
+  height: 70vh;
 }
 
 .h-\[calc\(100\%-1rem\)\]{
@@ -1722,8 +1714,8 @@ p {
   height: 100%;
 }
 
-.max-h-\[65rem\]{
-  max-height: 65rem;
+.max-h-\[200px\]{
+  max-height: 200px;
 }
 
 .max-h-\[87vh\]{
@@ -1748,6 +1740,11 @@ p {
 
 .min-h-\[600px\]{
   min-height: 600px;
+}
+
+.min-h-max{
+  min-height: -moz-max-content;
+  min-height: max-content;
 }
 
 .w-1{
@@ -1989,10 +1986,6 @@ p {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -2584,6 +2577,11 @@ p {
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-24{
@@ -4064,6 +4062,10 @@ body, html {
   }
   .md\:p-6{
     padding: 1.5rem;
+  }
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .md\:px-24{
     padding-left: 6rem;

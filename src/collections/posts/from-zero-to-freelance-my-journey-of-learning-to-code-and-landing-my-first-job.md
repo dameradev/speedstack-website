@@ -2,8 +2,8 @@
 date: 2024-03-20T15:39:05Z
 description: >-
   My web devlopment journey started in my last year of UNI, I was a Business
-  major and realized that I couldn’t do this for the rest of my life, so
-  naturally, I started researching things I could do from home and make money.
+  major and realized that I couldn’t do this for the 
+
 title: >-
   From Zero to Freelance: My Journey of Learning to Code and Landing My First
   Job

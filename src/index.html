@@ -26,17 +26,13 @@
     </head>
     <body class="dark:text-accent-50 text-accent-900">
         <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-40 items-center justify-center py-10 shadow shadow-lg w-full z-[100]" data-pgc="wa.Header">
-            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3">
-                <a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
-                    <li>
-                        <a href="/">Home</a>
+                    <li><a href="/">Home</a>
                     </li>
-                    <li>
-                        <a href="/services">Services</a>
+                    <li><a href="/services">Services</a>
                     </li>
-                    <li>
-                        <a href="/blog">Blog</a>
+                    <li><a href="/blog">Blog</a>
                     </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
@@ -62,13 +58,12 @@
                                 document.getElementById("drawer-preact")
                               );</script>
                         </template>
-                    </is-land>
-                    <a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
+                    </is-land><a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
                 </div>
             </nav>
         </header>
         <main class="pt-24" data-pgc-field="mainContent">
-            <section class="bg-primary-800 flex flex-col h-[80vh] items-center justify-center max-w-screen mx-auto px-14" data-pg-name="hero-section">
+            <section class="bg-primary-800 flex flex-col h-[70vh] items-center justify-center max-w-screen mx-auto px-14" data-pg-name="hero-section">
                 <p class="editable text-green-800 uppercase">
           100% HAND-CODED WEBSITES STARTING AT $118/MO </p>
                 <h1 class="editable text-center text-white uppercase md:text-6xl lg:text-8xl">
@@ -556,7 +551,7 @@
                         {% for faq in faqs %}
                         {% if faq.data.homepage %}
                         <div id="accordion-flush-heading-{{ forloop.index }}">
-                            <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex gap-3 justify-between px-10 py-5 text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-{{ forloop.index }}" aria-expanded="false" aria-controls="accordion-flush-body-{{ forloop.index }}">
+                            <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex gap-3 justify-between py-5 text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-{{ forloop.index }}" aria-expanded="false" aria-controls="accordion-flush-body-{{ forloop.index }}">
                                 <h4 class="text-2xl text-left font-sans">
         {{ faq.data.question }} </h4>
                                 <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -628,46 +623,37 @@
       });
     </script>
         <footer class="bg-primary-50 dark:bg-primary-800 pb-20 pt-32 shadow-xl" data-pgc="wa.Footer">
-            <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto">
-                <div class="mx-auto pr-24">
-                    <a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+            <div class="container grid grid-cols-1 mx-auto px-10 lg:grid-cols-2">
+                <div class="mx-auto pr-24"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
                     <p class="mt-2">Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria</p>
                 </div>
                 <div class="flex gap-8 justify-end">
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li>
-                                <a class="cursor-pointer underline">Pricing</a>
+                            <li><a class="cursor-pointer underline">Pricing</a>
                             </li>
-                            <li>
-                                <a class="cursor-pointer underline">Free consulatation</a>
+                            <li><a class="cursor-pointer underline">Free consulatation</a>
                             </li>
-                            <li>
-                                <a class="cursor-pointer underline">Contact us</a>
+                            <li><a class="cursor-pointer underline">Contact us</a>
                             </li>
-                            <li>
-                                <a spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
+                            <li><a spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li>
-                                <a class="cursor-pointer underline">Services</a>
+                            <li><a class="cursor-pointer underline">Services</a>
                             </li>
-                            <li>
-                                <a class="cursor-pointer underline">Jamstack</a>
+                            <li><a class="cursor-pointer underline">Jamstack</a>
                             </li>
-                            <li>
-                                <a class="cursor-pointer underline">Blog</a>
+                            <li><a class="cursor-pointer underline">Blog</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li>
-                            <a class="pr-10 border-r-[1px]">Privacy Policy</a> <a class="pl-10">Terms &amp; Conditions</a> <a class="pl-10"></a>
+                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
                         </li>
                         <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
                     </ul>

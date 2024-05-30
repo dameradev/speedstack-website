@@ -2,9 +2,7 @@
 date: 2024-03-20T15:39:05Z
 description: >-
   One of the main reasons I got into IT is the flexibility and freedom I get.
-  Traveling has always been a passion of mine, but until I started working for
-  myself it was limited to however much my parents could afford, and mostly to
-  neighbouring countries. ⁠
+  Traveling has always been a passion of mine, but until I started 
 title: 'Staying Productive on the Road: My Travel Tips and Tricks'
 slug: productive-on-the-road
 coverImage: /images/image-3.webp
