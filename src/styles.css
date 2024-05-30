@@ -130,6 +130,11 @@ ol {
     border-radius: 20px;
     text-align: center;
 }
+
+.btn {
+    @apply border-[1px] border-accent-700 justify-self-end px-14 py-5 rounded-full self-center text-accent-50
+}
+
 /* Pinegrow generated Design Panel Extra Rules Begin */
 
 h1,h2,h3,h4,h5,h6 {

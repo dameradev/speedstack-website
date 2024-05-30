@@ -2878,6 +2878,10 @@ p {
   font-style: normal;
 }
 
+.\!leading-tight{
+  line-height: 1.25 !important;
+}
+
 .leading-6{
   line-height: 1.5rem;
 }
@@ -3240,6 +3244,22 @@ ol {
     border-radius: 20px;
     text-align: center;
 }
+
+.btn{
+  align-self: center;
+  justify-self: end;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(76 76 76 / var(--tw-border-opacity));
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 /* Pinegrow generated Design Panel Extra Rules Begin */
 
 h1,h2,h3,h4,h5,h6{

@@ -26,13 +26,17 @@
     </head>
     <body class="dark:text-accent-50 text-accent-900">
         <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-40 items-center justify-center py-10 shadow shadow-lg w-full z-[100]" data-pgc="wa.Header">
-            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3">
+                <a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
-                    <li><a href="/">Home</a>
+                    <li>
+                        <a href="/">Home</a>
                     </li>
-                    <li><a href="/services">Services</a>
+                    <li>
+                        <a href="/services">Services</a>
                     </li>
-                    <li><a href="/blog">Blog</a>
+                    <li>
+                        <a href="/blog">Blog</a>
                     </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
@@ -58,14 +62,15 @@
                                 document.getElementById("drawer-preact")
                               );</script>
                         </template>
-                    </is-land><a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
+                    </is-land>
+                    <a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
                 </div>
             </nav>
         </header>
         <main class="pt-24" data-pgc-field="mainContent">
             <section class="bg-primary-800 mx-auto py-64">
                 <div class="container mx-auto px-10">
-                    <h1 class="[&>span]:text-green-600 uppercase md:text-6xl lg:text-8xl xl:px-32">
+                    <h1 class="!leading-tight [&>span]:text-green-600 text-center uppercase md:text-6xl lg:text-8xl xl:px-32">
             We gurantee <br/>{% assign textChangerPreact =
             "./lib/preact/textChanger.mjs" | preact %}  <is-land on:visible>
                             <div id="text-changer-preact"></div>
@@ -85,7 +90,7 @@
             </section>
             <section class="bg-black py-32 md:py-64">
                 <div class="px-4 mx-auto  sm:px-6 lg:px-8 container">
-                    <div class="grid grid-cols-1 md:items-center gap-y-8 md:grid-cols-2 md:gap-x-16">
+                    <div class="gap-y-8 grid grid-cols-1 md:gap-x-16 md:items-center lg:grid-cols-2">
                         <svg width="396" height="278" viewBox="0 0 396 278" fill="none" xmlns="http://www.w3.org/2000/svg" class="justify-self-center px-20 self-center md:px-0">
                             <g clip-path="url(#clip0_378_266)">
                                 <path d="M77.1989 77.1037L57.0542 69.9106V61.0157L77.1989 53.8225V60.8002L62.0087 65.8607V64.969L77.1989 70.1409V77.1186V77.1037Z" fill="white"/>
@@ -115,8 +120,8 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                        <div class="text-center md:text-left lg:pr-16">
-                            <h2 class="font-bold text-5xl">Web development done differently</h2>
+                        <div class="text-center lg:pr-16 lg:text-left">
+                            <h2 class="text-5xl text-center lg:text-left">Web development done differently</h2>
                             <p class="mt-8 text-gray-400 text-lg sm:mt-8">We custom code your site, meaning we don&rsquo;t use traditional web builders. Which gives us fine grain control of everything, from how the site looks, to the performance and SEO scores.</p>
                             <a href="/jamstack" title="" class="font-bold inline-flex items-center mt-8 text-green-700">More about jamstack</a>
                             <a href="/jamstack" title="" class="font-bold inline-flex items-center mt-8 text-green-700"><svg class="w-5 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -140,7 +145,7 @@ completly new, we can help build your businsess&rsquo;s brand.</p>
                                     <svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                                     </svg>
-                                    <h3 class="editable font-bold mt-8 text-2xl  sm:mt-20">Predictive Insights</h3>
+                                    <h3 class="editable font-bold mt-8 text-2xl  sm:mt-20">Branding Design</h3>
                                     <p class="editable mt-6 text-base ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend nullam consectetur placerat pellentesque ut massa volutpat at. Diam pretium orci dui sagittis.</p>
                                 </div>
                             </div>
@@ -149,7 +154,7 @@ completly new, we can help build your businsess&rsquo;s brand.</p>
                                     <svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
                                     </svg>
-                                    <h3 class="editable font-bold mt-8 text-2xl  sm:mt-20">Filtered Data</h3>
+                                    <h3 class="editable font-bold mt-8 text-2xl  sm:mt-20">Logo and Graphic Design</h3>
                                     <p class="editable mt-6 text-base ">Eleifend nullam consectetur placerat pellentesque ut massa volutpat at. Diam pretium orci dui sagittis. Norem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
@@ -157,14 +162,14 @@ completly new, we can help build your businsess&rsquo;s brand.</p>
                         <li class="space-y-4 sm:space-y-8">
                             <div class="relative">
                                 <div class="absolute -inset-1">
-                                    <div class="w-full h-full rotate-180 opacity-30 blur-lg filter" style="background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"></div>
+                                    <div class="w-full h-full rotate-180 opacity-30 blur-lg filter"></div>
                                 </div>
                                 <div class="relative overflow-hidden bg-white shadow-md rounded-xl">
                                     <div class="p-9">
                                         <svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
                                         </svg>
-                                        <h3 class="editable font-bold mt-8 text-2xl  sm:mt-20">Fastest Speed</h3>
+                                        <h3 class="editable font-bold mt-8 text-2xl  sm:mt-20">Web Design</h3>
                                         <p class="editable mt-6 text-base ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend nullam consectetur placerat pellentesque ut massa volutpat at. Diam pretium orci dui sagittis.</p>
                                         <p class="editable mt-6 text-base ">Eleifend nullam consectetur placerat pelle tesque ut massa volutpat bonur los.</p>
                                     </div>
@@ -175,7 +180,7 @@ completly new, we can help build your businsess&rsquo;s brand.</p>
                                     <svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
                                     </svg>
-                                    <h3 class="editable font-bold mt-8 text-2xl  sm:mt-20">Everything in Cloud</h3>
+                                    <h3 class="editable font-bold mt-8 text-2xl  sm:mt-20">Social media ADs</h3>
                                     <p class="editable mt-6 text-base ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend nullam consectetur placerat pellentesque ut massa volutpat at. Diam pretium orci dui sagittis.</p>
                                 </div>
                             </div>
@@ -222,20 +227,17 @@ completly new, we can help build your businsess&rsquo;s brand.</p>
                                 <li class="flex items-center ">
                                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    <span class="ml-3 text-lg font-bold"> 150+ Handcoded UI Blocks </span>
+                                    </svg><span class="ml-3 text-lg font-bold"> 150+ Handcoded UI Blocks </span>
                                 </li>
                                 <li class="flex items-center ">
                                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    <span class="ml-3 text-lg font-bold"> Fully Responsive on Any Device </span>
+                                    </svg><span class="ml-3 text-lg font-bold"> Fully Responsive on Any Device </span>
                                 </li>
                                 <li class="flex items-center ">
                                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    <span class="ml-3 text-lg font-bold"> Just Copy & Paste </span>
+                                    </svg><span class="ml-3 text-lg font-bold"> Just Copy & Paste </span>
                                 </li>
                             </ul>
                         </div>
@@ -297,36 +299,47 @@ completly new, we can help build your businsess&rsquo;s brand.</p>
     </script>
         <footer class="bg-primary-50 dark:bg-primary-800 pb-20 pt-32 shadow-xl" data-pgc="wa.Footer">
             <div class="container grid grid-cols-1 mx-auto px-10 lg:grid-cols-2">
-                <div class="mx-auto pr-24"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+                <div class="mx-auto pr-24">
+                    <a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
                     <p class="mt-2">Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria</p>
                 </div>
                 <div class="flex gap-8 justify-end">
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li><a class="cursor-pointer underline">Pricing</a>
+                            <li>
+                                <a class="cursor-pointer underline">Pricing</a>
                             </li>
-                            <li><a class="cursor-pointer underline">Free consulatation</a>
+                            <li>
+                                <a class="cursor-pointer underline">Free consulatation</a>
                             </li>
-                            <li><a class="cursor-pointer underline">Contact us</a>
+                            <li>
+                                <a class="cursor-pointer underline">Contact us</a>
                             </li>
-                            <li><a spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
+                            <li>
+                                <a spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li><a class="cursor-pointer underline">Services</a>
+                            <li>
+                                <a class="cursor-pointer underline">Services</a>
                             </li>
-                            <li><a class="cursor-pointer underline">Jamstack</a>
+                            <li>
+                                <a class="cursor-pointer underline">Jamstack</a>
                             </li>
-                            <li><a class="cursor-pointer underline">Blog</a>
+                            <li>
+                                <a class="cursor-pointer underline">Blog</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
+                        <li>
+                            <a class="pr-10 border-r-[1px]">Privacy Policy</a>
+                            <a class="pl-10">Terms &amp; Conditions</a>
+                            <a class="pl-10"></a>
                         </li>
                         <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
                     </ul>
