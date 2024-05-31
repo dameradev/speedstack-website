@@ -77,4 +77,4 @@ The reason we recommend going the git based route, is the price point. And the f
 
 While most services would do the job well, we recommend CloudCannon, as they are our official partner.
 
-[Contact us](https://www.notion.so/Free-consultation-page-b52ded2928dc46bb8c59f2c636bff152?pvs=21) to get a special deal when using their service.
+[Contact us](/free-consultation) to get a special deal when using their service.
