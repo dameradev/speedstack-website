@@ -21,7 +21,7 @@ collections_config:
         name: New FAQ
         path: schemas/faq.md
   post:
-    path: collections/posts
+    path: posts
     output: true
     description: 'Blog posts'
     icon: notes

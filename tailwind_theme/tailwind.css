@@ -1697,6 +1697,10 @@ p {
   height: 500px;
 }
 
+.h-\[50rem\]{
+  height: 50rem;
+}
+
 .h-\[70vh\]{
   height: 70vh;
 }
@@ -2310,6 +2314,11 @@ p {
   border-top-width: 2px;
 }
 
+.\!border-green-400{
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(92 199 126 / var(--tw-border-opacity)) !important;
+}
+
 .border-accent-400{
   --tw-border-opacity: 1;
   border-color: rgb(153 153 153 / var(--tw-border-opacity));
@@ -2916,6 +2925,11 @@ p {
 
 .tracking-wider{
   letter-spacing: 0.05em;
+}
+
+.\!text-green-400{
+  --tw-text-opacity: 1 !important;
+  color: rgb(92 199 126 / var(--tw-text-opacity)) !important;
 }
 
 .text-accent-100{
