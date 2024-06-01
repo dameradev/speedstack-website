@@ -550,7 +550,23 @@
                     </li>
                 </ul>
             </section>
-            <section class="bg-primary-800 px-12 py-32 md:py-40">
+            <section class="bg-primary-800 px-10 py-20 text-center md:py-40">
+                <h2 class="pb-10 pb-20">Case Studies</h2>
+                <p class="max-w-7xl mx-auto">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p>
+                <ul class="container flex flex-col gap-20 items-center justify-center mt-20 mx-auto lg:flex-row">
+                    <li class="bg-primary-600 max-w-3xl p-20 rounded-2xl text-left">
+                        <h3 class="pb-10">Salinas Data</h3>
+                        <p class="mb-10 pb-10">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p>
+                        <a href='/salinas-data' class="!border-green-400 !text-green-400 btn">READ MORE</a>
+                    </li>
+                    <li class="!border-green-400 bg-primary-600 max-w-3xl p-20 rounded-2xl text-left">
+                        <h3 class="pb-10">Nonstop Dogwear</h3>
+                        <p class="mb-10 pb-10">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p>
+                        <a class="!border-green-400 !text-green-400 btn">READ MORE</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="px-12 py-32 text-black md:py-40">
                 <div class="container mx-auto">
                     <p class="text-green-800 uppercase">FAQ</p>
                     <h2>Answers to our frequently asked questions</h2>
@@ -559,7 +575,7 @@
                         {% for faq in faqs %}
                         {% if faq.data.homepage %}
                         <div id="accordion-flush-heading-{{ forloop.index }}">
-                            <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex gap-3 justify-between py-5 text-3xl text-gray-500 text-white w-full" data-accordion-target="#accordion-flush-body-{{ forloop.index }}" aria-expanded="false" aria-controls="accordion-flush-body-{{ forloop.index }}">
+                            <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex gap-3 justify-between py-5 text-3xl text-black  w-full" data-accordion-target="#accordion-flush-body-{{ forloop.index }}" aria-expanded="false" aria-controls="accordion-flush-body-{{ forloop.index }}">
                                 <h4 class="text-2xl text-left font-sans">
         {{ faq.data.question }} </h4>
                                 <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
