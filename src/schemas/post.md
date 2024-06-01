@@ -1,7 +1,7 @@
 ---
-date: 
-description:
-title: 
-coverImage: 
-image: 
+date: ''
+description: ''
+title: ''
+coverImage: ''
+image: ''
 ---
