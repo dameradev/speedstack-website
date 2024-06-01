@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <title data-pgc-field="title">Blog</title>
+        <title data-pgc-field="title">SpeedStack - Custom Web Development and Design</title>
         <meta property="og:description" content="Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria" data-pgc-field="description"/>
         <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
         <script>
@@ -63,26 +63,84 @@
             </nav>
         </header>
         <main class="pt-24" data-pgc-field="mainContent">
-            <section class="container gap-20 grid grid-cols-1 mt-15 mx-auto px-10 py-32 md:grid-cols-2 lg:grid-cols-3"> {% assign postslist = collections.post %} 
-                {% for post in
-                postslist | reverse %}
-                <div class="bg-gray-800 flex flex-col justify-between min-h-max rounded-lg shadow text-white" data-pgc-define="custom-card-blog" data-pgc-section="Cards">
-                    <a href="{{ post.url | url }}">
-                      {% if post.data.image %}  <img class="object-cover max-h-[200px] min-w-full rounded-t-lg" src="{{ post.data.image | image }}" alt="">{% endif %} </a>
-                    <!-- {{post.data.image}} -->
-                    <div class="flex flex-col  justify-between p-14">
-                        <a href="{{ post.url | url }}"> <h5 class="dark:text-white font-bold mb-4 text-2xl tracking-tight">
-                                {% if post.data.title %} {{ post.data.title }} {% else %} Untitled {% endif %} </h5> </a>
-                        {% if post.data.description %}
-                        <p class="dark:text-white font-normal mb-3"> {{ post.data.description }} </p>
-                        {% endif %} <a href="{{ post.url | url }}" class="bg-blue-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium hover:bg-blue-800 inline-flex items-center mt-8 px-3 py-2 rounded-lg text-center text-white w-fit">Read
-                            more <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg></a>
+            <div class="container md:py-64 mx-auto text-black">
+                <h1 class="pb-20 text-center">Two Pricing Options</h1>
+                <p class="pb-32 text-center text-xl">Based on your needs we will help guide what's the best option for you</p>
+                <section>
+                    <h2 class="pb-10 text-center">Project Based Pricing</h2>
+                    <div class="gap-20 grid grid-cols-2">
+                        <div class="col-span-2 text-center">
+                            <p class="py-4">Project based pricing is our fixed option, and the final price you will pay is based on your project scope</p>
+                            <p class="py-4">We will detirmine the project scope after we gather the necessary information for your website</p>
+                            <p class="py-4">The final product will be a fully functional website</p>
+                            <p class="py-4">The final price is determined before starting based on the scope</p>
+                            <p class="py-4"><i>*Any addtional future changes are charged per hour</i></p>
+                        </div>
+                        <div>
+                            <p class="font-bold pt-14 text-xl">The most basic final product includes</p>
+                            <ul class="flex flex-col gap-4 list-disc pl-10 pt-8">
+                                <li>Fully optimized website with perfect core web vital scores</li>
+                                <li>Logo, graphics and branding</li>
+                                <li>CMS for you to control your website</li>
+                                <li>Hosting setup</li>
+                                <li>Domain setup</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p></p>
+                            <p class="font-bold pt-14 text-xl">Add-ons for the basic package</p>
+                            <ul class="flex flex-col gap-4 list-disc pl-10 pt-8">
+                                <li>Blog - $500</li>
+                                <li>Additional graphic design - TBD</li>
+                                <li>Hosting and CMS costs covered and managed by us - TBD</li>
+                                <li>Additional page - TBD</li>
+                                <li>Domain managed by us - TBD
+                                    <div></div>
+                                </li>
+                                <li>E-commerce and Payment intergration - TBD</li>
+                            </ul>
+                            <p class="pt-10"><i>*TBD - To be detirmined</i></p>
+                        </div>
                     </div>
-                </div>
-                {% endfor %}
-            </section>
+                </section>
+                <section class="mt-64">
+                    <h2 class="pb-10 text-center">Subscription Based Pricing</h2>
+                    <div class="gap-20 grid grid-cols-2">
+                        <div class="col-span-2 text-center">
+                            <p class="py-4">Project based pricing is our fixed option, and the final price you will pay is based on your project scope</p>
+                            <p class="py-4">We will detirmine the project scope after we gather the necessary information for your website</p>
+                            <p class="py-4">The final product will be a fully functional website</p>
+                            <p class="py-4">The final price is determined before starting based on the scope</p>
+                            <p class="py-4"><i>*Any addtional future changes are charged per hour</i></p>
+                        </div>
+                        <div>
+                            <p class="font-bold pt-14 text-xl">The most basic final product includes</p>
+                            <ul class="flex flex-col gap-4 list-disc pl-10 pt-8">
+                                <li>Fully optimized website with perfect core web vital scores</li>
+                                <li>Logo, graphics and branding</li>
+                                <li>CMS for you to control your website</li>
+                                <li>Hosting setup</li>
+                                <li>Domain setup</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p></p>
+                            <p class="font-bold pt-14 text-xl">Add-ons for the basic package</p>
+                            <ul class="flex flex-col gap-4 list-disc pl-10 pt-8">
+                                <li>Blog - $500</li>
+                                <li>Additional graphic design - TBD</li>
+                                <li>Hosting and CMS costs covered and managed by us - TBD</li>
+                                <li>Additional page - TBD</li>
+                                <li>Domain managed by us - TBD
+                                    <div></div>
+                                </li>
+                                <li>E-commerce and Payment intergration - TBD</li>
+                            </ul>
+                            <p class="pt-10"><i>*TBD - To be detirmined</i></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
         <script src="/static/js/alpine.js"></script>

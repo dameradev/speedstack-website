@@ -1570,6 +1570,10 @@ p {
   margin-top: 1.5rem;
 }
 
+.mt-64{
+  margin-top: 16rem;
+}
+
 .mt-8{
   margin-top: 2rem;
 }
@@ -1736,6 +1740,10 @@ p {
 
 .min-h-\[10vh\]{
   min-height: 10vh;
+}
+
+.min-h-\[120rem\]{
+  min-height: 120rem;
 }
 
 .min-h-\[600px\]{
@@ -1980,6 +1988,10 @@ p {
   resize: both;
 }
 
+.list-disc{
+  list-style-type: disc;
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -2131,10 +2143,6 @@ p {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
-.self-start{
-  align-self: flex-start;
 }
 
 .self-end{
@@ -2307,11 +2315,6 @@ p {
   border-color: rgb(153 153 153 / var(--tw-border-opacity));
 }
 
-.border-accent-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(127 127 127 / var(--tw-border-opacity));
-}
-
 .border-accent-700{
   --tw-border-opacity: 1;
   border-color: rgb(76 76 76 / var(--tw-border-opacity));
@@ -2364,11 +2367,6 @@ p {
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.bg-accent-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(76 76 76 / var(--tw-bg-opacity));
 }
 
 .bg-black{
@@ -2584,11 +2582,6 @@ p {
   padding-right: 5rem;
 }
 
-.px-24{
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2627,6 +2620,11 @@ p {
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-16{
@@ -2689,16 +2687,6 @@ p {
   padding-bottom: 2rem;
 }
 
-.py-\[10\%\]{
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-.py-\[15\%\]{
-  padding-top: 15%;
-  padding-bottom: 15%;
-}
-
 .py-\[30rem\]{
   padding-top: 30rem;
   padding-bottom: 30rem;
@@ -2756,16 +2744,20 @@ p {
   padding-right: 6rem;
 }
 
-.pr-\[10\%\]{
-  padding-right: 10%;
-}
-
 .pt-1{
   padding-top: 0.25rem;
 }
 
+.pt-10{
+  padding-top: 2.5rem;
+}
+
 .pt-12{
   padding-top: 3rem;
+}
+
+.pt-14{
+  padding-top: 3.5rem;
 }
 
 .pt-20{
@@ -2778,6 +2770,10 @@ p {
 
 .pt-32{
   padding-top: 8rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .text-left{
@@ -4087,6 +4083,10 @@ body, html {
     padding-left: 0px;
     padding-right: 0px;
   }
+  .md\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
   .md\:px-24{
     padding-left: 6rem;
     padding-right: 6rem;
@@ -4125,9 +4125,6 @@ body, html {
   }
   .md\:pl-\[30vw\]{
     padding-left: 30vw;
-  }
-  .md\:pl-\[40vw\]{
-    padding-left: 40vw;
   }
   .md\:pr-10{
     padding-right: 2.5rem;
@@ -4262,6 +4259,9 @@ body, html {
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .lg\:grid-cols-\[60\%_1fr\]{
+    grid-template-columns: 60% 1fr;
+  }
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -4313,6 +4313,10 @@ body, html {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+  .lg\:py-64{
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
   .lg\:pb-28{
     padding-bottom: 7rem;
   }
@@ -4324,6 +4328,9 @@ body, html {
   }
   .lg\:pr-24{
     padding-right: 6rem;
+  }
+  .lg\:pt-0{
+    padding-top: 0px;
   }
   .lg\:text-left{
     text-align: left;
