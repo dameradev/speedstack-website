@@ -22,7 +22,9 @@
         <script type="module">
       import "/js/is-land.js";
       import "/js/is-land-autoinit.js";
-    </script>
+    </script>         
+
+        <meta property="og:image" content="../uploads/image-3.png"/>
     </head>
     <body class="dark:text-accent-50 text-accent-900">
         <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-40 items-center justify-center py-10 shadow shadow-lg w-full z-[100]" data-pgc="wa.Header">
@@ -308,7 +310,7 @@
                                                     <rect width="25" height="19" fill="white"></rect>
                                                 </clipPath>
                                             </defs>
-                                        </svg>                                        $7500 minimum upfront cost
+                                        </svg>                                                                                                                                                                                                                                                $7500 minimum upfront cost
                                     </li>
                                     <li class="flex gap-4 items-center">
                                         <svg width="25" height="19" viewbox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -348,7 +350,6 @@
                                             </defs>
                                         </svg>
                                         Additional subscription avaliable
-
                                         <div></div>
                                     </li>
                                 </ul>
@@ -556,13 +557,11 @@
                 <ul class="container flex flex-col gap-20 items-center justify-center mt-20 mx-auto lg:flex-row">
                     <li class="bg-primary-600 max-w-3xl p-20 rounded-2xl text-left">
                         <h3 class="pb-10">Salinas Data</h3>
-                        <p class="mb-10 pb-10">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p>
-                        <a href='/salinas-data' class="!border-green-400 !text-green-400 btn">READ MORE</a>
+                        <p class="mb-10 pb-10">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p><a href='/salinas-data' class="!border-green-400 !text-green-400 btn">READ MORE</a>
                     </li>
                     <li class="!border-green-400 bg-primary-600 max-w-3xl p-20 rounded-2xl text-left">
                         <h3 class="pb-10">Nonstop Dogwear</h3>
-                        <p class="mb-10 pb-10">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p>
-                        <a class="!border-green-400 !text-green-400 btn">READ MORE</a>
+                        <p class="mb-10 pb-10">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p><a class="!border-green-400 !text-green-400 btn">READ MORE</a>
                     </li>
                 </ul>
             </section>
@@ -575,7 +574,7 @@
                         {% for faq in faqs %}
                         {% if faq.data.homepage %}
                         <div id="accordion-flush-heading-{{ forloop.index }}">
-                            <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex gap-3 justify-between py-5 text-3xl text-black  w-full" data-accordion-target="#accordion-flush-body-{{ forloop.index }}" aria-expanded="false" aria-controls="accordion-flush-body-{{ forloop.index }}">
+                            <button type="button" class="border-b border-gray-200 dark:border-gray-700 flex gap-3 justify-between px-4 py-5 text-3xl text-black w-full" data-accordion-target="#accordion-flush-body-{{ forloop.index }}" aria-expanded="false" aria-controls="accordion-flush-body-{{ forloop.index }}">
                                 <h4 class="text-2xl text-left font-sans">
         {{ faq.data.question }} </h4>
                                 <svg data-accordion-icon="" class="h-10 rotate-180 shrink-0 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">

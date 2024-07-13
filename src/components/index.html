@@ -22,45 +22,63 @@
         <script type="module">
       import "/js/is-land.js";
       import "/js/is-land-autoinit.js";
-    </script>
+    </script>         
+
+        <meta property="og:image" content="../uploads/image-3.png"/>
     </head>
     <body class="dark:text-accent-50 text-accent-900">
-        <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-40 items-center justify-center py-10 shadow shadow-lg w-full z-[100]" data-pgc="wa.Header">
-            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
-                <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
+        <header class="bg-base fixed flex h-24 items-center justify-center text-white w-full z-[100]" data-pgc="wa.Header">
+            <nav class="container grid grid-cols-2 h-fit items-center justify-center mx-auto px-10 w-full md:grid-cols-3">
+                <a href="/" class="mt-4"><svg width="191" height="34" viewBox="0 0 191 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-44"> 
+                        <g clip-path="url(#clip0_241_14)"> 
+                            <path d="M0 8.79983C0 7.73994 0.203311 6.74979 0.609932 5.82239C1.01655 4.89499 1.5704 4.07916 2.27147 3.38884C2.97254 2.69154 3.78579 2.14068 4.71821 1.73625C5.65064 1.33182 6.65317 1.12961 7.71179 1.12961H19.5178V6.25471H7.7188C7.36125 6.25471 7.02474 6.31747 6.71627 6.44995C6.4078 6.58244 6.13438 6.76373 5.90302 6.99384C5.67167 7.22395 5.48939 7.49589 5.35619 7.8027C5.22298 8.10951 5.15989 8.44421 5.15989 8.79983C5.15989 9.15545 5.22298 9.49015 5.35619 9.8109C5.48939 10.1317 5.67167 10.3966 5.90302 10.6337C6.13438 10.8638 6.4078 11.0451 6.71627 11.1776C7.02474 11.3101 7.36125 11.3728 7.7188 11.3728H12.8717C13.9373 11.3728 14.9398 11.5751 15.8793 11.9725C16.8187 12.37 17.639 12.9208 18.34 13.6111C19.0411 14.3084 19.5879 15.1243 19.9876 16.0586C20.3872 16.993 20.5905 17.9901 20.5905 19.05C20.5905 20.1099 20.3872 21.1001 19.9876 22.0275C19.5879 22.9549 19.0341 23.7707 18.34 24.461C17.639 25.1583 16.8187 25.7092 15.8793 26.1136C14.9398 26.518 13.9373 26.7203 12.8717 26.7203H1.4372V21.5952H12.8647C13.2222 21.5952 13.5587 21.5324 13.8672 21.3999C14.1757 21.2674 14.4491 21.0861 14.6804 20.856C14.9118 20.6259 15.0941 20.354 15.2273 20.0472C15.3605 19.7404 15.4236 19.4057 15.4236 19.05C15.4236 18.6944 15.3605 18.3597 15.2273 18.0529C15.0941 17.7461 14.9118 17.4742 14.6804 17.244C14.4491 17.0139 14.1757 16.8326 13.8672 16.7002C13.5587 16.5677 13.2222 16.5049 12.8647 16.5049H7.71179C6.64616 16.5049 5.65064 16.3027 4.71821 15.8983C3.78579 15.4938 2.96553 14.943 2.27147 14.2457C1.5704 13.5484 1.01655 12.7326 0.609932 11.7982C0.203311 10.8638 0 9.86669 0 8.8068L0 8.79983Z" fill="white"/> 
+                            <path d="M26.6055 34H21.6699V7.60049H24.5233L24.8107 9.90156C25.2524 9.48318 25.7361 9.0927 26.2619 8.72313C26.7877 8.35357 27.3346 8.03281 27.9024 7.76784C28.4703 7.50287 29.0592 7.28671 29.6692 7.1333C30.2791 6.9799 30.896 6.9032 31.52 6.9032C32.873 6.9032 34.142 7.14725 35.3338 7.62838C36.5256 8.10951 37.5632 8.79286 38.4536 9.67145C39.3439 10.55 40.045 11.6169 40.5638 12.8581C41.0826 14.0993 41.335 15.4799 41.335 16.9861C41.335 18.4922 41.0756 19.9705 40.5638 21.2256C40.052 22.4807 39.3439 23.5476 38.4536 24.4192C37.5632 25.2908 36.5186 25.9602 35.3338 26.4274C34.142 26.8946 32.873 27.1247 31.52 27.1247C31.0923 27.1247 30.6647 27.0759 30.237 26.9783C29.8094 26.8806 29.3957 26.7551 28.9821 26.5947C28.5685 26.4344 28.1618 26.2531 27.7622 26.0509C27.3626 25.8486 26.977 25.6395 26.6055 25.4233V33.993V34ZM36.4205 16.993C36.4205 16.1842 36.2943 15.459 36.0349 14.8175C35.7755 14.176 35.425 13.6321 34.9833 13.1858C34.5416 12.7395 34.0228 12.3979 33.4199 12.1608C32.824 11.9237 32.186 11.8052 31.52 11.8052C30.854 11.8052 30.216 11.9237 29.6271 12.1608C29.0382 12.3979 28.5194 12.7395 28.0777 13.1858C27.636 13.6321 27.2855 14.176 27.0261 14.8175C26.7667 15.459 26.6405 16.1842 26.6405 16.993C26.6405 17.8019 26.7667 18.4713 27.0261 19.1198C27.2855 19.7613 27.636 20.3121 28.0777 20.7584C28.5194 21.2116 29.0382 21.5603 29.6271 21.8113C30.216 22.0623 30.847 22.1879 31.52 22.1879C32.193 22.1879 32.824 22.0623 33.4199 21.8113C34.0158 21.5603 34.5416 21.2116 34.9833 20.7584C35.425 20.3052 35.7755 19.7613 36.0349 19.1198C36.2943 18.4783 36.4205 17.767 36.4205 16.993Z" fill="white"/> 
+                            <path d="M50.8139 22.0414C51.0032 22.1042 51.1995 22.139 51.3887 22.16C51.578 22.1809 51.7743 22.1879 51.9636 22.1879C52.4403 22.1879 52.9031 22.1251 53.3447 21.9926C53.7864 21.8601 54.2 21.6719 54.5926 21.4278C54.9782 21.1838 55.3288 20.8839 55.6302 20.5353C55.9317 20.1866 60.6148 14.6292 60.8041 14.1969L64.3936 17.781C63.9379 18.4225 58.9884 24.1682 58.3924 24.6772C57.8035 25.1862 57.1586 25.6255 56.4715 25.9811C55.7845 26.3367 55.0624 26.6087 54.2982 26.797C53.541 26.9783 52.7558 27.0759 51.9566 27.0759C50.6035 27.0759 49.3346 26.8249 48.1428 26.3228C46.951 25.8208 45.9134 25.1304 45.023 24.2379C44.1326 23.3454 43.4316 22.2855 42.9128 21.0513C42.401 19.8171 42.1416 18.4643 42.1416 16.993C42.1416 15.5217 42.401 14.0993 42.9128 12.8511C43.4246 11.603 44.1326 10.5361 45.023 9.6575C45.9134 8.77892 46.958 8.09557 48.1428 7.60746C49.3346 7.11936 50.6035 6.87531 51.9566 6.87531C52.7558 6.87531 53.541 6.97293 54.3052 7.1612C55.0694 7.34946 55.7985 7.62838 56.4855 7.984C57.1726 8.33962 57.8176 8.77891 58.4135 9.29491C59.0094 9.81091 59.5352 10.3897 59.9909 11.0381L50.8068 22.0484L50.8139 22.0414ZM53.3237 11.9934C53.0994 11.9098 52.875 11.854 52.6507 11.8331C52.4263 11.8121 52.202 11.7982 51.9566 11.7982C51.2836 11.7982 50.6526 11.9167 50.0637 12.1608C49.4748 12.4048 48.956 12.7535 48.5214 13.2067C48.0867 13.66 47.7432 14.2039 47.4908 14.8384C47.2384 15.4729 47.1122 16.1911 47.1122 16.9861C47.1122 17.1673 47.1192 17.3696 47.1402 17.5927C47.1613 17.8158 47.1893 18.0459 47.2314 18.283C47.2734 18.5131 47.3225 18.7363 47.3856 18.9524C47.4417 19.1686 47.5258 19.3568 47.617 19.5242L53.3237 11.9934Z" fill="white"/> 
+                            <path d="M69.0766 22.0414C69.2658 22.1042 69.4621 22.1391 69.6514 22.16C69.8407 22.1809 70.037 22.1879 70.2263 22.1879C70.703 22.1879 71.1657 22.1251 71.6074 21.9926C72.0491 21.8601 72.4627 21.6719 72.8553 21.4278C73.2409 21.1838 73.5915 20.8839 73.8929 20.5353C74.1944 20.1866 78.9897 15.6263 79.179 15.201L82.7685 18.7851C82.3128 19.4266 77.251 24.1752 76.6551 24.6842C76.0662 25.1932 75.4213 25.6325 74.7342 25.9881C74.0472 26.3437 73.325 26.6157 72.5609 26.804C71.8037 26.9852 71.0185 27.0829 70.2193 27.0829C68.8662 27.0829 67.5973 26.8318 66.4055 26.3298C65.2136 25.8277 64.1761 25.1374 63.2857 24.2449C62.3953 23.3524 61.6943 22.2925 61.1755 21.0583C60.6637 19.8241 60.4043 18.4713 60.4043 17C60.4043 15.5287 60.6637 14.1062 61.1755 12.8581C61.6873 11.6099 62.3953 10.5431 63.2857 9.66449C64.1761 8.7859 65.2207 8.10256 66.4055 7.61445C67.5973 7.12635 68.8662 6.88229 70.2193 6.88229C71.0185 6.88229 71.8037 6.97991 72.5679 7.16818C73.3321 7.35645 74.0612 7.63537 74.7482 7.99099C75.4353 8.34661 76.0803 8.7859 76.6762 9.3019C77.2721 9.8179 77.7979 10.3966 78.2536 11.0451L69.0695 22.0554L69.0766 22.0414ZM71.5864 11.9935C71.362 11.9098 71.1377 11.854 70.9134 11.8331C70.689 11.8122 70.4647 11.7982 70.2193 11.7982C69.5463 11.7982 68.9153 11.9167 68.3264 12.1608C67.7375 12.4049 67.2187 12.7535 66.784 13.2067C66.3494 13.66 66.0059 14.2039 65.7535 14.8384C65.5011 15.4729 65.3749 16.1912 65.3749 16.9861C65.3749 17.1674 65.3819 17.3696 65.4029 17.5927C65.424 17.8158 65.452 18.046 65.4941 18.283C65.5361 18.5131 65.5852 18.7363 65.6483 18.9524C65.7044 19.1686 65.7885 19.3569 65.8797 19.5242L71.5864 11.9935Z" fill="white"/> 
+                            <path d="M97.5683 26.7203H94.5537L94.4836 24.0984C94.0139 24.5168 93.5231 24.9073 93.0043 25.2699C92.4855 25.6325 91.9387 25.9463 91.3638 26.2182C90.789 26.4832 90.2 26.6993 89.5971 26.8527C88.9942 27.0062 88.3773 27.0829 87.7603 27.0829C86.4072 27.0829 85.1383 26.8318 83.9465 26.3228C82.7547 25.8208 81.7171 25.1165 80.8267 24.217C79.9364 23.3175 79.2353 22.2506 78.7165 21.0234C78.2047 19.7892 77.9453 18.4504 77.9453 17C77.9453 15.5496 78.2047 14.2248 78.7165 12.9836C79.2283 11.7424 79.9364 10.6756 80.8267 9.76907C81.7171 8.86259 82.7547 8.15833 83.9465 7.64233C85.1383 7.13331 86.4072 6.87531 87.7603 6.87531C88.188 6.87531 88.6367 6.91017 89.0994 6.9799C89.5621 7.04963 90.0108 7.16817 90.4454 7.32855C90.8801 7.48893 91.2937 7.69811 91.6723 7.96308C92.0579 8.22806 92.3804 8.54881 92.6398 8.92535V0H97.5753V26.7203H97.5683ZM92.6328 16.993C92.6328 16.3236 92.5066 15.6821 92.2472 15.0546C91.9878 14.427 91.6372 13.8761 91.1956 13.395C90.7539 12.9139 90.2351 12.5234 89.6462 12.2375C89.0573 11.9446 88.4193 11.7982 87.7533 11.7982C87.0873 11.7982 86.4493 11.9167 85.8604 12.1538C85.2715 12.3909 84.7527 12.7326 84.3181 13.1788C83.8834 13.6251 83.5399 14.169 83.2875 14.8105C83.0351 15.452 82.9089 16.1772 82.9089 16.9861C82.9089 17.6903 83.0351 18.3527 83.2875 18.9873C83.5399 19.6218 83.8834 20.1727 84.3181 20.6468C84.7527 21.121 85.2715 21.4975 85.8604 21.7695C86.4493 22.0414 87.0803 22.1809 87.7533 22.1809C88.4263 22.1809 89.0573 22.0345 89.6462 21.7416C90.2351 21.4487 90.7539 21.0652 91.1956 20.5841C91.6372 20.103 91.9878 19.5521 92.2472 18.9245C92.5066 18.297 92.6328 17.6555 92.6328 16.9861V16.993Z" fill="white"/> 
+                            <path d="M98.7251 8.79983C98.7251 7.73994 98.9284 6.74979 99.335 5.82239C99.7416 4.89499 100.295 4.07916 100.997 3.38884C101.698 2.69154 102.511 2.14068 103.443 1.73625C104.376 1.33182 105.371 1.12961 106.437 1.12961H118.243V6.25471H106.437C106.079 6.25471 105.743 6.31747 105.434 6.44995C105.126 6.58244 104.852 6.76373 104.614 6.99384C104.383 7.22395 104.2 7.49589 104.067 7.8027C103.934 8.10951 103.871 8.44421 103.871 8.79983C103.871 9.15545 103.934 9.49015 104.067 9.8109C104.2 10.1247 104.383 10.3966 104.614 10.6337C104.845 10.8638 105.119 11.0451 105.434 11.1776C105.743 11.3101 106.079 11.3728 106.437 11.3728H111.59C112.655 11.3728 113.658 11.5751 114.597 11.9725C115.537 12.37 116.357 12.9208 117.058 13.6111C117.759 14.3084 118.306 15.1243 118.706 16.0586C119.105 16.993 119.309 17.9901 119.309 19.05C119.309 20.1099 119.105 21.1001 118.706 22.0275C118.306 22.9549 117.752 23.7707 117.058 24.461C116.357 25.1583 115.537 25.7092 114.597 26.1136C113.658 26.518 112.655 26.7203 111.59 26.7203H100.162V21.5952H111.59C111.947 21.5952 112.284 21.5324 112.592 21.3999C112.901 21.2674 113.174 21.0861 113.413 20.856C113.651 20.6259 113.826 20.354 113.959 20.0472C114.093 19.7404 114.156 19.4057 114.156 19.05C114.156 18.6944 114.093 18.3597 113.959 18.0529C113.826 17.7461 113.644 17.4742 113.413 17.244C113.181 17.0139 112.908 16.8326 112.592 16.7002C112.284 16.5677 111.947 16.5049 111.59 16.5049H106.437C105.371 16.5049 104.376 16.3027 103.443 15.8983C102.511 15.4938 101.691 14.943 100.997 14.2457C100.303 13.5484 99.7416 12.7326 99.335 11.7982C98.9284 10.8638 98.7251 9.86669 98.7251 8.8068V8.79983Z" fill="white"/> 
+                            <path d="M129.895 26.7203C128.71 26.7203 127.595 26.4971 126.558 26.0509C125.52 25.6046 124.602 24.991 123.824 24.21C123.045 23.429 122.421 22.5226 121.973 21.4906C121.524 20.4586 121.3 19.3499 121.3 18.1715V12.4955H118.916V7.64233H121.3V0H126.179V7.63536H133.61V12.4885H126.179V18.1645C126.179 18.6735 126.277 19.1546 126.467 19.6009C126.656 20.0472 126.922 20.4377 127.259 20.7724C127.595 21.1071 127.988 21.372 128.444 21.5673C128.899 21.7625 129.383 21.8601 129.895 21.8601H133.61V26.7133H129.895V26.7203Z" fill="white"/> 
+                            <path d="M153.374 26.7203H150.401L150.282 24.0984C149.812 24.5168 149.321 24.9073 148.803 25.2699C148.284 25.6325 147.737 25.9463 147.162 26.2182C146.587 26.4902 145.998 26.6993 145.395 26.8527C144.793 27.0062 144.176 27.0829 143.559 27.0829C142.206 27.0829 140.937 26.8597 139.745 26.4065C138.553 25.9532 137.515 25.2978 136.625 24.4331C135.735 23.5685 135.034 22.5156 134.515 21.2674C134.003 20.0193 133.744 18.5968 133.744 17C133.744 15.5148 134.003 14.1481 134.515 12.9069C135.027 11.6657 135.735 10.5989 136.625 9.70632C137.515 8.81378 138.56 8.12346 139.745 7.62838C140.937 7.1333 142.206 6.88925 143.559 6.88925C144.183 6.88925 144.8 6.96595 145.409 7.11936C146.019 7.27276 146.608 7.48892 147.183 7.76087C147.758 8.03281 148.305 8.35357 148.824 8.72313C149.342 9.0927 149.833 9.49015 150.289 9.9155L152.189 7.6493H153.374V26.7272V26.7203ZM148.438 16.993C148.438 16.3236 148.312 15.6821 148.053 15.0546C147.793 14.427 147.443 13.8761 147.001 13.395C146.559 12.9139 146.04 12.5234 145.452 12.2375C144.863 11.9446 144.225 11.7982 143.559 11.7982C142.893 11.7982 142.255 11.9098 141.666 12.1399C141.077 12.37 140.558 12.6977 140.123 13.137C139.689 13.5763 139.345 14.1202 139.093 14.7687C138.84 15.4171 138.714 16.1563 138.714 16.993C138.714 17.8298 138.84 18.5689 139.093 19.2174C139.345 19.8659 139.689 20.4098 140.123 20.8491C140.558 21.2884 141.077 21.6231 141.666 21.8462C142.255 22.0693 142.886 22.1879 143.559 22.1879C144.232 22.1879 144.863 22.0414 145.452 21.7486C146.04 21.4557 146.559 21.0722 147.001 20.5911C147.443 20.1099 147.793 19.5591 148.053 18.9315C148.312 18.3039 148.438 17.6624 148.438 16.993Z" fill="white"/> 
+                            <path d="M172.323 11.4077L168.734 14.9918C168.551 14.4898 168.306 14.0435 167.998 13.646C167.689 13.2486 167.339 12.9139 166.946 12.635C166.56 12.363 166.133 12.1538 165.684 12.0074C165.228 11.861 164.766 11.7912 164.282 11.7912C163.609 11.7912 162.978 11.9307 162.389 12.2026C161.8 12.4746 161.281 12.8581 160.847 13.3532C160.412 13.8482 160.069 14.434 159.816 15.1103C159.564 15.7867 159.438 16.5398 159.438 17.3556C159.438 18.025 159.564 18.6456 159.816 19.2313C160.069 19.8171 160.412 20.3261 160.847 20.7654C161.281 21.2047 161.8 21.5533 162.389 21.7974C162.978 22.0484 163.609 22.1739 164.282 22.1739C164.759 22.1739 165.221 22.1112 165.663 21.9787C166.105 21.8462 166.518 21.6579 166.911 21.4139C167.304 21.1698 167.647 20.87 167.949 20.5213C168.257 20.1727 168.502 19.7822 168.692 19.3499L172.281 22.934C171.826 23.5755 171.3 24.1542 170.711 24.6633C170.122 25.1723 169.477 25.6116 168.79 25.9672C168.103 26.3228 167.381 26.5948 166.617 26.783C165.859 26.9643 165.074 27.0619 164.275 27.0619C162.922 27.0619 161.653 26.8109 160.461 26.3019C159.269 25.7998 158.232 25.1026 157.341 24.224C156.451 23.3454 155.75 22.3134 155.231 21.135C154.712 19.9565 154.46 18.6944 154.46 17.3487C154.46 15.8843 154.719 14.5176 155.231 13.2416C155.743 11.9656 156.451 10.8569 157.341 9.91552C158.232 8.9672 159.269 8.22109 160.461 7.67721C161.653 7.13332 162.922 6.8544 164.275 6.8544C165.074 6.8544 165.859 6.95899 166.638 7.16121C167.416 7.36342 168.145 7.65629 168.846 8.04677C169.547 8.43028 170.192 8.90444 170.781 9.46925C171.37 10.0271 171.882 10.6686 172.316 11.3938L172.323 11.4077Z" fill="white"/> 
+                            <path d="M178.058 26.7203H173.123V0H178.058V16.8466L185.363 7.63536H191L184.627 15.5984L191 26.7203H185.363L181.472 19.7752L178.065 24.2728V26.7203H178.058Z" fill="white"/> 
+                        </g>                         
+                        <defs> 
+                            <clipPath id="clip0_241_14"> 
+                                <rect width="191" height="34" fill="white"/> 
+                            </clipPath>                             
+                        </defs>                         
+                    </svg></a>
+                <ul class="flex hidden items-center justify-around min-w-[50%] md:flex" id="navbar-dropdown">
                     <li><a href="/">Home</a>
                     </li>
-                    <li><a href="/services">Services</a>
+                    <li>
+                        <a href="/portfolio">Portfolio</a>
                     </li>
                     <li><a href="/blog">Blog</a>
                     </li>
                 </ul>
-                <div class="flex gap-12 justify-end">
-                    <button id="theme-toggle" type="button" class="dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hidden hover:bg-gray-100 p-2.5 rounded-lg text-gray-500 text-sm">
-                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                        </svg>                         
-                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
-                    <is-land on:visible>
-                        <div id="drawer-preact" class="block md:hidden"></div>
-                        <template data-island>
-                            <script type="module">import {
-                                render,
-                                html,
-                              } from "https://unpkg.com/htm/preact/index.mjs?module";
-                              import Drawer from "/lib/preact/drawer.client.js";
-              
-                              render(
-                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/blog","text":"Blog"}]')}  />`,
-                                document.getElementById("drawer-preact")
-                              );</script>
-                        </template>
-                    </is-land><a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
-                </div>
+                <a href="/contact" class="bg-white hidden justify-self-end px-4 py-2 rounded-full self-center md:block"><button class="text-black">Start Project</button></a>
+                <label class="cursor-pointer place-self-end px-3 py-6 relative self-center z-40 md:hidden" for="mobile-menu">
+                    <input class="peer hidden" type="checkbox" id="mobile-menu"/>
+                    <div class="after:absolute after:bg-black after:block after:bottom-[-0.35rem] after:content-[''] after:dark:bg-white after:duration-200 after:ease-out after:h-full after:right-0 after:transition-all after:w-full before:absolute before:bg-black before:block before:content-[''] before:dark:bg-white before:duration-200 before:ease-out before:h-full before:top-[-0.35rem] before:transition-all before:w-full before:z-50 bg-black bg-transparent block content-[''] dark:bg-white h-[1px] peer-checked:bg-transparent relative w-7 z-50 after:peer-checked:-rotate-45 after:peer-checked:bottom-0 after:peer-checked:transform after:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:top-0 before:peer-checked:transform before:peer-checked:w-full">
+</div>
+                    <div class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block">
+                        &nbsp;
+</div>
+                    <div class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0">
+                        <div class="dark:bg-base float-right min-h-full pt-12 px-6 shadow-2xl w-[40%]">
+                            <menu>
+                                <li><a href="/">Home</a>
+                                </li>
+                                <li><a href="/contact">Contact</a>
+                                </li>
+                            </menu>
+                        </div>
+                    </div>
+                </label>
             </nav>
+            <section data-empty-placeholder></section>
+            <main data-empty-placeholder></main>
         </header>
         <main class="pt-24" data-pgc-field="mainContent">
             <div class="container flex flex-col gap-32 mx-auto pb-24">
@@ -172,8 +190,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                         </svg>
                                     </button>
-                                    <div x-show="open" @click.away="open = false" class="absolute bg-white left-0 mt-2 origin-top-left px-2 py-2 ring-1 ring-black ring-opacity-5 rounded-md shadow-lg w-56">
-                                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Save</a>
+                                    <div x-show="open" @click.away="open = false" class="absolute bg-white left-0 mt-2 origin-top-left px-2 py-2 ring-1 ring-black ring-opacity-5 rounded-md shadow-lg w-56"><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Save</a>
                                         <div x-data="{ subMenuOpen: false }" class="relative">
                                             <button @click="subMenuOpen = !subMenuOpen" class="flex justify-between items-center w-full px-4 py-2 text-gray-700 hover:bg-gray-100 relative rounded-md">
                                                 Share to
@@ -192,11 +209,15 @@
                                                     </g>
                                                 </svg>
                                             </button>
-                                            <div x-show="subMenuOpen" @click.away="subMenuOpen = false" class="absolute top-0 left-full ml-4 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 px-2 py-2"><a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;text=" class="flex px-4 py-2 text-gray-700 hover:bg-gray-100">Twitter</a><a target="_blank" rel="noopener" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Facebook</a><a target="_blank" rel="noopener" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;title=&amp;summary=&amp;source=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">LinkedIn</a><a target="_blank" rel="noopener" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=&amp;caption=&amp;content=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;canonicalUrl=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;shareSource=tumblr_share_button" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Tumblr</a><a target="_blank" rel="noopener" href="https://reddit.com/submit/?url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;resubmit=true&amp;title=" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Reddit</a>
+                                            <div x-show="subMenuOpen" @click.away="subMenuOpen = false" class="absolute top-0 left-full ml-4 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 px-2 py-2">
+                                                <a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;text=" class="flex px-4 py-2 text-gray-700 hover:bg-gray-100">Twitter</a>
+                                                <a target="_blank" rel="noopener" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Facebook</a>
+                                                <a target="_blank" rel="noopener" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;title=&amp;summary=&amp;source=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">LinkedIn</a>
+                                                <a target="_blank" rel="noopener" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=&amp;caption=&amp;content=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;canonicalUrl=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;shareSource=tumblr_share_button" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Tumblr</a>
+                                                <a target="_blank" rel="noopener" href="https://reddit.com/submit/?url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;resubmit=true&amp;title=" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Reddit</a>
                                                 <!-- Add more sub-menu items as needed -->
                                             </div>
-                                        </div>
-                                        <a href="#" class="block px-4 py-2 text-red-500 hover:bg-red-100 rounded-md">Report</a>
+                                        </div><a href="#" class="block px-4 py-2 text-red-500 hover:bg-red-100 rounded-md">Report</a>
                                     </div>
                                 </div>
                             </div>
@@ -216,7 +237,8 @@
                                                 <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
                                                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
-                                                    </svg><span class="sr-only">Close modal</span>
+                                                    </svg>
+                                                    <span class="sr-only">Close modal</span>
                                                 </button>
                                             </div>
                                             <!-- Modal body -->
@@ -359,11 +381,13 @@
                         <button type="button" class="bg-base h-3 rounded-full w-3 z-50" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button> -->
                                 </div>
                                 <!-- Slider controls -->
-                                <button type="button" class="absolute cursor-pointer flex focus:outline-none group h-full items-center justify-center px-4 start-0 top-0 z-50" data-carousel-prev=""><span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <button type="button" class="absolute cursor-pointer flex focus:outline-none group h-full items-center justify-center px-4 start-0 top-0 z-50" data-carousel-prev="">
+                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"></path>
                                         </svg> <span class="sr-only">Previous</span> </span>
                                 </button>
-                                <button type="button" class="absolute cursor-pointer end-0 flex focus:outline-none group h-full items-center justify-center px-4 top-0 z-50" data-carousel-next=""><span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <button type="button" class="absolute cursor-pointer end-0 flex focus:outline-none group h-full items-center justify-center px-4 top-0 z-50" data-carousel-next="">
+                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
                                         </svg> <span class="sr-only">Next</span> </span>
                                 </button>
@@ -399,26 +423,30 @@
                     Nela Nikolovska </p>
                                     <p>Visual Designer</p>
                                 </div>
-                                <div class="border-t-2 flex items-center justify-center p-3 pb-10 space-x-3"><a rel="noopener noreferrer" href="#" title="Email" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8">
+                                <div class="border-t-2 flex items-center justify-center p-3 pb-10 space-x-3">
+                                    <a rel="noopener noreferrer" href="#" title="Email" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8">
                                             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                                             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                                        </svg> </a><a rel="noopener noreferrer" href="#" title="Twitter" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" class="w-8 h-8">
+                                        </svg> </a>
+                                    <a rel="noopener noreferrer" href="#" title="Twitter" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" class="w-8 h-8">
                                             <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"></path>
-                                        </svg> </a><a rel="noopener noreferrer" href="#" title="LinkedIn" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-8 h-8">
+                                        </svg> </a>
+                                    <a rel="noopener noreferrer" href="#" title="LinkedIn" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-8 h-8">
                                             <path d="M8.268 28h-5.805v-18.694h5.805zM5.362 6.756c-1.856 0-3.362-1.538-3.362-3.394s1.505-3.362 3.362-3.362 3.362 1.505 3.362 3.362c0 1.856-1.506 3.394-3.362 3.394zM29.994 28h-5.792v-9.1c0-2.169-0.044-4.95-3.018-4.95-3.018 0-3.481 2.356-3.481 4.794v9.256h-5.799v-18.694h5.567v2.55h0.081c0.775-1.469 2.668-3.019 5.492-3.019 5.875 0 6.955 3.869 6.955 8.894v10.269z"></path>
-                                        </svg> </a><a rel="noopener noreferrer" href="#" title="GitHub" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-8 h-8">
+                                        </svg> </a>
+                                    <a rel="noopener noreferrer" href="#" title="GitHub" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-8 h-8">
                                             <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"></path>
                                         </svg> </a>
-                                </div>
-                                <a href="">Link</a>
+                                </div><a href="">Link</a>
                             </div>
-                            <div class="bg-primary-800 max-w-xl rounded-lg shadow text-accent-50" data-pgc-define="flowbite-card-image" data-pgc-section="Cards">
-                                <a href="#"> <img class="rounded-t-lg" src="../images/blog/sample.jpg" alt=""/> </a>
-                                <div class="p-14"><a href="#"> <h3 class="dark:text-white font-bold mb-10 text-2xl tracking-tight">
+                            <div class="bg-primary-800 max-w-xl rounded-lg shadow text-accent-50" data-pgc-define="flowbite-card-image" data-pgc-section="Cards"><a href="#"> <img class="rounded-t-lg" src="../images/blog/sample.jpg" alt=""/> </a>
+                                <div class="p-14">
+                                    <a href="#"> <h3 class="dark:text-white font-bold mb-10 text-2xl tracking-tight">
                       Noteworthy technology acquisitions 2021 </h3> </a>
                                     <p class="dark:text-gray-100 font-normal mb-3 text-lg text-md">
                     Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order. </p><a href="#" class="bg-blue-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium hover:bg-blue-800 inline-flex items-center mt-16 px-3 py-2 rounded-lg text-center text-white">
+                    2021 so far, in reverse chronological order. </p>
+                                    <a href="#" class="bg-blue-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium hover:bg-blue-800 inline-flex items-center mt-16 px-3 py-2 rounded-lg text-center text-white">
                     Read more <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
                                         </svg> </a>
@@ -434,7 +462,9 @@
                                         <p class="mt-6 mb-8 text-lg sm:mb-12">
                       With you every step of the way, SpeedStack transforms your
                       online presence </p>
-                                        <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"><a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50">GET STARTED</a><a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">FIND PROJECT</a>
+                                        <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+                                            <a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50">GET STARTED</a>
+                                            <a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">FIND PROJECT</a>
                                         </div>
                                     </div>
                                     <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 min-w-fit">
@@ -464,8 +494,7 @@
                                                 <img alt="" src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="absolute inset-0 h-full w-full object-cover"/>
                                             </div>
                                         </div>
-                                        <div class="relative flex items-center bg-gray-100">
-                                            <span class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span>
+                                        <div class="relative flex items-center bg-gray-100"><span class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span>
                                             <div class="p-8 sm:p-16 lg:p-24">
                                                 <h2 class="text-2xl font-bold sm:text-3xl">
                           Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -475,7 +504,8 @@
                           elit. Aliquid, molestiae! Quidem est esse numquam odio
                           deleniti, beatae, magni dolores provident quaerat
                           totam eos, aperiam architecto eius quis quibusdam
-                          fugiat dicta. </p><a href="#" class="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500">
+                          fugiat dicta. </p>
+                                                <a href="#" class="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500">
                           Get in Touch </a>
                                             </div>
                                         </div>
@@ -526,7 +556,8 @@
                                 <!-- Grid -->
                                 <div class="grid sm:grid-cols-12 gap-6">
                                     <div class="sm:self-end col-span-12 sm:col-span-7 md:col-span-8 lg:col-span-5 lg:col-start-3">
-                                        <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+                                        <!-- Card -->
+                                        <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
                                                 <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3481&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
@@ -537,7 +568,8 @@
                                     </div>
                                     <!-- End Col -->
                                     <div class="sm:self-end col-span-12 sm:col-span-5 md:col-span-4 lg:col-span-3">
-                                        <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+                                        <!-- Card -->
+                                        <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
                                                 <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=987&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
@@ -548,7 +580,8 @@
                                     </div>
                                     <!-- End Col -->
                                     <div class="col-span-12 md:col-span-4">
-                                        <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+                                        <!-- Card -->
+                                        <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
                                                 <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1606836576983-8b458e75221d?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
@@ -559,7 +592,8 @@
                                     </div>
                                     <!-- End Col -->
                                     <div class="col-span-12 sm:col-span-6 md:col-span-4">
-                                        <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+                                        <!-- Card -->
+                                        <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
                                                 <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1598929438701-ef29ab0bb61a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1035&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
@@ -570,7 +604,8 @@
                                     </div>
                                     <!-- End Col -->
                                     <div class="col-span-12 sm:col-span-6 md:col-span-4">
-                                        <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+                                        <!-- Card -->
+                                        <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
                                                 <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1019&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
@@ -606,7 +641,10 @@
                             </section>
                         </div>
                         <div class="hidden p-4 rounded-lg" id="widgets" role="tabpanel" aria-labelledby="widgets-tab">
-                            <label for="Toggle2" class="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-800" data-pgc-define="mambaui-toggle" data-pgc-section="Widgets"><span>Off</span><span class="relative"> <input id="Toggle2" type="checkbox" class="hidden peer"/> <div class="w-10 h-4 rounded-full shadow dark:bg-gray-400 peer-checked:dark:bg-violet-600"></div> <div class="absolute left-0 w-6 h-6 rounded-full shadow -inset-y-1 peer-checked:right-0 peer-checked:left-auto dark:bg-violet-600"></div> </span><span>On</span>
+                            <label for="Toggle2" class="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-800" data-pgc-define="mambaui-toggle" data-pgc-section="Widgets">
+                                <span>Off</span>
+                                <span class="relative"> <input id="Toggle2" type="checkbox" class="hidden peer"/> <div class="w-10 h-4 rounded-full shadow dark:bg-gray-400 peer-checked:dark:bg-violet-600"></div> <div class="absolute left-0 w-6 h-6 rounded-full shadow -inset-y-1 peer-checked:right-0 peer-checked:left-auto dark:bg-violet-600"></div> </span>
+                                <span>On</span>
                             </label>
                             <div class="lg:px-8 lg:py-14 mx-auto px-4 py-10 sm:px-6" data-pgc-define="preline-stats" data-pgc-section="Stats">
                                 <!-- Grid -->
@@ -664,8 +702,7 @@
                   This is just some informational text <button data-popover-target="popover-description" data-popover-placement="bottom-end" type="button">
                                         <svg class="w-10 h-10 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="sr-only">Show information</span>
+                                        </svg><span class="sr-only">Show information</span>
                                     </button> </p>
                                 <div data-popover="" id="popover-description" role="tooltip" class="absolute bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 duration-300 inline-block invisible max-w-7xl opacity-0 rounded-lg shadow-sm text-gray-500 transition-opacity z-10">
                                     <div class="max-w-3xl min-w-[250px] p-3">
@@ -682,7 +719,8 @@
                       For each date bucket, the all-time volume of activities is
                       calculated. This means that activities in period n contain
                       all activities up to period n, plus the activities
-                      generated by your community in period. </p><a href="#" class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">Read more <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      generated by your community in period. </p>
+                                        <a href="#" class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">Read more <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
                                             </svg></a>
                                     </div>
@@ -717,9 +755,9 @@
                             <div class="bg-gray-200 flex items-center mb-4 px-12 py-4 rounded-lg w-fit" role="alert" data-pgc-define="alert-info" data-pgc-section="Alerts">
                                 <svg class="flex-shrink-0 h-10 inline me-3 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"></path>
-                                </svg>
-                                <span class="sr-only">Info</span>
-                                <div><span class="font-medium">Info alert!</span> Change a few
+                                </svg><span class="sr-only">Info</span>
+                                <div>
+                                    <span class="font-medium">Info alert!</span> Change a few
                                     things up and try submitting again.
                                 </div>
                             </div>
@@ -838,7 +876,8 @@
                       plaid gastropub normcore XOXO 90&apos;s pickled cindigo
                       jean shorts. Slow-carb next level shoindigoitch ethical
                       authentic, yr scenester sriracha forage franzen organic
-                      drinking vinegar. </p><span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+                      drinking vinegar. </p>
+                                        <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
                                         <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
                       HOLDEN CAULFIELD </h2>
                                         <p class="text-gray-500">Senior Product Designer</p>
@@ -1080,14 +1119,14 @@
                         </div>
                         <!-- End Grid -->
                     </div>
-                    <h2>Meet our team</h2>
-                    <a href="https://wind-ui.com/components/layouts/" class="underline">WIND UI GRID LAYOUTS</a>
+                    <h2>Meet our team</h2><a href="https://wind-ui.com/components/layouts/" class="underline">WIND UI GRID LAYOUTS</a>
                     <div class="flex h-fit justify-center w-fit">
                         <div class="antialiased sans-serif">
                             <div x-data="app" x-cloak>
                                 <div class="container md:py-10 mx-auto px-4 py-2">
                                     <div>
-                                        <div class="hidden"><span class="font-bold my-1 text-gray-700 block">Results (would normally be hidden)</span>
+                                        <div class="hidden">
+                                            <span class="font-bold my-1 text-gray-700 block">Results (would normally be hidden)</span>
                                             <input type="text" name="date_from" x-model="dateFromYmd"/>
                                             <input type="text" name="date_to" x-model="dateToYmd"/>
                                         </div>
@@ -1102,7 +1141,9 @@
                                             <div class="bg-white mt-2 rounded-lg shadow p-4 absolute" style="width: 17rem" x-show="showDatepicker" x-transition>
                                                 <div class="flex flex-col items-center">
                                                     <div class="w-full flex justify-between items-center mb-2">
-                                                        <div><span x-text="MONTH_NAMES[month]" class="text-lg font-bold text-gray-800"></span><span x-text="year" class="ml-1 text-lg text-gray-600 font-normal"></span>
+                                                        <div>
+                                                            <span x-text="MONTH_NAMES[month]" class="text-lg font-bold text-gray-800"></span>
+                                                            <span x-text="year" class="ml-1 text-lg text-gray-600 font-normal"></span>
                                                         </div>
                                                         <div>
                                                             <button type="button" class="transition ease-in-out duration-100 inline-flex cursor-pointer hover:bg-gray-200 p-1 rounded-full" @click="if (month == 0) {year--; month=11;} else {month--;} getNoOfDays()">
@@ -1455,43 +1496,77 @@
         }
       });
     </script>
-        <footer class="bg-primary-50 dark:bg-primary-800 pb-20 pt-32 shadow-xl" data-pgc="wa.Footer">
-            <div class="container grid grid-cols-1 mx-auto px-10 md:px-0 lg:grid-cols-2">
-                <div class="mx-auto pr-24"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
-                    <p class="mt-2">Custom coded websites with great peformance and high ranking SEO, serving small businesses,</p>
-                    <p class="mt-2">When you&apos;re unsure about the technology stack for your next project, choose the SpeedStack.</p>
+        <footer class="bg-base border-t-2  pt-14 text-white" data-pgc="wa.Footer">
+            <div class="container grid grid-cols-1 mx-auto md:grid-cols-2">
+                <div class="mx-auto pr-24">
+                    <p>LOGO</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                 </div>
                 <div class="flex gap-8 justify-end">
                     <div>
+                        <p class="font-bold mb-4">Services</p>
                         <ul class="flex flex-col gap-2">
-                            <li><a href="/tiers" class="cursor-pointer underline">Pricing</a>
+                            <li><a>Shopify</a>
                             </li>
-                            <li><a href="/free-consultation" class="cursor-pointer underline">Free consulatation</a>
+                            <li><a>Pwa<div id="dropdownNavbar" class="dark:bg-gray-700 dark:divide-gray-600 divide-gray-100 divide-y font-normal h-[250px] hidden rounded-lg shadow z-[100]">
+                                        <ul class="border-b-[1px] border-l-[1px] border-r-[1px] dark:bg-base dark:border-white dark:text-gray-200 flex flex-col py-2 text-gray-700 text-sm" aria-labelledby="dropdownLargeButton">
+                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                            </li>
+                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                            </li>
+                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                            </li>
+                                        </ul>
+                                        <div class="hidden py-1"><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                                        </div>
+                                    </div></a>
                             </li>
-                            <li><a href="/contact" class="cursor-pointer underline">Contact us</a>
+                            <li><a>Ecommerce</a>
                             </li>
-                            <li><a href="https://docs.google.com/forms/d/1dtqeeshhtozp2vVflnWmww7c-LlSKrjvTTCrQVhJx3E/edit" spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
+                            <li><a>Booking</a>
                             </li>
                         </ul>
                     </div>
                     <div>
+                        <p class="font-bold mb-4">About Us</p>
                         <ul class="flex flex-col gap-2">
-                            <li><a href="/services" class="cursor-pointer underline">Services</a>
+                            <li>
+                                <a>Shopify</a>
                             </li>
-                            <li><a href="/jamstack" class="cursor-pointer underline">Jamstack</a>
+                            <li>
+                                <a>Pwa</a>
                             </li>
-                            <li><a href="/blog" class="cursor-pointer underline">Blog</a>
+                            <li>
+                                <a>Ecommerce</a>
                             </li>
-                            <li><a href="/portfolio" class="cursor-pointer underline">Portfolio</a>
+                            <li>
+                                <a>Booking</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-4">Company</p>
+                        <ul class="flex flex-col gap-2">
+                            <li>
+                                <a>Shopify</a>
+                            </li>
+                            <li>
+                                <a>Pwa</a>
+                            </li>
+                            <li>
+                                <a>Ecommerce</a>
+                            </li>
+                            <li>
+                                <a>Booking</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
+                <div class="border-t-2 border-white col-span-2 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a> <a class="pl-10">Terms &amp; Conditions</a> <a class="pl-10"></a>
+                        <li><a class="pr-10 border-r-[1px]">List item</a><a class="pl-10">List item</a>
                         </li>
-                        <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
+                        <li class="justify-self-end self-end">List item</li>
                     </ul>
                 </div>
             </div>
