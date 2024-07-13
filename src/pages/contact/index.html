@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <title data-pgc-field="title">{{title}}</title>
+        <title data-pgc-field="title">pageee</title>
         <meta property="og:description" content="Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria" data-pgc-field="description"/>
         <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
         <script>
@@ -63,16 +63,63 @@
                 </div>
             </nav>
         </header>
-        <main class="pt-24" data-pgc-field="mainContent"> 
-            <div class="container mt-6 mx-auto pb-24 px-6  w-full"> 
-                <div class="border-b border-gray-100 flex flex-col items-center mb-5 pb-5"> 
-                    <h1 class="!text-4xl font-bold leading-[100px] mx-auto my-4 pb-10 prose pt-12 text-3xl text-center lg:prose-xl">{{title}}</h1> 
-                    <img alt="" src="{{ coverImage }}" class="max-w-[900px]"/>
-                    <p class="text-center text-base leading-6 font-medium text-gray-500"> <time class="hidden"> {{ date | readableDate }}                 by                 <a>{{ author }}</a> 
-                        </time> </p> 
-                </div>                 
-                <article class="[&>blockquote]:my-8 [&>blockquote]:inline-block  [&>p]:text-black [&>p]:text-xl [&>ul]:text-xl ![&>li]:list-disc ![&>ul]:list-disc [&>h2]:pb-12 [&>h2]:pt-20 [&>li]:text-2xl [&>ul]:flex [&>ul]:flex-col [&>ul]:pb-10 [&>ul]:pt-10 mx-auto my-4 prose pt-12 lg:prose-xl">         {{ content }}</article>                 
-            </div>
+        <main class="pt-24" data-pgc-field="mainContent">
+            <section class="bg-gray-900 bg-green-800 overflow-hidden py-32 md:py-64 xl:min-h-[70vh]">
+                <div class="container mx-auto px-4">
+                    <div class="gap-y-32 grid grid-cols-1 justify-items-center mx-auto lg:gap-x-16 lg:grid-cols-2 xl:gap-x-24">
+                        <div class="flex flex-col justify-between max-w-2xl relative lg:max-w-none lg:py-12">
+                            <p class="font-normal mt-4 text-base text-gray-400 uppercase sm:mt-6 sm:text-lg lg:max-w-xs">interested?</p>
+                            <div class="mt-6 lg:mt-auto">
+                                <h2 class="font-normal text-white">We will help you 
+to <span class="text-green-400
+">grow your business</span> faster and easier.</h2>
+                                <p class="mt-4 text-base font-normal text-gray-400 sm:text-lg sm:mt-6">We will be happy to advise you in the areas of branding, UI/UX design, web development. and will send you a non-binding offer for your project after an initial consultation.</p>
+                            </div>
+                        </div>
+                        <div class="relative flex items-center justify-center">
+                            <div class="absolute right-0 transform translate-x-4 -translate-y-1/2 top-1/2">
+</div>
+                            <div class="bg-white overflow-hidden relative rounded-3xl">
+                                <div class="max-w-2xl p-14 text-accent-600">
+                                    <p class="font-normal text-xl">Let us know about your project & we will help you grow your business from scratch.</p>
+                                    <form action="#" method="POST" class="mt-8 space-y-4">
+                                        <div>
+                                            <label for="" class="sr-only"> Full name </label>
+                                            <div>
+                                                <input type="text" name="" id="" placeholder="First & Last name" class="block border-[1px] border-accent-400 focus:border-white focus:ring-1 focus:ring-white placeholder-gray-500 px-5 py-4 rounded-xl text-base text-white w-full"/>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="" class="sr-only"> Email address </label>
+                                            <div>
+                                                <input type="email" name="" id="" placeholder="Email address" class="block border-[1px] border-accent-400 focus:border-white focus:ring-1 focus:ring-white placeholder-gray-500 px-5 py-4 rounded-xl text-base text-white w-full"/>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="" class="sr-only"> Phone number </label>
+                                            <div>
+</div>
+                                        </div>
+                                        <div>
+                                            <label for="" class="sr-only"> Message </label>
+                                            <div>
+                                                <textarea name="" id="" placeholder="Write your message" rows="4" class="block border-[1px] border-accent-400 focus:border-white focus:ring-1 focus:ring-white mt-6 placeholder-gray-500 px-5 py-4 resize-y rounded-xl text-base text-white w-full"></textarea>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="group inline-flex mt-2 relative w-full">
+                                                <button type="button" class="bg-black border border-transparent inline-flex items-center justify-center mt-10 px-8 py-3 relative rounded-full text-accent-100 uppercase w-full" role="button">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Modal toggle -->
+            <!-- Main modal -->
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
         <script src="/static/js/alpine.js"></script>

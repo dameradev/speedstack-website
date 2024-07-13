@@ -112,6 +112,7 @@ primarylight: {'50': '#e3ebe9',
 '900': '#203a34',
 '950': '#172b26',
 },
+base: '#222222',
 }
 
 const pg_fonts = {sans: ["'Nunito Sans', sans-serif",

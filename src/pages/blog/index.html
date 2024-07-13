@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <title data-pgc-field="title">{{title}}</title>
+        <title data-pgc-field="title">Blog</title>
         <meta property="og:description" content="Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria" data-pgc-field="description"/>
-        <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
+        <link href="../../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
         <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
       if (
@@ -63,16 +63,25 @@
                 </div>
             </nav>
         </header>
-        <main class="pt-24" data-pgc-field="mainContent"> 
-            <div class="container mt-6 mx-auto pb-24 px-6  w-full"> 
-                <div class="border-b border-gray-100 flex flex-col items-center mb-5 pb-5"> 
-                    <h1 class="!text-4xl font-bold leading-[100px] mx-auto my-4 pb-10 prose pt-12 text-3xl text-center lg:prose-xl">{{title}}</h1> 
-                    <img alt="" src="{{ coverImage }}" class="max-w-[900px]"/>
-                    <p class="text-center text-base leading-6 font-medium text-gray-500"> <time class="hidden"> {{ date | readableDate }}                 by                 <a>{{ author }}</a> 
-                        </time> </p> 
-                </div>                 
-                <article class="[&>blockquote]:my-8 [&>blockquote]:inline-block  [&>p]:text-black [&>p]:text-xl [&>ul]:text-xl ![&>li]:list-disc ![&>ul]:list-disc [&>h2]:pb-12 [&>h2]:pt-20 [&>li]:text-2xl [&>ul]:flex [&>ul]:flex-col [&>ul]:pb-10 [&>ul]:pt-10 mx-auto my-4 prose pt-12 lg:prose-xl">         {{ content }}</article>                 
-            </div>
+        <main class="pt-24" data-pgc-field="mainContent">
+            <section class="container gap-20 grid grid-cols-1 mt-15 mx-auto px-10 py-32 md:grid-cols-2 lg:grid-cols-3"> {% assign postslist = collections.post %} 
+                {% for post in
+                postslist | reverse %}
+                <div class="bg-gray-800 flex flex-col justify-between min-h-max rounded-lg shadow text-white" data-pgc-define="custom-card-blog" data-pgc-section="Cards"><a href="{{ post.url | url }}">
+                      {% if post.data.image %}  <img class="object-cover max-h-[200px] min-w-full rounded-t-lg" src="{{ post.data.image | image }}" alt="">{% endif %} </a>
+                    <!-- {{post.data.image}} -->
+                    <div class="flex flex-col  justify-between p-14"><a href="{{ post.url | url }}"> <h5 class="dark:text-white font-bold mb-4 text-2xl tracking-tight">
+                                {% if post.data.title %} {{ post.data.title }} {% else %} Untitled {% endif %} </h5> </a>
+                        {% if post.data.description %}
+                        <p class="dark:text-white font-normal mb-3"> {{ post.data.description }} </p>
+                        {% endif %} <a href="{{ post.url | url }}" class="bg-blue-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium hover:bg-blue-800 inline-flex items-center mt-8 px-3 py-2 rounded-lg text-center text-white w-fit">Read
+                            more <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg></a>
+                    </div>
+                </div>
+                {% endfor %}
+            </section>
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
         <script src="/static/js/alpine.js"></script>
