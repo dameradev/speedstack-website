@@ -69,7 +69,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/images");
 
   // Correctly configured copy for uploads to root
+  eleventyConfig.addPassthroughCopy({ "./src/images": "./images" });
   eleventyConfig.addPassthroughCopy({ "./src/uploads": "./uploads" });
+  eleventyConfig.addPassthroughCopy({ "./src/collections": "./collections" });
   eleventyConfig.addPassthroughCopy({ "./src/js": "./js" });
 
   eleventyConfig.addPassthroughCopy("./src/css/styles.css");
