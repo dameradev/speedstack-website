@@ -6,6 +6,7 @@
         <title data-pgc-field="title">SpeedStack - Custom Web Development and Design</title>
         <meta property="og:description" content="Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria" data-pgc-field="description"/>
         <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
+        <script async data-id="101460916" src="//static.getclicky.com/js"></script>
         <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
       if (
@@ -27,39 +28,42 @@
     </head>
     <body class="dark:text-accent-50 text-accent-900">
         <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-40 items-center justify-center py-10 shadow shadow-lg w-full z-[100]" data-pgc="wa.Header">
-            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">{{meta.siteName}}</a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
-                    <li><a href="/">Home</a>
+                    {% for item in navigation.primaryNavigation %}
+                    <li><a href="../%7B%7Bitem.route%7D%7D">{{item.text}}</a>
                     </li>
-                    <li><a href="/services">Services</a>
-                    </li>
-                    <li><a href="/blog">Blog</a>
-                    </li>
+                    {% endfor %}
                 </ul>
                 <div class="flex gap-12 justify-end">
                     <button id="theme-toggle" type="button" class="dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hidden hover:bg-gray-100 p-2.5 rounded-lg text-gray-500 text-sm">
                         <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                        </svg>                         
+                        </svg>
                         <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
                         </svg>
                     </button>
+                    {% assign drawerPreact = "./lib/preact/drawer.mjs" | preact %} {%
+                    assign items_json = navigation.primaryNavigation | json %}
                     <is-land on:visible>
                         <div id="drawer-preact" class="block md:hidden"></div>
                         <template data-island>
-                            <script type="module">import {
+                            <script type="module">
+                              import {
                                 render,
                                 html,
                               } from "https://unpkg.com/htm/preact/index.mjs?module";
-                              import Drawer from "/lib/preact/drawer.client.js";
+                              import Drawer from "{{ drawerPreact.clientJsUrl }}";
               
                               render(
-                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/blog","text":"Blog"}]')}  />`,
+                                html`<${Drawer} items=${JSON.parse('{{items_json}}')}  />`,
                                 document.getElementById("drawer-preact")
-                              );</script>
+                              );
+                            </script>
                         </template>
-                    </is-land><a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
+                    </is-land>
+                    <a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
                 </div>
             </nav>
         </header>
@@ -122,7 +126,8 @@
                             <p class="mt-8 text-gray-400 text-lg sm:mt-8">It allows us to separate the front from the backend, in comparison with WordPress and other traditional web servers, where both are typically connected, which exposes you to more security risks, and is typically much slower to load.</p>
                             <p class="mt-8 text-gray-400 text-lg sm:mt-8">With Jamstack, the end product is a static site, which still retains the dynamic features availabe with traditional web builders, without the need for a database.</p>
                             <p class="mt-8 text-gray-400 text-lg sm:mt-8">
-Jamstack represents the optimal approach for modern web development by seamlessly combining the advantages of both static and dynamic websites.</p><a href="/jamstack" title="" class="font-bold inline-flex items-center mt-8 text-green-700"></a>
+Jamstack represents the optimal approach for modern web development by seamlessly combining the advantages of both static and dynamic websites.</p>
+                            <a href="/jamstack" title="" class="font-bold inline-flex items-center mt-8 text-green-700"></a>
                         </div>
                     </div>
                 </div>
@@ -319,37 +324,37 @@ and our services</h2>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Increased UX (User Experience) = Higher Conversion Rates
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Increased UX (User Experience) = Higher Conversion Rates
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Significantly increased SEO results = larger traffic
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Significantly increased SEO results = larger traffic
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Much better speed and application performance
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Much better speed and application performance
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Scalability without increased costs
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Scalability without increased costs
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Maximum security and hack prevention
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Maximum security and hack prevention
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Flexibility and omni-channel readiness
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Flexibility and omni-channel readiness
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.02487 13.5241L11.6971 16.1847L17.0414 10.8635M25.058 13.5241C25.058 20.1365 19.6743 25.497 13.0332 25.497C6.39201 25.497 1.0083 20.1365 1.0083 13.5241C1.0083 6.91169 6.39201 1.55127 13.0332 1.55127C19.6743 1.55127 25.058 6.91169 25.058 13.5241Z" stroke="#191B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Cheap (or free) hosting & smaller maintenance costs
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Cheap (or free) hosting & smaller maintenance costs
                                 </li>
                             </ul>                             
                         </li>
@@ -369,7 +374,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Filled with glitches & bugs
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Filled with glitches & bugs
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -381,7 +386,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Requires never-ending SEO optimizations
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Requires never-ending SEO optimizations
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -393,7 +398,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Lower page speed and performance
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Lower page speed and performance
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -405,7 +410,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Costs increase significantly as you scale
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Costs increase significantly as you scale
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -417,7 +422,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Favorite target for hackers
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Favorite target for hackers
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -429,7 +434,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Needs many additional plugins, which aren't always compatible and Tawess
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Needs many additional plugins, which aren't always compatible and Tawess
                                 </li>
                                 <li class="flex gap-6 items-center">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -441,7 +446,7 @@ and our services</h2>
                                                 <rect width="21" height="21" fill="white"/>
                                             </clipPath>
                                         </defs>
-                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Requires hosting and expensive maintenance to work
+                                    </svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Requires hosting and expensive maintenance to work
                                     property
                                 </li>
                             </ul>                             
@@ -456,11 +461,13 @@ and our services</h2>
                 <ul class="container flex flex-col gap-20 items-center justify-center mt-20 mx-auto lg:flex-row">
                     <li class="bg-primary-600 max-w-3xl p-20 rounded-2xl text-left">
                         <h3 class="pb-10">Salinas Data</h3>
-                        <p class="mb-10 pb-10">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p><a class="!border-green-400 !text-green-400 btn">READ MORE</a>
+                        <p class="mb-10 pb-10">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p>
+                        <a class="!border-green-400 !text-green-400 btn">READ MORE</a>
                     </li>
                     <li class="!border-green-400 bg-primary-600 max-w-3xl p-20 rounded-2xl text-left">
                         <h3 class="pb-10">Nonstop Dogwear</h3>
-                        <p class="mb-10 pb-10">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p><a class="!border-green-400 !text-green-400 btn">READ MORE</a>
+                        <p class="mb-10 pb-10">We don’t only offer maintentce and hosting, but you get us as a partner, meaning we follow the latest changes in tech and make sure your website is alligened and up to date with that.</p>
+                        <a class="!border-green-400 !text-green-400 btn">READ MORE</a>
                     </li>
                 </ul>
             </section>
@@ -568,8 +575,9 @@ and our services</h2>
       });
     </script>
         <footer class="bg-primary-50 dark:bg-primary-800 pb-20 pt-32 shadow-xl" data-pgc="wa.Footer">
-            <div class="container grid grid-cols-1 mx-auto md:px-0 lg:grid-cols-2">
-                <div class="pr-24"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+            <div class="container grid grid-cols-1 mx-auto  md:px-0 lg:grid-cols-2">
+                <div class=" pr-24">
+                    <a href="/" class="font-bold mt-4 text-2xl">{{meta.siteName}}</a>
                     <p class="mt-2">Custom coded websites with great peformance and high ranking SEO, serving small businesses,</p>
                     <p class="mt-2">When you&apos;re unsure about the technology stack for your next project, choose the SpeedStack.</p>
                 </div>
@@ -578,7 +586,8 @@ and our services</h2>
                         <ul class="flex flex-col gap-2">
                             <li><a href="/tiers" class="cursor-pointer underline">Pricing</a>
                             </li>
-                            <li><a href="/free-consultation" class="cursor-pointer underline">Free consulatation</a>
+                            <li>
+                                <a href="/free-consultation" class="cursor-pointer underline">Free consulatation</a>
                             </li>
                             <li><a href="/contact" class="cursor-pointer underline">Contact us</a>
                             </li>
@@ -588,7 +597,8 @@ and our services</h2>
                     </div>
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li><a href="/services" class="cursor-pointer underline">Services</a>
+                            <li>
+                                <a href="/services" class="cursor-pointer underline">Services</a>
                             </li>
                             <li><a href="/jamstack" class="cursor-pointer underline">Jamstack</a>
                             </li>
@@ -601,7 +611,8 @@ and our services</h2>
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
+                        <li>
+                            <a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
                         </li>
                         <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
                     </ul>

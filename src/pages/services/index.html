@@ -6,6 +6,7 @@
         <title data-pgc-field="title">-</title>
         <meta property="og:description" content="Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria" data-pgc-field="description"/>
         <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
+        <script async data-id="101460916" src="//static.getclicky.com/js"></script>
         <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
       if (
@@ -27,39 +28,42 @@
     </head>
     <body class="dark:text-accent-50 text-accent-900">
         <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-40 items-center justify-center py-10 shadow shadow-lg w-full z-[100]" data-pgc="wa.Header">
-            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">{{meta.siteName}}</a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
-                    <li><a href="/">Home</a>
+                    {% for item in navigation.primaryNavigation %}
+                    <li><a href="../%7B%7Bitem.route%7D%7D">{{item.text}}</a>
                     </li>
-                    <li><a href="/services">Services</a>
-                    </li>
-                    <li><a href="/blog">Blog</a>
-                    </li>
+                    {% endfor %}
                 </ul>
                 <div class="flex gap-12 justify-end">
                     <button id="theme-toggle" type="button" class="dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hidden hover:bg-gray-100 p-2.5 rounded-lg text-gray-500 text-sm">
                         <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                        </svg>                         
+                        </svg>
                         <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
                         </svg>
                     </button>
+                    {% assign drawerPreact = "./lib/preact/drawer.mjs" | preact %} {%
+                    assign items_json = navigation.primaryNavigation | json %}
                     <is-land on:visible>
                         <div id="drawer-preact" class="block md:hidden"></div>
                         <template data-island>
-                            <script type="module">import {
+                            <script type="module">
+                              import {
                                 render,
                                 html,
                               } from "https://unpkg.com/htm/preact/index.mjs?module";
-                              import Drawer from "/lib/preact/drawer.client.js";
+                              import Drawer from "{{ drawerPreact.clientJsUrl }}";
               
                               render(
-                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/blog","text":"Blog"}]')}  />`,
+                                html`<${Drawer} items=${JSON.parse('{{items_json}}')}  />`,
                                 document.getElementById("drawer-preact")
-                              );</script>
+                              );
+                            </script>
                         </template>
-                    </is-land><a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
+                    </is-land>
+                    <a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
                 </div>
             </nav>
         </header>
@@ -118,7 +122,9 @@
                         </svg>
                         <div class="text-center lg:pr-16 lg:text-left">
                             <h2 class="text-5xl text-center lg:text-left">Web development done differently</h2>
-                            <p class="mt-8 text-gray-400 text-lg sm:mt-8">We custom code your site, meaning we don&rsquo;t use traditional web builders. Which gives us fine grain control of everything, from how the site looks, to the performance and SEO scores.</p><a href="/jamstack" title="" class="font-bold inline-flex items-center mt-8 text-green-700">More about jamstack</a><a href="/jamstack" title="" class="font-bold inline-flex items-center mt-8 text-green-700"><svg class="w-5 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <p class="mt-8 text-gray-400 text-lg sm:mt-8">We custom code your site, meaning we don&rsquo;t use traditional web builders. Which gives us fine grain control of everything, from how the site looks, to the performance and SEO scores.</p>
+                            <a href="/jamstack" title="" class="font-bold inline-flex items-center mt-8 text-green-700">More about jamstack</a>
+                            <a href="/jamstack" title="" class="font-bold inline-flex items-center mt-8 text-green-700"><svg class="w-5 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                                 </svg></a>
                         </div>
@@ -227,20 +233,17 @@ completly new, we can help build your businsess&rsquo;s brand.</p>
                                 <li class="flex items-center ">
                                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    <span class="ml-3 text-lg font-bold"> 150+ Handcoded UI Blocks </span>
+                                    </svg><span class="ml-3 text-lg font-bold"> 150+ Handcoded UI Blocks </span>
                                 </li>
                                 <li class="flex items-center ">
                                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    <span class="ml-3 text-lg font-bold"> Fully Responsive on Any Device </span>
+                                    </svg><span class="ml-3 text-lg font-bold"> Fully Responsive on Any Device </span>
                                 </li>
                                 <li class="flex items-center ">
                                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    <span class="ml-3 text-lg font-bold"> Just Copy & Paste </span>
+                                    </svg><span class="ml-3 text-lg font-bold"> Just Copy & Paste </span>
                                 </li>
                             </ul>
                         </div>
@@ -301,8 +304,9 @@ completly new, we can help build your businsess&rsquo;s brand.</p>
       });
     </script>
         <footer class="bg-primary-50 dark:bg-primary-800 pb-20 pt-32 shadow-xl" data-pgc="wa.Footer">
-            <div class="container grid grid-cols-1 mx-auto md:px-0 lg:grid-cols-2">
-                <div class="pr-24"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+            <div class="container grid grid-cols-1 mx-auto  md:px-0 lg:grid-cols-2">
+                <div class=" pr-24">
+                    <a href="/" class="font-bold mt-4 text-2xl">{{meta.siteName}}</a>
                     <p class="mt-2">Custom coded websites with great peformance and high ranking SEO, serving small businesses,</p>
                     <p class="mt-2">When you&apos;re unsure about the technology stack for your next project, choose the SpeedStack.</p>
                 </div>
@@ -311,7 +315,8 @@ completly new, we can help build your businsess&rsquo;s brand.</p>
                         <ul class="flex flex-col gap-2">
                             <li><a href="/tiers" class="cursor-pointer underline">Pricing</a>
                             </li>
-                            <li><a href="/free-consultation" class="cursor-pointer underline">Free consulatation</a>
+                            <li>
+                                <a href="/free-consultation" class="cursor-pointer underline">Free consulatation</a>
                             </li>
                             <li><a href="/contact" class="cursor-pointer underline">Contact us</a>
                             </li>
@@ -321,7 +326,8 @@ completly new, we can help build your businsess&rsquo;s brand.</p>
                     </div>
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li><a href="/services" class="cursor-pointer underline">Services</a>
+                            <li>
+                                <a href="/services" class="cursor-pointer underline">Services</a>
                             </li>
                             <li><a href="/jamstack" class="cursor-pointer underline">Jamstack</a>
                             </li>
@@ -334,7 +340,8 @@ completly new, we can help build your businsess&rsquo;s brand.</p>
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
+                        <li>
+                            <a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
                         </li>
                         <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
                     </ul>
