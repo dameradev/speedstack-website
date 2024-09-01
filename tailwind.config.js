@@ -117,7 +117,7 @@ base: '#222222',
 
 const pg_fonts = {sans: ["'Nunito Sans', sans-serif",
 ],
-serif: ["'Righteous', sans-serif",
+serif: ['Righteous',
 ],
 }   
 
