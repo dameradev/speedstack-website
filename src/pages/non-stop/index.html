@@ -32,14 +32,11 @@
         <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-40 items-center justify-center py-10 shadow shadow-lg w-full z-[100]" data-pgc="wa.Header">
             <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
-                    <li>
-                        <a href="/">Home</a>
+                    <li><a href="/">Home</a>
                     </li>
-                    <li>
-                        <a href="/services">Services</a>
+                    <li><a href="/services">Services</a>
                     </li>
-                    <li>
-                        <a href="/blog">Blog</a>
+                    <li><a href="/blog">Blog</a>
                     </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
@@ -65,8 +62,7 @@
                                 document.getElementById("drawer-preact")
                               );</script>
                         </template>
-                    </is-land>
-                    <a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
+                    </is-land><a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
                 </div>
             </nav>
         </header>
@@ -151,11 +147,15 @@
                 <div class="container max-w-7xl mx-auto prose-xl text-white">
                     <h2 class="font-sans text-base text-green-800 text-md uppercase">Goal</h2>
                     <h3 class="text-5xl text-white">What they wanted to achieve</h3>
-                    <p>SalinasData approached SpeedStack wanting to improve their online presence. Ever since the founding of the company they were using WordPress, and while this was enough for when the company started, now it became a problem to manage, update and keep up with the latest in tech.</p>
-                    <h4 class="text-4xl text-white">They wanted a fresh start for all their sites, they wanted to take advantage of the new web.</h4>
-                    <p>The first project was to migrate their Agency WordPress site to the JamStack. They also required an easy to use CMS from which they could control the site with ease.</p>
-                    <p>So we chose CloudCannon as the solution, it’s a git-based CMS, that is user friendly, and gives you control of virtually the whole site, with minimal effort.</p>
-                    <p>We provided them with a fresh design, adhearing to a better UX, making it easier for their customers to find what they were looking for.</p>
+                    <p>NonStop approached us with ideas for their lack of technology, the initial project we took over was their B2B sales site, it was non-existent at the time and all the orders we&apos;re entered manually taken over the phone, which was very inefficient.</p>
+                    <p>They also lacked an admin dashboard where sales could see all the data that was required for them to do their day-to-day tasks.</p>
+                    <h4 class="text-4xl text-white">The B2B portal, and the admin dashboard</h4>
+                    <p>All their data was saved in a central ERP, and quering this data everytime a user accesed the portal was not feasable, so we came up with a plan to create a new system which would be syncronized to their ERP.</p>
+                    <p>Our stack of choice was: NextJS, Prisma, TailwindCSS.</p>
+                    <p>Using this approach we ensured to be future proof, the web-app was blazingly fast, and their customer satisfaction increased overnight, which in turn increased the sales dramatically.</p>
+                    <p>After developing the Portal, we started developing an internal application, where employees would be able to fullfull thier duties.&nbsp;</p>
+                    <p>It started as a simple order/customer preview and ordering streamlined. But as time passed more and more features were added, to the point where the ERP system was no longer directly used, but rather it was updated from our apps, using the neccessary rules.</p>
+                    <p>In this way we ensured that the data was still centrally stored, while having the freedom and benefits of using the latest technologies for a faster and more efficient&nbsp; completition of day-to-day tasks.</p>
                     <h4 class="text-4xl text-white">The new website architecture</h4>
                     <p>Salinas had their previous website built in the traditional way, and this no longer worked for them.</p>
                     <p>For every content change, they needed to contact their developer, this was costly and inefficient.</p>
@@ -324,51 +324,39 @@ With some training provided by us, and their excellent documentation, the client
     </script>
         <footer class="bg-primary-50 dark:bg-primary-800 pb-20 pt-32 shadow-xl" data-pgc="wa.Footer">
             <div class="container grid grid-cols-1 mx-auto md:px-0 lg:grid-cols-2">
-                <div class="pr-24">
-                    <a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+                <div class="pr-24"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
                     <p class="mt-2">Custom coded websites with great peformance and high ranking SEO, serving small businesses,</p>
                     <p class="mt-2">When you&apos;re unsure about the technology stack for your next project, choose the SpeedStack.</p>
                 </div>
                 <div class="flex gap-8 justify-end">
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li>
-                                <a href="/tiers" class="cursor-pointer underline">Pricing</a>
+                            <li><a href="/tiers" class="cursor-pointer underline">Pricing</a>
                             </li>
-                            <li>
-                                <a href="/free-consultation" class="cursor-pointer underline">Free consulatation</a>
+                            <li><a href="/free-consultation" class="cursor-pointer underline">Free consulatation</a>
                             </li>
-                            <li>
-                                <a href="/contact" class="cursor-pointer underline">Contact us</a>
+                            <li><a href="/contact" class="cursor-pointer underline">Contact us</a>
                             </li>
-                            <li>
-                                <a href="https://docs.google.com/forms/d/1dtqeeshhtozp2vVflnWmww7c-LlSKrjvTTCrQVhJx3E/edit" spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
+                            <li><a href="https://docs.google.com/forms/d/1dtqeeshhtozp2vVflnWmww7c-LlSKrjvTTCrQVhJx3E/edit" spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li>
-                                <a href="/services" class="cursor-pointer underline">Services</a>
+                            <li><a href="/services" class="cursor-pointer underline">Services</a>
                             </li>
-                            <li>
-                                <a href="/jamstack" class="cursor-pointer underline">Jamstack</a>
+                            <li><a href="/jamstack" class="cursor-pointer underline">Jamstack</a>
                             </li>
-                            <li>
-                                <a href="/blog" class="cursor-pointer underline">Blog</a>
+                            <li><a href="/blog" class="cursor-pointer underline">Blog</a>
                             </li>
-                            <li>
-                                <a href="/portfolio" class="cursor-pointer underline">Portfolio</a>
+                            <li><a href="/portfolio" class="cursor-pointer underline">Portfolio</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li>
-                            <a class="pr-10 border-r-[1px]">Privacy Policy</a>
-                            <a class="pl-10">Terms &amp; Conditions</a>
-                            <a class="pl-10"></a>
+                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
                         </li>
                         <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
                     </ul>

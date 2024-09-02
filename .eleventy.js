@@ -74,6 +74,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/collections": "./collections" });
   eleventyConfig.addPassthroughCopy({ "./src/js": "./js" });
 
+  
   eleventyConfig.addPassthroughCopy("./src/css/styles.css");
   eleventyConfig.addPassthroughCopy("tailwind_theme/tailwind.css");
 

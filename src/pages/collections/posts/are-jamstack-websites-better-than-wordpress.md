@@ -5,6 +5,7 @@ title: Are Jamstack websites better than Wordpress?
 slug:
 coverImage: /images/blog/sample.jpg
 image: /images/blog/sample.jpg
+layout: posts.html
 ---
 # Static - Jamstack websites vs Dynamic (Wordpress, Wix, Squarespace etc)
 

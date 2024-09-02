@@ -2461,11 +2461,6 @@ p {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-gray-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
 .bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -4519,6 +4514,10 @@ body, html {
   line-height: 3.2rem;
 }
 
+    .\[\&\>ol\]\:flex-col>ol{
+  flex-direction: column;
+}
+
     .\[\&\>p\]\:text-xl>p{
   font-size: 2rem;
   line-height: 2.8rem;
@@ -4536,10 +4535,6 @@ body, html {
 
     .\[\&\>ul\]\:flex>ul{
   display: flex;
-}
-
-    .\[\&\>ul\]\:list-disc>ul{
-  list-style-type: disc;
 }
 
     .\[\&\>ul\]\:flex-col>ul{

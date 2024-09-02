@@ -5,6 +5,7 @@ title: The Benefits of Responsive Web Design in 2024
 slug: the-fastlane-to-your-first-web-development-freelance-tests
 coverImage: /images/blog/sample.jpg
 image: /images/blog/sample.jpg
+layout: posts.html
 ---
 In today's world, it’s unimaginable to run a business without having an online presence. The first step to establishing a presence is creating a website, which will serve as the first point of contact with your business.
 

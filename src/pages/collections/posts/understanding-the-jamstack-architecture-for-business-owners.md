@@ -5,6 +5,7 @@ title: Understanding the JamStack Architecture for Business Owners
 slug:
 coverImage: /images/blog/sample.jpg
 image: /images/blog/sample.jpg
+layout: posts.html
 ---
 ### Understanding the JamStack Architecture for Business Owners
 

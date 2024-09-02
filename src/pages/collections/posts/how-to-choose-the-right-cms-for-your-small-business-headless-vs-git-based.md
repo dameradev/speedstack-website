@@ -5,6 +5,7 @@ title: 'How to Choose the Right CMS for Your Small Business: Headless vs Git-Bas
 slug: How to-Choose-the-Right-CMS for-Your-Small-Business:-Headless-vs-Git-Based
 coverImage: /images/blog/sample.jpg
 image: /images/blog/sample.jpg
+layout: posts.html
 ---
 ### How to Choose the Right CMS for Your Small Business: Headless vs Git-Based
 
