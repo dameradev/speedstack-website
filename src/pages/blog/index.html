@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <title data-pgc-field="title">Blog</title>
         <meta property="og:description" content="Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria" data-pgc-field="description"/>
+        <meta property="description" content="Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria" data-pgc-field="description"/>
         <link href="../../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
         <link href="../../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
         <script async data-id="101460916" src="//static.getclicky.com/js"></script>
@@ -70,12 +71,10 @@
             <section class="container gap-20 grid grid-cols-1 mt-15 mx-auto px-10 py-32 md:grid-cols-2 lg:grid-cols-3"> 
                 {% assign posts = collections.posts %}
                 {% for post in posts %}
-                <div class="bg-primary-800 flex flex-col justify-between min-h-max rounded-lg shadow text-white" data-pgc-section="Cards">
-                    <a href="{{ post.url | url }}">
+                <div class="bg-primary-800 flex flex-col justify-between min-h-max rounded-lg shadow text-white" data-pgc-section="Cards"><a href="{{ post.url | url }}">
                       {% if post.data.image %}  <img class="object-cover max-h-[200px] min-w-full rounded-t-lg" src="{{ post.data.image | image }}" alt="">{% endif %} </a>
                     <!-- {{post.data.image}} -->
-                    <div class="flex flex-col  justify-between p-14">
-                        <a href="{{ post.url | url }}"> <h5 class="dark:text-white font-bold mb-4 text-2xl tracking-tight">
+                    <div class="flex flex-col  justify-between p-14"><a href="{{ post.url | url }}"> <h5 class="dark:text-white font-bold mb-4 text-2xl tracking-tight">
                                 {% if post.data.title %} {{ post.data.title }} {% else %} Untitled {% endif %} </h5> </a>
                         {% if post.data.description %}
                         <p class="dark:text-white font-normal mb-3"> {{ post.data.description }} </p>
@@ -172,7 +171,7 @@
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a> <a class="pl-10">Terms &amp; Conditions</a> <a class="pl-10"></a>
+                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
                         </li>
                         <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
                     </ul>
