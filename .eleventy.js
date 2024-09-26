@@ -5,6 +5,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const EleventySveltePlugin = require("./11ty/SveltePlugin.cjs");
 const EleventyVuePlugin = require("./11ty/VuePlugin.cjs");
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -74,7 +75,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/collections": "./collections" });
   eleventyConfig.addPassthroughCopy({ "./src/js": "./js" });
 
-  
   eleventyConfig.addPassthroughCopy("./src/css/styles.css");
   eleventyConfig.addPassthroughCopy("tailwind_theme/tailwind.css");
 
@@ -93,6 +93,13 @@ module.exports = function (eleventyConfig) {
     }
 
     return content;
+  });
+
+  eleventyConfig.addPlugin(sitemap, {
+    lastModifiedProperty: "modified",
+    sitemap: {
+      hostname: "https://speedstack.dev",
+    },
   });
 
   eleventyConfig.addPassthroughCopy("../css/styles.css");
