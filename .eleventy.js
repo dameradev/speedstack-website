@@ -95,6 +95,9 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  eleventyConfig.addPassthroughCopy("src/util/sitemap.liquid");
+  eleventyConfig.addPassthroughCopy("src/util/robots.liquid");
+
   eleventyConfig.addPlugin(sitemap, {
     lastModifiedProperty: "modified",
     sitemap: {
