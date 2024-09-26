@@ -98,6 +98,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/util/sitemap.liquid");
   eleventyConfig.addPassthroughCopy("src/util/robots.liquid");
 
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
   eleventyConfig.addPlugin(sitemap, {
     lastModifiedProperty: "modified",
     sitemap: {
